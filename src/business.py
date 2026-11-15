@@ -5,9 +5,22 @@ effect of an intervention is an assumption (effectiveness), not an estimate. ADR
 profit; margin_rate converts room revenue into contribution margin, and replacement_probability
 accounts for canceled rooms that would have been resold anyway.
 
-Per targeted booking:
-    expected incremental profit = P(cancel) x effectiveness x (1 - replacement_probability)
-                                  x margin_rate x booking_value - cost_per_contact
+Per targeted booking i:
+    E[incremental profit_i] = p_i x e x (1 - r) x m x V_i - c
+with p_i the predicted cancellation probability, e the assumed effectiveness (share of would-be
+cancellations prevented), r the assumed replacement probability, m the assumed margin rate,
+V_i = ADR x nights (room revenue) and c the cost per contact.
+
+Two views of the same targeting decision:
+- expected (ex ante, primary): uses p_i, i.e. only what is known when the hotel decides.
+- outcome_conditioned (ex post): replaces p_i by the observed label y_i of the evaluation bookings, under the
+  same assumed e, r, m and c. It shows how well the ranking would have worked retrospectively.
+  It is NOT realized profit: no intervention took place, and e, r, m and c are assumptions.
+
+Because e, r, m and c are the same for every booking, ranking bookings by p_i x V_i is the same as ranking
+them by expected incremental profit (when e(1 - r)m > 0). The expected-value-maximizing policy is therefore
+the threshold rule "contact booking i if E[incremental profit_i] > 0", which has no tuning parameter.
+Booking-specific effects or costs would need data this project does not have.
 """
 from dataclasses import asdict, dataclass
 
@@ -54,9 +67,9 @@ def expected_incremental_profit(p_cancel, booking_value, scenario: Scenario) -> 
 def simulate_intervention(score, p_cancel, booking_value, scenario: Scenario, coverage: float, y=None) -> dict:
     """Target the `coverage` share of bookings with the highest score.
 
-    expected_*: uses the model's probabilities (what the hotel would plan with).
-    realized_*: uses the actual outcomes of the evaluation bookings (how well the targeting really worked),
-    still under the assumed effectiveness, margin and replacement.
+    expected_*: uses the predicted probabilities (ex ante; what the hotel can plan with).
+    outcome_conditioned_*: uses the observed outcomes of the evaluation bookings under the same assumptions
+    (ex post scenario evaluation of the targeting, not realized profit).
     """
     if not 0 <= coverage <= 1:
         raise ValueError('coverage must be between 0 and 1')
@@ -75,32 +88,53 @@ def simulate_intervention(score, p_cancel, booking_value, scenario: Scenario, co
     out['expected_break_even_effectiveness'] = cost / gross if gross > 0 else np.nan
     if y is not None:
         y_t = np.asarray(y, dtype=float)[idx]
-        realized_gross = (y_t * value).sum()
-        out['actual_cancellations_targeted'] = int(y_t.sum())
-        out['realized_prevented_cancellations'] = float(y_t.sum() * scenario.effectiveness)
-        out['realized_incremental_contribution'] = float(realized_gross * scenario.effectiveness)
-        out['realized_net_benefit'] = out['realized_incremental_contribution'] - cost
-        out['realized_break_even_effectiveness'] = cost / realized_gross if realized_gross > 0 else np.nan
+        observed_gross = (y_t * value).sum()
+        out['observed_cancellations_targeted'] = int(y_t.sum())
+        out['outcome_conditioned_prevented_cancellations'] = float(y_t.sum() * scenario.effectiveness)
+        out['outcome_conditioned_incremental_contribution'] = float(observed_gross * scenario.effectiveness)
+        out['outcome_conditioned_net_benefit'] = out['outcome_conditioned_incremental_contribution'] - cost
+        out['outcome_conditioned_break_even_effectiveness'] = cost / observed_gross if observed_gross > 0 else np.nan
     return out
 
 
 def coverage_curve(strategies: dict[str, np.ndarray], p_cancel, booking_value, y, scenario: Scenario,
                    coverages) -> pd.DataFrame:
-    """Realized net benefit by coverage for several ranking strategies (same bookings, same assumptions)."""
+    """Net benefit by coverage for several predefined ranking strategies (same bookings, same assumptions).
+
+    The expected view values every strategy with the same probabilities p_cancel (the strict model's), so the
+    strategies differ only in which bookings they pick. This is a comparative scenario analysis, not a policy search.
+    """
     rows = []
     for name, score in strategies.items():
         for c in coverages:
             r = simulate_intervention(score, p_cancel, booking_value, scenario, c, y)
-            rows.append({'strategy': name, 'scenario': scenario.name, 'coverage': c,
-                         'targeted_bookings': r['targeted_bookings'], 'realized_net_benefit': r['realized_net_benefit']})
+            rows.append({'strategy': name, 'scenario': scenario.name, 'coverage': c, 'targeted_bookings': r['targeted_bookings'],
+                         'expected_net_benefit': r['expected_net_benefit'],
+                         'outcome_conditioned_net_benefit': r['outcome_conditioned_net_benefit']})
     # Random targeting: expected value of a random draw of the same size
-    y, value = np.asarray(y, dtype=float), scenario.value_per_prevented(booking_value)
+    p, y = np.asarray(p_cancel, dtype=float), np.asarray(y, dtype=float)
+    value = scenario.value_per_prevented(booking_value)
+    per_booking = {view: (outcome * value).mean() * scenario.effectiveness - scenario.cost_per_contact if len(y) else 0.0
+                   for view, outcome in [('expected', p), ('outcome_conditioned', y)]}
     for c in coverages:
         k = int(round(c * len(y)))
         rows.append({'strategy': 'Random (expected)', 'scenario': scenario.name, 'coverage': c, 'targeted_bookings': k,
-                     'realized_net_benefit': k * ((y * value).mean() * scenario.effectiveness - scenario.cost_per_contact)
-                     if len(y) else 0.0})
+                     'expected_net_benefit': k * per_booking['expected'],
+                     'outcome_conditioned_net_benefit': k * per_booking['outcome_conditioned']})
     return pd.DataFrame(rows)
+
+
+def threshold_policy(p_cancel, booking_value, scenario: Scenario, y=None) -> dict:
+    """Contact every booking whose expected incremental profit is positive.
+
+    This maximizes expected net benefit under the scenario's assumptions and needs no coverage choice,
+    so it can be fixed before looking at any evaluation outcome.
+    """
+    p_cancel = np.asarray(p_cancel, dtype=float)
+    ev = expected_incremental_profit(p_cancel, booking_value, scenario)
+    coverage = float((ev > 0).mean()) if len(ev) else 0.0
+    return {'policy': 'contact if expected incremental profit > 0',
+            **simulate_intervention(ev, p_cancel, booking_value, scenario, coverage, y)}
 
 
 def sensitivity(score, p_cancel, booking_value, y, base: Scenario, coverage: float,
@@ -112,7 +146,9 @@ def sensitivity(score, p_cancel, booking_value, y, base: Scenario, coverage: flo
             s = Scenario(**{**asdict(base), field: v, 'name': f'{field}={v}'})
             r = simulate_intervention(score, p_cancel, booking_value, s, coverage, y)
             rows.append({'parameter': field, 'value': v, 'coverage': coverage,
-                         'expected_net_benefit': r['expected_net_benefit'], 'realized_net_benefit': r['realized_net_benefit']})
+                         'expected_net_benefit': r['expected_net_benefit'],
+                         'expected_break_even_effectiveness': r['expected_break_even_effectiveness'],
+                         'outcome_conditioned_net_benefit': r['outcome_conditioned_net_benefit']})
     return pd.DataFrame(rows)
 
 

@@ -84,6 +84,7 @@ def main(n_boot: int = config.N_BOOTSTRAP) -> None:
     splits = ft.make_splits(df)
     check_splits(splits)
     save(ft.split_summary(splits), 'split_summary.csv')
+    save(ft.unseen_level_report(splits), 'encoding_fallbacks.csv')
     print(ft.split_summary(splits).to_string(index=False))
 
     # ---------- Stage 1: model selection on train + validation (no test data) ----------
@@ -182,6 +183,10 @@ def main(n_boot: int = config.N_BOOTSTRAP) -> None:
     strict_dedup = md.fit_logit(strict_terms, dedup)
     dedup_table = coefs[['term', 'coef']].merge(md.coefficient_table(strict_dedup)[['term', 'coef']],
                                                on='term', suffixes=('_all_rows', '_deduplicated'))
+    # Pre-declared rule: a coefficient is robust if it keeps its sign and moves by at most 0.2 on the log-odds scale
+    change = dedup_table['coef_deduplicated'] - dedup_table['coef_all_rows']
+    dedup_table['robust_to_dedup'] = (np.sign(dedup_table['coef_deduplicated']) == np.sign(dedup_table['coef_all_rows'])) \
+        & (change.abs() <= 0.2)
     dedup_metrics = pd.DataFrame([{'fit': 'all rows', 'train_rows': len(refit_s), **ev.metrics(y, p, False)},
                                   {'fit': 'deduplicated', 'train_rows': len(dedup),
                                    **ev.metrics(y, md.predict(strict_dedup, test_s), False)}])
@@ -205,7 +210,8 @@ def main(n_boot: int = config.N_BOOTSTRAP) -> None:
     scen_rows = [business.simulate_intervention(p, p, value, s, c, y) for s in business.scenarios() for c in config.COVERAGE_GRID]
     scen_table = pd.DataFrame(scen_rows)
     save(scen_table, 'business_scenarios.csv')
-    strategies = {'Logistic: risk': p, 'Logistic: risk x booking value': p * value, 'Hotel rate baseline': preds[HOTEL]}
+    # Predefined strategies, compared on the same test bookings (comparative scenario analysis, no policy search)
+    strategies = {'Logistic: risk': p, 'Logistic: expected value (risk x booking value)': p * value, 'Hotel rate baseline': preds[HOTEL]}
     coverage_grid = np.round(np.arange(0.01, 1.001, 0.01), 2)
     curve = pd.concat([business.coverage_curve(strategies, p, value, y, s, coverage_grid) for s in business.scenarios()])
     save(curve, 'business_coverage_curve.csv')
@@ -214,6 +220,14 @@ def main(n_boot: int = config.N_BOOTSTRAP) -> None:
         'effectiveness': [0.05, 0.1, 0.2, 0.3, 0.4], 'replacement_probability': [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
         'margin_rate': [0.1, 0.2, 0.4, 0.6], 'cost_per_contact': [1.0, 3.0, 5.0, 10.0, 20.0]})
     save(sens, 'business_sensitivity.csv')
+
+    # Decision policy fixed in advance: contact a booking if its expected incremental profit is positive.
+    # Checked on validation (selection-stage model), then applied unchanged to the test set.
+    policy = pd.DataFrame(
+        [{'stage': 'validation', **business.threshold_policy(val_preds[STRICT], val_s['booking_value'], sc, val_s['is_canceled'])}
+         for sc in business.scenarios()]
+        + [{'stage': 'test', **business.threshold_policy(p, value, sc, y)} for sc in business.scenarios()])
+    save(policy, 'business_policy.csv')
 
     # ---------- Headline numbers ----------
     def ci_of(model, metric):
@@ -230,6 +244,9 @@ def main(n_boot: int = config.N_BOOTSTRAP) -> None:
         'calibration': test_rows.loc[STRICT, ['mean_predicted', 'actual_rate', 'calibration_intercept', 'calibration_slope']].to_dict(),
         'test_metrics_by_model': test_rows[['roc_auc', 'average_precision', 'log_loss', 'brier']].to_dict(orient='index'),
         'risk_tier_cut_points': cuts,
+        'business_base_top20': {k: v for k, v in scen_table[(scen_table['scenario'] == 'Base') & (scen_table['coverage'] == 0.2)]
+                                .iloc[0].items() if k != 'scenario'},
+        'business_threshold_policy': policy.to_dict(orient='records'),
     }
     with open(config.RESULTS_DIR / 'test_metrics.json', 'w') as f:
         json.dump(headline, f, indent=2, default=float)
@@ -245,7 +262,7 @@ def main(n_boot: int = config.N_BOOTSTRAP) -> None:
     visualize.odds_ratios(coefs)
     visualize.subgroups(subgroups)
     visualize.daily(daily)
-    visualize.net_benefit(curve)
+    visualize.net_benefit(curve, policy)
     print('\nDone. Results in', config.RESULTS_DIR, 'and figures in', config.FIGURES_DIR)
 
 

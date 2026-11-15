@@ -1,0 +1,7 @@
+stage,policy,scenario,coverage,targeted_bookings,expected_prevented_cancellations,total_intervention_cost,expected_incremental_contribution,expected_net_benefit,expected_break_even_effectiveness,observed_cancellations_targeted,outcome_conditioned_prevented_cancellations,outcome_conditioned_incremental_contribution,outcome_conditioned_net_benefit,outcome_conditioned_break_even_effectiveness
+validation,contact if expected incremental profit > 0,Conservative,0.000777001,11,0.480536,110,165.924,55.9244,0.0662953,9,0.9,361.648,251.648,0.0304163
+validation,contact if expected incremental profit > 0,Base,0.287702,4073,297.712,20365,38784.8,18419.8,0.105015,1625,325,44535,24170,0.0914562
+validation,contact if expected incremental profit > 0,Optimistic,0.687787,9737,869.081,29211,135853,106642,0.0645058,3203,960.9,154102,124891,0.056867
+test,contact if expected incremental profit > 0,Conservative,0.0095185,239,11.8126,2390,2971.63,581.631,0.0804272,155,15.5,4007.5,1617.5,0.0596382
+test,contact if expected incremental profit > 0,Base,0.454976,11424,887.013,57120,142869,85749.3,0.0799612,4744,948.8,163226,106106,0.0699889
+test,contact if expected incremental profit > 0,Optimistic,0.763232,19164,1891,57492,412196,354704,0.0418432,6491,1947.3,460263,402771,0.0374734

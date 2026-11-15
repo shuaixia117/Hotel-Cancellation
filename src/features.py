@@ -68,7 +68,9 @@ def split_summary(splits: Splits) -> pd.DataFrame:
         rows.append({'split': name, 'rows': len(d),
                      'booking_date_min': d['booking_date'].min().date(), 'booking_date_max': d['booking_date'].max().date(),
                      'arrival_date_min': d['arrival_date'].min().date(), 'arrival_date_max': d['arrival_date'].max().date(),
-                     'max_lead_time': int(d['lead_time'].max()), 'cancel_rate': round(d['is_canceled'].mean(), 3),
+                     'max_lead_time': int(d['lead_time'].max()), 'median_lead_time': float(d['lead_time'].median()),
+                     'share_lead_over_180': round((d['lead_time'] > 180).mean(), 3),
+                     'cancel_rate': round(d['is_canceled'].mean(), 3),
                      'non_refund_share': round(d['is_non_refund'].mean(), 3)})
     return pd.DataFrame(rows)
 
@@ -104,10 +106,36 @@ def fit_encoder(train: pd.DataFrame, columns: list[str] = config.CATEGORICAL_COL
 
 
 def encode(df: pd.DataFrame, encoder: Encoder) -> pd.DataFrame:
-    """Apply training levels. Rare or unseen levels become 'Other' (or the reference level if there is no 'Other')."""
+    """Apply training levels. Rare or unseen levels become 'Other'; without an 'Other' level they become the reference.
+
+    The fallback keeps the fitted design matrix fixed: an 'Other' level with no training rows would be an all-zero,
+    unidentifiable column. For every column without 'Other' the reference level is also the most frequent training
+    level, so the fallback is a mode imputation. unseen_level_report() shows how often it is used (never, in this data).
+    """
     df = df.assign(agent_group=agent_group(df['agent'], encoder.top_agents))
     for col, levels in encoder.levels.items():
         values = df[col].astype(str)
         fallback = 'Other' if 'Other' in levels else levels[0]
         df[col] = pd.Categorical(values.where(values.isin(levels), fallback), categories=levels)
     return df
+
+
+def unseen_level_report(splits: Splits) -> pd.DataFrame:
+    """Evaluation rows whose category was never seen in the matching training window (Non Refund excluded)."""
+    rows = []
+    for fit_name, train, evals in [('train', splits.train, {'validation': splits.validation}),
+                                   ('refit', splits.refit, {'test': splits.test, 'legacy_test': splits.legacy_test})]:
+        train = train[train['is_non_refund'] == 0]
+        enc = fit_encoder(train)
+        seen = encode(train, enc)  # encoded training rows define which levels exist
+        for eval_name, d in evals.items():
+            d = d[d['is_non_refund'] == 0]
+            raw = d.assign(agent_group=agent_group(d['agent'], enc.top_agents))
+            train_raw = train.assign(agent_group=agent_group(train['agent'], enc.top_agents))
+            for col, levels in enc.levels.items():
+                unseen = ~raw[col].astype(str).isin(train_raw[col].astype(str).unique())
+                rows.append({'trained_on': fit_name, 'evaluated_on': eval_name, 'column': col, 'has_other_level': 'Other' in levels,
+                             'fallback_level': 'Other' if 'Other' in levels else levels[0],
+                             'reference_is_modal': levels[0] == seen[col].astype(str).value_counts().index[0],
+                             'unseen_rows': int(unseen.sum())})
+    return pd.DataFrame(rows)

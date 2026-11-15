@@ -84,3 +84,16 @@ def test_row_features_do_not_depend_on_other_rows(data):
     again = features.add_features(subset.drop(columns=['booking_date', 'month', 'prev_cancel', 'prev_stay', 'kids',
                                                        'weekend_share', 'has_company_id', 'is_non_refund', 'booking_value']))
     pd.testing.assert_frame_equal(again[subset.columns], subset)
+
+
+def test_fallback_level_is_modal_and_never_needed_in_this_data(data):
+    report = features.unseen_level_report(features.make_splits(data))
+    without_other = report[~report['has_other_level']]
+    assert without_other['reference_is_modal'].all()
+    assert (report['unseen_rows'] == 0).all()
+
+
+def test_split_summary_reports_lead_time_coverage(data):
+    summary = features.split_summary(features.make_splits(data)).set_index('split')
+    assert summary.loc['test', 'max_lead_time'] < summary.loc['refit', 'max_lead_time']
+    assert summary.loc['test', 'share_lead_over_180'] < summary.loc['refit', 'share_lead_over_180']
