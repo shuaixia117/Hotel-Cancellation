@@ -32,7 +32,6 @@ It is an out-of-time evaluation with a strict cutoff rule, not a full point-in-t
 | Validation | booked from 2016-07-01, arrived before 2017-01-01 | 14,320 | choose terms, Non Refund scheme, boosting settings |
 | Final training | arrived before 2017-01-01 | 78,033 | refit the chosen models |
 | **Test** | **booked from 2017-01-01** (arrivals up to 2017-08-31) | 26,408 | one final evaluation |
-| Legacy test | arrived in 2017 (the original definition) | 40,507 | comparison with the original results only |
 
 ![Temporal design](../figures/01_temporal_design.png)
 
@@ -94,7 +93,7 @@ model selection receives only training and validation rows.
   If a column has no rare training levels, there is no `Other` level, and an unseen value falls back to the **reference level**.
   An empty `Other` level is not added, because a level with no training rows is an all-zero, unidentifiable column.
   For every such column the reference level is also the most frequent training level, so the fallback is a mode imputation.
-  It is not a neutral "unknown" estimate. In this data it is never triggered: no validation, test or legacy-test row has an
+  It is not a neutral "unknown" estimate. In this data it is never triggered: no validation or test row has an
   unseen level (`results/encoding_fallbacks.csv`, checked by a test). New categories in future data should be reviewed rather than
   silently scored.
 - Reference levels: City Hotel, Online TA, TA/TO, Transient, no agent, BB, room A, No Deposit.
@@ -102,9 +101,8 @@ model selection receives only training and validation rows.
 
 ## 4. Model selection
 
-Rule (unchanged from the original project, but with **validation instead of test**): starting from the base terms,
-greedy forward selection adds the candidate that lowers validation log loss most, among candidates that lower training BIC
-**and** validation log loss. A backward pass then drops a term only if both criteria improve.
+Starting from the base terms, greedy forward selection adds the candidate that lowers validation log loss most, among
+candidates that lower training BIC **and** validation log loss. The test set plays no role. A backward pass then drops a term only if both criteria improve.
 Every fit is logged in `results/model_selection.csv`.
 
 Result: `has_company_id` and `distribution_channel` were added. Notable rejections:
