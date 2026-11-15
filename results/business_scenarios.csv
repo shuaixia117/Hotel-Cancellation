@@ -1,4 +1,4 @@
-scenario,coverage,targeted_bookings,expected_prevented_cancellations,total_intervention_cost,expected_incremental_contribution,expected_net_benefit,expected_break_even_effectiveness,actual_cancellations_targeted,realized_prevented_cancellations,realized_incremental_contribution,realized_net_benefit,realized_break_even_effectiveness
+scenario,coverage,targeted_bookings,expected_prevented_cancellations,total_intervention_cost,expected_incremental_contribution,expected_net_benefit,expected_break_even_effectiveness,observed_cancellations_targeted,outcome_conditioned_prevented_cancellations,outcome_conditioned_incremental_contribution,outcome_conditioned_net_benefit,outcome_conditioned_break_even_effectiveness
 Conservative,0.05,1255,67.1842,12550,5722.69,-6827.31,0.219302,697,69.7,6318.09,-6231.91,0.198636
 Conservative,0.1,2511,130.4,25110,10325.6,-14784.4,0.243182,1374,137.4,11446.5,-13663.5,0.219368
 Conservative,0.2,5022,247.626,50220,18227.1,-31992.9,0.275524,2599,259.9,20266.2,-29953.8,0.247802
