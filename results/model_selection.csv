@@ -1,0 +1,41 @@
+step,action,term,n_params,bic,validation_log_loss,delta_bic,delta_validation_log_loss,accepted,converged
+0,start,,29,41937.5,0.516874,0,0,True,True
+1,add,I(np.log1p(lead_time) ** 2),30,41947.3,0.516527,9.72196,-0.000347417,False,True
+1,add,prev_cancel,30,36879.1,0.524783,-5058.4,0.00790817,False,True
+1,add,is_repeated_guest,30,41538.4,0.519617,-399.086,0.00274224,False,True
+1,add,C(month),40,41682.1,0.523875,-255.408,0.00700024,False,True
+1,add,distribution_channel,32,41906.5,0.516974,-31.0793,9.98179e-05,False,True
+1,add,reserved_room_type,37,41982.4,0.517182,44.8604,0.000307987,False,True
+1,add,np.log1p(adr),30,41943.4,0.517035,5.8226,0.000160856,False,True
+1,add,adults,30,41948,0.516934,10.5138,5.97645e-05,False,True
+1,add,np.log1p(total_nights),30,41947,0.517029,9.42173,0.000154577,False,True
+1,add,weekend_share,30,41941.3,0.517185,3.80164,0.000310277,False,True
+1,add,has_company_id,30,41879.1,0.515849,-58.3904,-0.00102538,True,True
+2,add,I(np.log1p(lead_time) ** 2),31,41889.2,0.515598,10.081,-0.000250786,False,True
+2,add,prev_cancel,31,36820.7,0.523052,-5058.41,0.00720311,False,True
+2,add,is_repeated_guest,31,41475.8,0.518556,-403.367,0.00270658,False,True
+2,add,C(month),41,41621.6,0.52278,-257.507,0.00693102,False,True
+2,add,distribution_channel,33,41826.9,0.515446,-52.2302,-0.000402653,True,True
+2,add,reserved_room_type,38,41923.2,0.516156,44.0817,0.000307015,False,True
+2,add,np.log1p(adr),31,41884.2,0.516016,5.07325,0.00016735,False,True
+2,add,adults,31,41889.8,0.51587,10.615,2.05215e-05,False,True
+2,add,np.log1p(total_nights),31,41889,0.515965,9.83241,0.000115591,False,True
+2,add,weekend_share,31,41883.5,0.516138,4.33223,0.000289176,False,True
+3,add,I(np.log1p(lead_time) ** 2),34,41837.1,0.515222,10.1676,-0.000224351,False,True
+3,add,prev_cancel,34,36764.1,0.523185,-5062.85,0.00773864,False,True
+3,add,is_repeated_guest,34,41425.1,0.518294,-401.83,0.00284787,False,True
+3,add,C(month),44,41551.3,0.522387,-275.65,0.00694113,False,True
+3,add,reserved_room_type,41,41872.5,0.515697,45.5616,0.000250151,False,True
+3,add,np.log1p(adr),34,41831.3,0.515634,4.33908,0.000188069,False,True
+3,add,adults,34,41837.5,0.515465,10.6147,1.8992e-05,False,True
+3,add,np.log1p(total_nights),34,41837.2,0.515527,10.2565,8.11214e-05,False,True
+3,add,weekend_share,34,41831.8,0.51578,4.85365,0.000333336,False,True
+4,drop,np.log1p(lead_time) * hotel,32,41835.2,0.515119,8.30169,-0.000327406,False,True
+4,drop,market_segment,27,41833.4,0.516535,6.49021,0.00108847,False,True
+4,drop,customer_type,30,41993.3,0.515865,166.343,0.000418377,False,True
+4,drop,agent_group,22,42522.6,0.528661,695.706,0.0132146,False,True
+4,drop,prev_stay,32,41890.4,0.517527,63.4965,0.0020811,False,True
+4,drop,kids,32,41827.4,0.515695,0.475086,0.00024865,False,True
+4,drop,meal,30,41879.5,0.514606,52.5856,-0.000840448,False,True
+4,drop,has_company_id,32,41906.5,0.516974,79.5413,0.00152785,False,True
+4,drop,distribution_channel,30,41879.1,0.515849,52.2302,0.000402653,False,True

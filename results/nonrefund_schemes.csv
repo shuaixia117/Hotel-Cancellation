@@ -1,0 +1,13 @@
+stage,scheme,population,n,cancellations,roc_auc,average_precision,log_loss,brier,mean_predicted,actual_rate,calibration_intercept,calibration_slope,coverage_of_all_bookings
+validation,A: one model with deposit_type,all bookings,14320,3830,0.732257,0.500824,0.508727,0.168528,0.247221,0.267458,0.123183,0.982054,1
+validation,C: Non Refund rule + logistic,all bookings,14320,3830,0.730389,0.499356,0.510013,0.169015,0.246358,0.267458,0.128329,0.978892,1
+validation,A: one model with deposit_type,excluding Non Refund,14157,3668,0.720501,0.43969,0.514235,0.170407,0.23874,0.259094,0.122629,0.975155,0.988617
+validation,B (= C): logistic without Non Refund,excluding Non Refund,14157,3668,0.718552,0.438321,0.515446,0.170891,0.237793,0.259094,0.128164,0.976497,0.988617
+validation,A: one model with deposit_type,Non Refund only,163,162,1,1,0.0303753,0.00535269,0.983867,0.993865,,,0.0113827
+validation,C: Non Refund rule,Non Refund only,163,162,0.5,0.993865,0.0381428,0.00611035,0.990258,0.993865,,,0.0113827
+test,A: one model with deposit_type,all bookings,26408,8389,0.773737,0.647803,0.501704,0.167531,0.308568,0.317669,0.054407,1.01053,1
+test,C: Non Refund rule + logistic,all bookings,26408,8389,0.774169,0.647411,0.501941,0.167472,0.308566,0.317669,0.0543608,1.01386,1
+test,A: one model with deposit_type,excluding Non Refund,25109,7098,0.732909,0.477683,0.526364,0.175923,0.273329,0.282687,0.0533581,0.996995,0.95081
+test,B (= C): logistic without Non Refund,excluding Non Refund,25109,7098,0.733461,0.478698,0.525956,0.175819,0.273215,0.282687,0.053911,1.01108,0.95081
+test,A: one model with deposit_type,Non Refund only,1299,1291,0.997192,0.99998,0.0250343,0.00530835,0.989724,0.993841,,,0.0491896
+test,C: Non Refund rule,Non Refund only,1299,1291,0.5,0.993841,0.0377483,0.00612453,0.991874,0.993841,,,0.0491896

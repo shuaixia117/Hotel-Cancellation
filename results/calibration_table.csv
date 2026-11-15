@@ -1,0 +1,21 @@
+bin,n,mean_predicted,observed_rate,model
+1,2511,0.0403702,0.0577459,Logistic (strict)
+2,2511,0.0878502,0.0991637,Logistic (strict)
+3,2511,0.135064,0.134608,Logistic (strict)
+4,2511,0.18334,0.175627,Logistic (strict)
+5,2511,0.237394,0.21147,Logistic (strict)
+6,2510,0.296001,0.288048,Logistic (strict)
+7,2511,0.353798,0.359618,Logistic (strict)
+8,2511,0.412177,0.46595,Logistic (strict)
+9,2511,0.466849,0.487853,Logistic (strict)
+10,2511,0.519317,0.546794,Logistic (strict)
+1,2511,0.0536998,0.0485862,Gradient boosting
+2,2511,0.0954808,0.0832338,Gradient boosting
+3,2511,0.131564,0.115094,Gradient boosting
+4,2511,0.165871,0.174034,Gradient boosting
+5,2511,0.200477,0.231382,Gradient boosting
+6,2510,0.252594,0.259761,Gradient boosting
+7,2511,0.383084,0.39546,Gradient boosting
+8,2511,0.444882,0.502589,Gradient boosting
+9,2511,0.461377,0.457985,Gradient boosting
+10,2511,0.501102,0.558742,Gradient boosting

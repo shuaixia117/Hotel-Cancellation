@@ -1,0 +1,6 @@
+model,test_set,n,cancellations,roc_auc,average_precision,log_loss,brier,mean_predicted,actual_rate
+Logistic (original spec),legacy: all 2017 arrivals,36381,11612,0.768525,0.619377,0.525173,0.174102,0.296674,0.319178
+Logistic (strict),legacy: all 2017 arrivals,36381,11612,0.737775,0.545565,0.549841,0.185662,0.308003,0.319178
+Logistic (original spec),new: bookings made from 2017-01-01,25109,7098,0.765261,0.563348,0.50331,0.165052,0.271376,0.282687
+Logistic (strict),new: bookings made from 2017-01-01,25109,7098,0.733461,0.478698,0.525956,0.175819,0.273215,0.282687
+Logistic (strict) + special requests,new: bookings made from 2017-01-01,25109,7098,0.76679,0.565341,0.502659,0.164628,0.271022,0.282687
