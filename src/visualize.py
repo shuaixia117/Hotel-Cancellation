@@ -171,7 +171,7 @@ def interaction(effects: pd.DataFrame, coefs: pd.DataFrame) -> None:
         a1.fill_between(effects['lead_time'], effects[f'prob_{key}_lower_95'], effects[f'prob_{key}_upper_95'],
                         alpha=0.2, color=HOTEL_COLORS[h])
     a1.set(xlabel='Lead Time (Days)', ylabel='Average Predicted Cancellation Probability',
-           title='Predicted Probability by Hotel (Other Covariates as Observed)')
+           title='Average Predicted Probability by Hotel\n(other covariates as in 3,000 training bookings)')
     a1.legend()
     a2.plot(effects['lead_time'], effects['odds_ratio'], color='black')
     a2.fill_between(effects['lead_time'], effects['or_lower_95'], effects['or_upper_95'], alpha=0.2, color='black')
@@ -227,21 +227,33 @@ def subgroups(table: pd.DataFrame) -> None:
 
 def daily(daily_df: pd.DataFrame) -> None:
     fig, ax = plt.subplots(figsize=(10, 4))
-    daily_df.rename(columns={'actual': 'Actual'}).rolling(7).mean().plot(ax=ax, color=['black', '#d62728', '#7f7f7f'], style=['-', '-', '--'])
+    labels = {'actual': 'Actual'} | {c: f'Expected: {c}' for c in daily_df.columns if c != 'actual'}
+    daily_df.rename(columns=labels).rolling(7).mean().plot(ax=ax, color=['black', '#d62728', '#7f7f7f'], style=['-', '-', '--'])
     ax.set(xlabel='Arrival Date', ylabel='Cancellations per Arrival Date (7-Day MA)')
-    _save(fig, '15_daily_cancellations.png', 'Actual vs Predicted Cancellations per Arrival Date (Test Bookings)')
+    _save(fig, '15_daily_cancellations.png', 'Actual vs Expected Cancellations per Arrival Date (Test Bookings, Post-Hoc Grouping)')
 
 
-def net_benefit(curve: pd.DataFrame) -> None:
+def net_benefit(curve: pd.DataFrame, policy: pd.DataFrame) -> None:
+    """Rows: expected (ex ante, primary) and outcome-conditioned (ex post) net benefit; columns: scenarios."""
     names = list(dict.fromkeys(curve['scenario']))
-    fig, axes = plt.subplots(1, len(names), figsize=(5 * len(names), 4))
-    for ax, s in zip(np.atleast_1d(axes), names):
-        for strategy, d in curve[curve['scenario'] == s].groupby('strategy', sort=False):
-            style = '--' if strategy.startswith('Random') else '-'
-            ax.plot(d['coverage'] * 100, d['realized_net_benefit'] / 1000, style, label=strategy)
-        ax.axhline(0, color='black', linewidth=0.8)
-        ax.set(xlabel='Intervention Coverage (% of Test Bookings)', ylabel='Net Benefit (thousand currency units)',
-               title=f'{s} scenario')
-        ax.legend(fontsize=7)
+    views = [('expected_net_benefit', 'Expected net benefit\n(predicted probabilities)'),
+             ('outcome_conditioned_net_benefit', 'Outcome-conditioned net benefit\n(observed test labels)')]
+    fig, axes = plt.subplots(2, len(names), figsize=(5 * len(names), 7.5), sharex=True)
+    test_policy = policy[policy['stage'] == 'test'].set_index('scenario')
+    for col, s in enumerate(names):
+        for row, (metric, label) in enumerate(views):
+            ax = axes[row, col]
+            for strategy, d in curve[curve['scenario'] == s].groupby('strategy', sort=False):
+                style = '--' if strategy.startswith('Random') else '-'
+                ax.plot(d['coverage'] * 100, d[metric] / 1000, style, label=strategy)
+            pol = test_policy.loc[s]
+            ax.plot(pol['coverage'] * 100, pol[metric] / 1000, 'k*', markersize=11,
+                    label='Threshold policy: contact if expected profit > 0')
+            ax.axhline(0, color='black', linewidth=0.8)
+            ax.set(ylabel=f'{label} (thousands)', title=f'{s} scenario' if row == 0 else None)
+            if row == 1:
+                ax.set_xlabel('Intervention Coverage (% of Test Bookings, Highest Score First)')
+    axes[0, 0].legend(fontsize=7, loc='lower left')
     _save(fig, '16_net_benefit_vs_coverage.png',
-          'ILLUSTRATIVE: Simulated Net Benefit vs Intervention Coverage (assumed parameters, realized test outcomes)')
+          'ILLUSTRATIVE scenario analysis: net benefit vs coverage under ASSUMED intervention parameters\n'
+          '(currency units of ADR; no intervention was observed, neither row is realized profit)')
