@@ -49,7 +49,6 @@ class Splits:
     validation: pd.DataFrame     # model selection: compare candidates
     refit: pd.DataFrame          # final fit (all outcomes known at TEST_START)
     test: pd.DataFrame           # final, one-time evaluation
-    legacy_test: pd.DataFrame    # the original project's test set (2017 arrivals), for comparison only
 
 
 def make_splits(df: pd.DataFrame, validation_start: pd.Timestamp = config.VALIDATION_START,
@@ -57,13 +56,12 @@ def make_splits(df: pd.DataFrame, validation_start: pd.Timestamp = config.VALIDA
     return Splits(train=trained_window(df, validation_start),
                   validation=booked_window(df, validation_start, outcome_known_by=test_start),
                   refit=trained_window(df, test_start),
-                  test=booked_window(df, test_start),
-                  legacy_test=df[df['arrival_date'] >= test_start])
+                  test=booked_window(df, test_start))
 
 
 def split_summary(splits: Splits) -> pd.DataFrame:
     rows = []
-    for name in ['train', 'validation', 'refit', 'test', 'legacy_test']:
+    for name in ['train', 'validation', 'refit', 'test']:
         d = getattr(splits, name)
         rows.append({'split': name, 'rows': len(d),
                      'booking_date_min': d['booking_date'].min().date(), 'booking_date_max': d['booking_date'].max().date(),
@@ -124,7 +122,7 @@ def unseen_level_report(splits: Splits) -> pd.DataFrame:
     """Evaluation rows whose category was never seen in the matching training window (Non Refund excluded)."""
     rows = []
     for fit_name, train, evals in [('train', splits.train, {'validation': splits.validation}),
-                                   ('refit', splits.refit, {'test': splits.test, 'legacy_test': splits.legacy_test})]:
+                                   ('refit', splits.refit, {'test': splits.test})]:
         train = train[train['is_non_refund'] == 0]
         enc = fit_encoder(train)
         seen = encode(train, enc)  # encoded training rows define which levels exist
