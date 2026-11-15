@@ -1,0 +1,304 @@
+share_targeted,share_captured,model
+0,0,Logistic (strict)
+0.01,0.0194421,Logistic (strict)
+0.02,0.0381798,Logistic (strict)
+0.03,0.0584672,Logistic (strict)
+0.04,0.0783319,Logistic (strict)
+0.05,0.0981967,Logistic (strict)
+0.06,0.116371,Logistic (strict)
+0.07,0.135672,Logistic (strict)
+0.08,0.156241,Logistic (strict)
+0.09,0.176951,Logistic (strict)
+0.1,0.193576,Logistic (strict)
+0.11,0.208791,Logistic (strict)
+0.12,0.226965,Logistic (strict)
+0.13,0.244576,Logistic (strict)
+0.14,0.261341,Logistic (strict)
+0.15,0.279374,Logistic (strict)
+0.16,0.296703,Logistic (strict)
+0.17,0.314596,Logistic (strict)
+0.18,0.330375,Logistic (strict)
+0.19,0.349817,Logistic (strict)
+0.2,0.366159,Logistic (strict)
+0.21,0.383911,Logistic (strict)
+0.22,0.400817,Logistic (strict)
+0.23,0.417864,Logistic (strict)
+0.24,0.435616,Logistic (strict)
+0.25,0.451677,Logistic (strict)
+0.26,0.468583,Logistic (strict)
+0.27,0.484784,Logistic (strict)
+0.28,0.500282,Logistic (strict)
+0.29,0.51592,Logistic (strict)
+0.3,0.530854,Logistic (strict)
+0.31,0.545083,Logistic (strict)
+0.32,0.556495,Logistic (strict)
+0.33,0.56847,Logistic (strict)
+0.34,0.580586,Logistic (strict)
+0.35,0.594534,Logistic (strict)
+0.36,0.609467,Logistic (strict)
+0.37,0.62426,Logistic (strict)
+0.38,0.636095,Logistic (strict)
+0.39,0.646097,Logistic (strict)
+0.4,0.658073,Logistic (strict)
+0.41,0.669907,Logistic (strict)
+0.42,0.679769,Logistic (strict)
+0.43,0.689208,Logistic (strict)
+0.44,0.700902,Logistic (strict)
+0.45,0.711891,Logistic (strict)
+0.46,0.719639,Logistic (strict)
+0.47,0.729501,Logistic (strict)
+0.48,0.740209,Logistic (strict)
+0.49,0.75007,Logistic (strict)
+0.5,0.760073,Logistic (strict)
+0.51,0.768949,Logistic (strict)
+0.52,0.777684,Logistic (strict)
+0.53,0.784165,Logistic (strict)
+0.54,0.791209,Logistic (strict)
+0.55,0.797971,Logistic (strict)
+0.56,0.806847,Logistic (strict)
+0.57,0.813187,Logistic (strict)
+0.58,0.820231,Logistic (strict)
+0.59,0.828402,Logistic (strict)
+0.6,0.834742,Logistic (strict)
+0.61,0.840096,Logistic (strict)
+0.62,0.849112,Logistic (strict)
+0.63,0.856438,Logistic (strict)
+0.64,0.860947,Logistic (strict)
+0.65,0.866723,Logistic (strict)
+0.66,0.871654,Logistic (strict)
+0.67,0.878557,Logistic (strict)
+0.68,0.884474,Logistic (strict)
+0.69,0.891941,Logistic (strict)
+0.7,0.896872,Logistic (strict)
+0.71,0.901522,Logistic (strict)
+0.72,0.906734,Logistic (strict)
+0.73,0.912511,Logistic (strict)
+0.74,0.918005,Logistic (strict)
+0.75,0.922091,Logistic (strict)
+0.76,0.927585,Logistic (strict)
+0.77,0.933502,Logistic (strict)
+0.78,0.937588,Logistic (strict)
+0.79,0.940547,Logistic (strict)
+0.8,0.944491,Logistic (strict)
+0.81,0.948718,Logistic (strict)
+0.82,0.953508,Logistic (strict)
+0.83,0.957735,Logistic (strict)
+0.84,0.961538,Logistic (strict)
+0.85,0.966329,Logistic (strict)
+0.86,0.969428,Logistic (strict)
+0.87,0.972387,Logistic (strict)
+0.88,0.9745,Logistic (strict)
+0.89,0.976754,Logistic (strict)
+0.9,0.979713,Logistic (strict)
+0.91,0.981403,Logistic (strict)
+0.92,0.98408,Logistic (strict)
+0.93,0.986898,Logistic (strict)
+0.94,0.989011,Logistic (strict)
+0.95,0.990702,Logistic (strict)
+0.96,0.992251,Logistic (strict)
+0.97,0.994505,Logistic (strict)
+0.98,0.996478,Logistic (strict)
+0.99,0.998309,Logistic (strict)
+1,1,Logistic (strict)
+0,0,Gradient boosting
+0.01,0.0247957,Gradient boosting
+0.02,0.0456467,Gradient boosting
+0.03,0.0667794,Gradient boosting
+0.04,0.0877712,Gradient boosting
+0.05,0.107354,Gradient boosting
+0.06,0.127642,Gradient boosting
+0.07,0.145393,Gradient boosting
+0.08,0.163145,Gradient boosting
+0.09,0.179065,Gradient boosting
+0.1,0.197661,Gradient boosting
+0.11,0.217103,Gradient boosting
+0.12,0.234714,Gradient boosting
+0.13,0.252606,Gradient boosting
+0.14,0.270921,Gradient boosting
+0.15,0.290082,Gradient boosting
+0.16,0.306847,Gradient boosting
+0.17,0.324317,Gradient boosting
+0.18,0.343195,Gradient boosting
+0.19,0.358974,Gradient boosting
+0.2,0.376444,Gradient boosting
+0.21,0.392928,Gradient boosting
+0.22,0.40927,Gradient boosting
+0.23,0.426176,Gradient boosting
+0.24,0.440688,Gradient boosting
+0.25,0.458016,Gradient boosting
+0.26,0.473795,Gradient boosting
+0.27,0.493097,Gradient boosting
+0.28,0.508312,Gradient boosting
+0.29,0.526205,Gradient boosting
+0.3,0.541843,Gradient boosting
+0.31,0.557763,Gradient boosting
+0.32,0.575232,Gradient boosting
+0.33,0.589321,Gradient boosting
+0.34,0.603832,Gradient boosting
+0.35,0.618202,Gradient boosting
+0.36,0.632432,Gradient boosting
+0.37,0.646661,Gradient boosting
+0.38,0.659341,Gradient boosting
+0.39,0.670752,Gradient boosting
+0.4,0.677374,Gradient boosting
+0.41,0.685827,Gradient boosting
+0.42,0.693153,Gradient boosting
+0.43,0.703015,Gradient boosting
+0.44,0.712595,Gradient boosting
+0.45,0.722598,Gradient boosting
+0.46,0.731333,Gradient boosting
+0.47,0.740772,Gradient boosting
+0.48,0.753029,Gradient boosting
+0.49,0.7612,Gradient boosting
+0.5,0.769231,Gradient boosting
+0.51,0.777261,Gradient boosting
+0.52,0.786841,Gradient boosting
+0.53,0.794026,Gradient boosting
+0.54,0.80262,Gradient boosting
+0.55,0.811778,Gradient boosting
+0.56,0.819527,Gradient boosting
+0.57,0.826853,Gradient boosting
+0.58,0.837278,Gradient boosting
+0.59,0.845309,Gradient boosting
+0.6,0.851085,Gradient boosting
+0.61,0.859115,Gradient boosting
+0.62,0.864751,Gradient boosting
+0.63,0.871795,Gradient boosting
+0.64,0.878698,Gradient boosting
+0.65,0.883911,Gradient boosting
+0.66,0.890392,Gradient boosting
+0.67,0.897295,Gradient boosting
+0.68,0.902649,Gradient boosting
+0.69,0.907157,Gradient boosting
+0.7,0.912651,Gradient boosting
+0.71,0.917019,Gradient boosting
+0.72,0.9204,Gradient boosting
+0.73,0.924908,Gradient boosting
+0.74,0.930262,Gradient boosting
+0.75,0.933502,Gradient boosting
+0.76,0.938292,Gradient boosting
+0.77,0.942237,Gradient boosting
+0.78,0.945759,Gradient boosting
+0.79,0.949845,Gradient boosting
+0.8,0.953367,Gradient boosting
+0.81,0.95703,Gradient boosting
+0.82,0.960693,Gradient boosting
+0.83,0.965061,Gradient boosting
+0.84,0.968864,Gradient boosting
+0.85,0.971119,Gradient boosting
+0.86,0.9745,Gradient boosting
+0.87,0.977881,Gradient boosting
+0.88,0.979431,Gradient boosting
+0.89,0.98084,Gradient boosting
+0.9,0.982812,Gradient boosting
+0.91,0.98408,Gradient boosting
+0.92,0.98563,Gradient boosting
+0.93,0.989575,Gradient boosting
+0.94,0.991547,Gradient boosting
+0.95,0.994083,Gradient boosting
+0.96,0.995492,Gradient boosting
+0.97,0.996337,Gradient boosting
+0.98,0.997605,Gradient boosting
+0.99,0.999014,Gradient boosting
+1,1,Gradient boosting
+0,0,Hotel rate baseline
+0.01,0.00972105,Hotel rate baseline
+0.02,0.0197239,Hotel rate baseline
+0.03,0.0287405,Hotel rate baseline
+0.04,0.0407157,Hotel rate baseline
+0.05,0.0517047,Hotel rate baseline
+0.06,0.0605804,Hotel rate baseline
+0.07,0.0725556,Hotel rate baseline
+0.08,0.0822767,Hotel rate baseline
+0.09,0.0936884,Hotel rate baseline
+0.1,0.106086,Hotel rate baseline
+0.11,0.115666,Hotel rate baseline
+0.12,0.129614,Hotel rate baseline
+0.13,0.140039,Hotel rate baseline
+0.14,0.150747,Hotel rate baseline
+0.15,0.161736,Hotel rate baseline
+0.16,0.173852,Hotel rate baseline
+0.17,0.185123,Hotel rate baseline
+0.18,0.194139,Hotel rate baseline
+0.19,0.204987,Hotel rate baseline
+0.2,0.216258,Hotel rate baseline
+0.21,0.225697,Hotel rate baseline
+0.22,0.235418,Hotel rate baseline
+0.23,0.246689,Hotel rate baseline
+0.24,0.257115,Hotel rate baseline
+0.25,0.268526,Hotel rate baseline
+0.26,0.280361,Hotel rate baseline
+0.27,0.289518,Hotel rate baseline
+0.28,0.301071,Hotel rate baseline
+0.29,0.311496,Hotel rate baseline
+0.3,0.322063,Hotel rate baseline
+0.31,0.331502,Hotel rate baseline
+0.32,0.34235,Hotel rate baseline
+0.33,0.354043,Hotel rate baseline
+0.34,0.365878,Hotel rate baseline
+0.35,0.375317,Hotel rate baseline
+0.36,0.385602,Hotel rate baseline
+0.37,0.39645,Hotel rate baseline
+0.38,0.406312,Hotel rate baseline
+0.39,0.41716,Hotel rate baseline
+0.4,0.427444,Hotel rate baseline
+0.41,0.439279,Hotel rate baseline
+0.42,0.449422,Hotel rate baseline
+0.43,0.461961,Hotel rate baseline
+0.44,0.471964,Hotel rate baseline
+0.45,0.482812,Hotel rate baseline
+0.46,0.494646,Hotel rate baseline
+0.47,0.505213,Hotel rate baseline
+0.48,0.515497,Hotel rate baseline
+0.49,0.524796,Hotel rate baseline
+0.5,0.536348,Hotel rate baseline
+0.51,0.547056,Hotel rate baseline
+0.52,0.556495,Hotel rate baseline
+0.53,0.565511,Hotel rate baseline
+0.54,0.574387,Hotel rate baseline
+0.55,0.584672,Hotel rate baseline
+0.56,0.594815,Hotel rate baseline
+0.57,0.604396,Hotel rate baseline
+0.58,0.613694,Hotel rate baseline
+0.59,0.623556,Hotel rate baseline
+0.6,0.633277,Hotel rate baseline
+0.61,0.643421,Hotel rate baseline
+0.62,0.65286,Hotel rate baseline
+0.63,0.664694,Hotel rate baseline
+0.64,0.674134,Hotel rate baseline
+0.65,0.683995,Hotel rate baseline
+0.66,0.692871,Hotel rate baseline
+0.67,0.702311,Hotel rate baseline
+0.68,0.711327,Hotel rate baseline
+0.69,0.72133,Hotel rate baseline
+0.7,0.731192,Hotel rate baseline
+0.71,0.740349,Hotel rate baseline
+0.72,0.749366,Hotel rate baseline
+0.73,0.757678,Hotel rate baseline
+0.74,0.766695,Hotel rate baseline
+0.75,0.775289,Hotel rate baseline
+0.76,0.784587,Hotel rate baseline
+0.77,0.79304,Hotel rate baseline
+0.78,0.801493,Hotel rate baseline
+0.79,0.810369,Hotel rate baseline
+0.8,0.819245,Hotel rate baseline
+0.81,0.829248,Hotel rate baseline
+0.82,0.840518,Hotel rate baseline
+0.83,0.849253,Hotel rate baseline
+0.84,0.858552,Hotel rate baseline
+0.85,0.866723,Hotel rate baseline
+0.86,0.874049,Hotel rate baseline
+0.87,0.882502,Hotel rate baseline
+0.88,0.891801,Hotel rate baseline
+0.89,0.900394,Hotel rate baseline
+0.9,0.906875,Hotel rate baseline
+0.91,0.914342,Hotel rate baseline
+0.92,0.924063,Hotel rate baseline
+0.93,0.934207,Hotel rate baseline
+0.94,0.943223,Hotel rate baseline
+0.95,0.953367,Hotel rate baseline
+0.96,0.961538,Hotel rate baseline
+0.97,0.970555,Hotel rate baseline
+0.98,0.981403,Hotel rate baseline
+0.99,0.990279,Hotel rate baseline
+1,1,Hotel rate baseline

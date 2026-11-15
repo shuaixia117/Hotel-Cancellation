@@ -1,0 +1,21 @@
+model,metric,estimate,ci_lower_95,ci_upper_95,diff_vs_Logistic (strict),diff_ci_lower_95,diff_ci_upper_95
+Overall rate baseline,roc_auc,0.5,0.5,0.5,-0.233461,-0.243364,-0.22281
+Overall rate baseline,average_precision,0.282687,0.271049,0.292929,-0.19601,-0.211696,-0.180046
+Overall rate baseline,log_loss,0.596083,0.584339,0.606418,0.0701269,0.063809,0.0762601
+Overall rate baseline,brier,0.203017,0.197597,0.207786,0.0271978,0.0247252,0.0296312
+Hotel rate baseline,roc_auc,0.524575,0.51474,0.534835,-0.208886,-0.21863,-0.197688
+Hotel rate baseline,average_precision,0.293198,0.282114,0.30189,-0.1855,-0.201039,-0.170053
+Hotel rate baseline,log_loss,0.595226,0.583216,0.606063,0.0692702,0.0632233,0.0749803
+Hotel rate baseline,brier,0.202646,0.197175,0.20759,0.026827,0.0245737,0.0289779
+Logistic (strict),roc_auc,0.733461,0.72281,0.743364,0,0,0
+Logistic (strict),average_precision,0.478698,0.459915,0.497259,0,0,0
+Logistic (strict),log_loss,0.525956,0.514053,0.537559,0,0,0
+Logistic (strict),brier,0.175819,0.171148,0.180542,0,0,0
+Logistic (extended),roc_auc,0.774485,0.765328,0.784209,0.0410246,0.035037,0.0470663
+Logistic (extended),average_precision,0.578829,0.560387,0.59734,0.100131,0.0878146,0.111758
+Logistic (extended),log_loss,0.49658,0.483813,0.508634,-0.0293766,-0.0343971,-0.0245779
+Logistic (extended),brier,0.162385,0.157559,0.166978,-0.0134339,-0.0153689,-0.0115889
+Gradient boosting,roc_auc,0.748535,0.738267,0.758442,0.0150739,0.0109657,0.0196634
+Gradient boosting,average_precision,0.502242,0.485322,0.517674,0.0235442,0.0125194,0.0339681
+Gradient boosting,log_loss,0.515313,0.503446,0.527397,-0.0106427,-0.0133595,-0.0077514
+Gradient boosting,brier,0.172169,0.167357,0.177022,-0.00364967,-0.00463834,-0.00262792

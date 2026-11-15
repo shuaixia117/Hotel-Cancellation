@@ -1,91 +1,139 @@
-"""Step 4: Prepare model features and the time-based train/test split.
+"""Derived features, temporal splits and a categorical encoder learned on the training window only."""
+from dataclasses import dataclass
+from pathlib import Path
 
-Run this file to see the checks behind the modeling choices.
-Excluded on purpose:
-- Non Refund bookings (99.4% canceled, mostly group blocks).
-- Leakage: reservation_status, reservation_status_date and assigned_room_type are recorded
-  at or after the outcome. booking_changes and required_car_parking_spaces are only known after booking.
-"""
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import statsmodels.formula.api as smf
 
-SPLIT_DATE = '2017-01-01'  # learn from 2015-2016 arrivals, test on 2017 arrivals (as the hotel would use it)
-
-# Reference level (first category) of each categorical variable
-REFERENCE = {'hotel': 'City Hotel',
-             'market_segment': 'Online TA',
-             'customer_type': 'Transient',
-             'agent_group': 'None',
-             'meal': 'BB'}
+from src import config
+from src.clean import booking_date
 
 
-def load_data():
-    df = pd.read_csv('data/hotel_booking_clean.csv', parse_dates=['arrival_date'])
-    df = df[df['deposit_type'] != 'Non Refund'].copy()
+def load_clean(path: Path = config.CLEAN_DATA) -> pd.DataFrame:
+    df = pd.read_csv(path, parse_dates=['arrival_date', 'reservation_status_date'])
+    return add_features(df)
 
+
+def add_features(df: pd.DataFrame) -> pd.DataFrame:
+    """Row-wise features. None of them uses information from other rows, so they cannot leak."""
+    df = df.copy()
+    df['booking_date'] = booking_date(df['arrival_date'], df['lead_time'])
     df['month'] = df['arrival_date'].dt.month
     df['prev_cancel'] = (df['previous_cancellations'] > 0).astype(int)
     df['prev_stay'] = (df['previous_bookings_not_canceled'] > 0).astype(int)
     df['kids'] = ((df['children'] + df['babies']) > 0).astype(int)
-
-    # agent has 333 IDs: keep the 10 largest agents in the training period, group the rest as 'Other'
-    top_agents = df.loc[df['arrival_date'] < SPLIT_DATE, 'agent'].value_counts().head(10).index
-    df['agent_group'] = 'Other'
-    df.loc[df['agent'].isin(top_agents), 'agent_group'] = df['agent'].astype('Int64').astype(str)
-    df.loc[df['agent'].isna(), 'agent_group'] = 'None'
-
-    for col, level in REFERENCE.items():
-        others = sorted(set(df[col]) - {level})
-        df[col] = pd.Categorical(df[col], categories=[level] + others)
+    df['weekend_share'] = df['stays_in_weekend_nights'] / df['total_nights']
+    df['has_company_id'] = df['company'].notna().astype(int)
+    df['is_non_refund'] = (df['deposit_type'] == 'Non Refund').astype(int)
+    df['booking_value'] = df['adr'] * df['total_nights']   # room revenue, not profit
     return df
 
 
-def split(df):
-    return df[df['arrival_date'] < SPLIT_DATE], df[df['arrival_date'] >= SPLIT_DATE]
+# ---------- Temporal splits ----------
+def trained_window(df: pd.DataFrame, cutoff: pd.Timestamp) -> pd.DataFrame:
+    """Bookings whose outcome is known on the cutoff date: they arrived before it."""
+    return df[df['arrival_date'] < cutoff]
 
 
-if __name__ == '__main__':
-    df = load_data()
-    train, test = split(df)
-    print('All / train / test:', df.shape, train.shape, test.shape)
-    print('Cancellation rate all / train / test:',
-          df['is_canceled'].mean().round(3), train['is_canceled'].mean().round(3), test['is_canceled'].mean().round(3))
-    print('\nAgent groups:\n', df['agent_group'].value_counts())
+def booked_window(df: pd.DataFrame, start: pd.Timestamp, outcome_known_by: pd.Timestamp | None = None) -> pd.DataFrame:
+    """Bookings made on or after start, optionally only those whose outcome is known by a later date."""
+    mask = df['booking_date'] >= start
+    if outcome_known_by is not None:
+        mask &= df['arrival_date'] < outcome_known_by
+    return df[mask]
 
-    # Which transformation of lead_time fits best?
-    print('\nBIC of lead_time transformations:')
-    for f in ['lead_time', 'np.sqrt(lead_time)', 'np.log1p(lead_time)']:
-        print(' ', f, round(smf.logit('is_canceled ~ ' + f, data=train).fit(disp=0).bic, 1))
 
-    # Is the log-odds of cancellation linear in log(1 + lead_time)?  Is the slope the same for both hotels?
-    fig, ax = plt.subplots(figsize=(5, 4))
-    for h in ['City Hotel', 'Resort Hotel']:
-        sub = train[train['hotel'] == h]
-        bins = pd.qcut(sub['lead_time'], 20, duplicates='drop')
-        x = np.log1p(sub['lead_time']).groupby(bins, observed=True).mean()
-        rate = sub['is_canceled'].groupby(bins, observed=True).mean()
-        ax.plot(x, np.log(rate / (1 - rate)), 'o-', label=h)
-    ax.set(xlabel='log(1 + Lead Time)', ylabel='Log-Odds of Cancellation', title='Empirical Log-Odds vs Lead Time')
-    ax.legend()
-    ax.grid(linestyle=':')
-    fig.savefig('figures/p2_fig1_logodds_lead_time.png', dpi=200, bbox_inches='tight')
+@dataclass
+class Splits:
+    train: pd.DataFrame          # model selection: fit
+    validation: pd.DataFrame     # model selection: compare candidates
+    refit: pd.DataFrame          # final fit (all outcomes known at TEST_START)
+    test: pd.DataFrame           # final, one-time evaluation
 
-    # Are market_segment and distribution_channel redundant?
-    print('\n', pd.crosstab(train['market_segment'], train['distribution_channel']))
 
-    # Is the effect of a previous cancellation stable over time?
-    quarter = df['arrival_date'].dt.to_period('Q').astype(str)
-    rate = df.groupby([quarter, 'prev_cancel'])['is_canceled'].mean().unstack() * 100
-    ax = rate.plot(marker='o', figsize=(5, 4), rot=45, xlabel='Arrival Quarter', ylabel='Cancellation Rate (%)')
-    ax.axvline(5.5, linestyle='--', color='darkgray')  # between 2016Q4 and 2017Q1
-    ax.legend(['No previous cancellation', 'Has previous cancellation', 'Train | Test'])
-    ax.grid(linestyle=':')
-    ax.set_title('Cancellation Rate by Previous Cancellation')
-    ax.figure.savefig('figures/p2_fig2_prev_cancel_drift.png', dpi=200, bbox_inches='tight')
-    print('\nCancellation rate (%) by quarter and previous cancellation:\n', rate.round(1))
+def make_splits(df: pd.DataFrame, validation_start: pd.Timestamp = config.VALIDATION_START,
+                test_start: pd.Timestamp = config.TEST_START) -> Splits:
+    return Splits(train=trained_window(df, validation_start),
+                  validation=booked_window(df, validation_start, outcome_known_by=test_start),
+                  refit=trained_window(df, test_start),
+                  test=booked_window(df, test_start))
 
-    # Is the month effect consistent between 2015 and 2016?
-    by_month = train.groupby([train['arrival_date'].dt.year, 'month'])['is_canceled'].mean().unstack(0) * 100
-    print('\nCancellation rate (%) by month, 2015 vs 2016:\n', by_month.round(1))
+
+def split_summary(splits: Splits) -> pd.DataFrame:
+    rows = []
+    for name in ['train', 'validation', 'refit', 'test']:
+        d = getattr(splits, name)
+        rows.append({'split': name, 'rows': len(d),
+                     'booking_date_min': d['booking_date'].min().date(), 'booking_date_max': d['booking_date'].max().date(),
+                     'arrival_date_min': d['arrival_date'].min().date(), 'arrival_date_max': d['arrival_date'].max().date(),
+                     'max_lead_time': int(d['lead_time'].max()), 'median_lead_time': float(d['lead_time'].median()),
+                     'share_lead_over_180': round((d['lead_time'] > 180).mean(), 3),
+                     'cancel_rate': round(d['is_canceled'].mean(), 3),
+                     'non_refund_share': round(d['is_non_refund'].mean(), 3)})
+    return pd.DataFrame(rows)
+
+
+# ---------- Categorical encoding ----------
+@dataclass
+class Encoder:
+    levels: dict[str, list[str]]   # column -> allowed levels, reference level first
+    top_agents: list[str]
+
+
+def agent_group(agent: pd.Series, top_agents: list[str]) -> pd.Series:
+    ids = agent.astype('Int64').astype(str)
+    return pd.Series(np.where(agent.isna(), 'None', np.where(ids.isin(top_agents), ids, 'Other')), index=agent.index)
+
+
+def fit_encoder(train: pd.DataFrame, columns: list[str] = config.CATEGORICAL_COLUMNS,
+                top_n_agents: int = config.TOP_AGENTS, min_count: int = config.MIN_CATEGORY_COUNT) -> Encoder:
+    """Learn category levels from the training rows only."""
+    top_agents = train['agent'].dropna().astype('Int64').astype(str).value_counts().head(top_n_agents).index.tolist()
+    data = train.assign(agent_group=agent_group(train['agent'], top_agents))
+    levels = {}
+    for col in columns:
+        counts = data[col].astype(str).value_counts()
+        kept = counts[counts >= min_count].index.tolist()
+        if len(kept) < len(counts) and 'Other' not in kept:
+            kept.append('Other')
+        reference = config.REFERENCE_LEVELS.get(col)
+        if reference not in kept:
+            reference = counts.index[0]
+        levels[col] = [reference] + sorted(set(kept) - {reference})
+    return Encoder(levels=levels, top_agents=top_agents)
+
+
+def encode(df: pd.DataFrame, encoder: Encoder) -> pd.DataFrame:
+    """Apply training levels. Rare or unseen levels become 'Other'; without an 'Other' level they become the reference.
+
+    The fallback keeps the fitted design matrix fixed: an 'Other' level with no training rows would be an all-zero,
+    unidentifiable column. For every column without 'Other' the reference level is also the most frequent training
+    level, so the fallback is a mode imputation. unseen_level_report() shows how often it is used (never, in this data).
+    """
+    df = df.assign(agent_group=agent_group(df['agent'], encoder.top_agents))
+    for col, levels in encoder.levels.items():
+        values = df[col].astype(str)
+        fallback = 'Other' if 'Other' in levels else levels[0]
+        df[col] = pd.Categorical(values.where(values.isin(levels), fallback), categories=levels)
+    return df
+
+
+def unseen_level_report(splits: Splits) -> pd.DataFrame:
+    """Evaluation rows whose category was never seen in the matching training window (Non Refund excluded)."""
+    rows = []
+    for fit_name, train, evals in [('train', splits.train, {'validation': splits.validation}),
+                                   ('refit', splits.refit, {'test': splits.test})]:
+        train = train[train['is_non_refund'] == 0]
+        enc = fit_encoder(train)
+        seen = encode(train, enc)  # encoded training rows define which levels exist
+        for eval_name, d in evals.items():
+            d = d[d['is_non_refund'] == 0]
+            raw = d.assign(agent_group=agent_group(d['agent'], enc.top_agents))
+            train_raw = train.assign(agent_group=agent_group(train['agent'], enc.top_agents))
+            for col, levels in enc.levels.items():
+                unseen = ~raw[col].astype(str).isin(train_raw[col].astype(str).unique())
+                rows.append({'trained_on': fit_name, 'evaluated_on': eval_name, 'column': col, 'has_other_level': 'Other' in levels,
+                             'fallback_level': 'Other' if 'Other' in levels else levels[0],
+                             'reference_is_modal': levels[0] == seen[col].astype(str).value_counts().index[0],
+                             'unseen_rows': int(unseen.sum())})
+    return pd.DataFrame(rows)

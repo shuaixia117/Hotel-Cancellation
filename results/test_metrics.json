@@ -1,0 +1,212 @@
+{
+  "selected_strict_terms": [
+    "np.log1p(lead_time) * hotel",
+    "market_segment",
+    "customer_type",
+    "agent_group",
+    "prev_stay",
+    "kids",
+    "meal",
+    "has_company_id",
+    "distribution_channel"
+  ],
+  "gbm_params": {
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 4
+  },
+  "test_set": {
+    "rows": 25109,
+    "cancel_rate": 0.28268748257596876,
+    "definition": "bookings made from 2017-01-01 (arrivals up to 2017-08-31), Non Refund excluded"
+  },
+  "strict_logistic": {
+    "roc_auc": {
+      "estimate": 0.7334607780702689,
+      "ci_95": [
+        0.7228098937461485,
+        0.7433638043114502
+      ]
+    },
+    "average_precision": {
+      "estimate": 0.4786978440539561,
+      "ci_95": [
+        0.45991456349739324,
+        0.49725875481991705
+      ]
+    },
+    "log_loss": {
+      "estimate": 0.5259561365476606,
+      "ci_95": [
+        0.5140525652617548,
+        0.5375587094644828
+      ]
+    },
+    "brier": {
+      "estimate": 0.17581889267690065,
+      "ci_95": [
+        0.1711479892931302,
+        0.18054199675543658
+      ]
+    }
+  },
+  "calibration": {
+    "mean_predicted": 0.2732150827597446,
+    "actual_rate": 0.28268748257596876,
+    "calibration_intercept": 0.05391102133918685,
+    "calibration_slope": 1.0110792125297816
+  },
+  "test_metrics_by_model": {
+    "Overall rate baseline": {
+      "roc_auc": 0.5,
+      "average_precision": 0.28268748257596876,
+      "log_loss": 0.5960830152465418,
+      "brier": 0.20301674151997343
+    },
+    "Hotel rate baseline": {
+      "roc_auc": 0.5245747257018147,
+      "average_precision": 0.2931976341503897,
+      "log_loss": 0.5952263617493746,
+      "brier": 0.2026458867451573
+    },
+    "Logistic (strict)": {
+      "roc_auc": 0.7334607780702689,
+      "average_precision": 0.4786978440539561,
+      "log_loss": 0.5259561365476606,
+      "brier": 0.17581889267690065
+    },
+    "Logistic (extended)": {
+      "roc_auc": 0.774485404562964,
+      "average_precision": 0.5788292966306933,
+      "log_loss": 0.49657952884114104,
+      "brier": 0.1623850366503019
+    },
+    "Gradient boosting": {
+      "roc_auc": 0.7485346373984941,
+      "average_precision": 0.5022420835610528,
+      "log_loss": 0.5153134507101553,
+      "brier": 0.1721692267748281
+    }
+  },
+  "risk_tier_cut_points": [
+    0.2480891286527358,
+    0.41951858264511177
+  ],
+  "business_base_top20": {
+    "coverage": 0.2,
+    "targeted_bookings": 5022.0,
+    "expected_prevented_cancellations": 495.25215690149173,
+    "total_intervention_cost": 25110.0,
+    "expected_incremental_contribution": 72908.45682161482,
+    "expected_net_benefit": 47798.45682161482,
+    "expected_break_even_effectiveness": 0.0688808983063149,
+    "observed_cancellations_targeted": 2599.0,
+    "outcome_conditioned_prevented_cancellations": 519.8000000000001,
+    "outcome_conditioned_incremental_contribution": 81064.73904,
+    "outcome_conditioned_net_benefit": 55954.73904,
+    "outcome_conditioned_break_even_effectiveness": 0.06195048623448946
+  },
+  "business_threshold_policy": [
+    {
+      "stage": "validation",
+      "policy": "contact if expected incremental profit > 0",
+      "scenario": "Conservative",
+      "coverage": 0.000777000777000777,
+      "targeted_bookings": 11,
+      "expected_prevented_cancellations": 0.480535590482439,
+      "total_intervention_cost": 110.0,
+      "expected_incremental_contribution": 165.9243682858818,
+      "expected_net_benefit": 55.9243682858818,
+      "expected_break_even_effectiveness": 0.06629526520810608,
+      "observed_cancellations_targeted": 9,
+      "outcome_conditioned_prevented_cancellations": 0.9,
+      "outcome_conditioned_incremental_contribution": 361.64844000000005,
+      "outcome_conditioned_net_benefit": 251.64844000000005,
+      "outcome_conditioned_break_even_effectiveness": 0.030416279412127423
+    },
+    {
+      "stage": "validation",
+      "policy": "contact if expected incremental profit > 0",
+      "scenario": "Base",
+      "coverage": 0.2877021967931059,
+      "targeted_bookings": 4073,
+      "expected_prevented_cancellations": 297.7116384233625,
+      "total_intervention_cost": 20365.0,
+      "expected_incremental_contribution": 38784.796170551446,
+      "expected_net_benefit": 18419.796170551446,
+      "expected_break_even_effectiveness": 0.10501537721352139,
+      "observed_cancellations_targeted": 1625,
+      "outcome_conditioned_prevented_cancellations": 325.0,
+      "outcome_conditioned_incremental_contribution": 44534.99856000001,
+      "outcome_conditioned_net_benefit": 24169.998560000007,
+      "outcome_conditioned_break_even_effectiveness": 0.09145616103507066
+    },
+    {
+      "stage": "validation",
+      "policy": "contact if expected incremental profit > 0",
+      "scenario": "Optimistic",
+      "coverage": 0.6877869605142333,
+      "targeted_bookings": 9737,
+      "expected_prevented_cancellations": 869.0808427010968,
+      "total_intervention_cost": 29211.0,
+      "expected_incremental_contribution": 135852.9617075749,
+      "expected_net_benefit": 106641.9617075749,
+      "expected_break_even_effectiveness": 0.06450577072337303,
+      "observed_cancellations_targeted": 3203,
+      "outcome_conditioned_prevented_cancellations": 960.9,
+      "outcome_conditioned_incremental_contribution": 154101.6084,
+      "outcome_conditioned_net_benefit": 124890.6084,
+      "outcome_conditioned_break_even_effectiveness": 0.05686702488693817
+    },
+    {
+      "stage": "test",
+      "policy": "contact if expected incremental profit > 0",
+      "scenario": "Conservative",
+      "coverage": 0.009518499342865108,
+      "targeted_bookings": 239,
+      "expected_prevented_cancellations": 11.812572557024389,
+      "total_intervention_cost": 2390.0,
+      "expected_incremental_contribution": 2971.631482346488,
+      "expected_net_benefit": 581.6314823464882,
+      "expected_break_even_effectiveness": 0.08042720014908396,
+      "observed_cancellations_targeted": 155,
+      "outcome_conditioned_prevented_cancellations": 15.5,
+      "outcome_conditioned_incremental_contribution": 4007.5016399999995,
+      "outcome_conditioned_net_benefit": 1617.5016399999995,
+      "outcome_conditioned_break_even_effectiveness": 0.059638154009588884
+    },
+    {
+      "stage": "test",
+      "policy": "contact if expected incremental profit > 0",
+      "scenario": "Base",
+      "coverage": 0.4549763033175355,
+      "targeted_bookings": 11424,
+      "expected_prevented_cancellations": 887.0126737293883,
+      "total_intervention_cost": 57120.0,
+      "expected_incremental_contribution": 142869.27576406923,
+      "expected_net_benefit": 85749.27576406923,
+      "expected_break_even_effectiveness": 0.0799612088666657,
+      "observed_cancellations_targeted": 4744,
+      "outcome_conditioned_prevented_cancellations": 948.8000000000001,
+      "outcome_conditioned_incremental_contribution": 163225.9224,
+      "outcome_conditioned_net_benefit": 106105.92240000001,
+      "outcome_conditioned_break_even_effectiveness": 0.06998888308931989
+    },
+    {
+      "stage": "test",
+      "policy": "contact if expected incremental profit > 0",
+      "scenario": "Optimistic",
+      "coverage": 0.7632323071408659,
+      "targeted_bookings": 19164,
+      "expected_prevented_cancellations": 1890.9978430025235,
+      "total_intervention_cost": 57492.0,
+      "expected_incremental_contribution": 412195.8561138038,
+      "expected_net_benefit": 354703.8561138038,
+      "expected_break_even_effectiveness": 0.041843215413689364,
+      "observed_cancellations_targeted": 6491,
+      "outcome_conditioned_prevented_cancellations": 1947.3,
+      "outcome_conditioned_incremental_contribution": 460262.766,
+      "outcome_conditioned_net_benefit": 402770.766,
+      "outcome_conditioned_break_even_effectiveness": 0.037473376675444564
+    }
+  ]
+}

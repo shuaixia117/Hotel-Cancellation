@@ -1,0 +1,3 @@
+forecast,mae,rmse,bias,correlation
+Logistic (strict),4.40716,5.87622,-0.978776,0.94418
+Hotel rate baseline,7.36735,9.46758,-1.48616,0.884484

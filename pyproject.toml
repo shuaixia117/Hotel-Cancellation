@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hotel-cancellation"
+version = "2.0.0"
+description = "Booking-time cancellation risk model and scenario-based decision analysis for two Portuguese hotels"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26,<3",
+    "pandas>=2.2,<4",
+    "matplotlib>=3.8,<4",
+    "scipy>=1.11,<2",
+    "statsmodels>=0.14,<0.16",
+    "patsy>=0.5.6,<2",
+    "scikit-learn>=1.4,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+# Model tests use a 25% sample, where a few rare levels make some candidate fits stop at maxiter.
+# The full-data pipeline records convergence of every fit in results/model_selection.csv.
+filterwarnings = ["ignore::statsmodels.tools.sm_exceptions.ConvergenceWarning"]
+
+[tool.ruff]
+line-length = 150
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["src"]

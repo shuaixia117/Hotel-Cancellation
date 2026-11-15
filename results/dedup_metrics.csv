@@ -1,0 +1,3 @@
+fit,train_rows,n,cancellations,roc_auc,average_precision,log_loss,brier,mean_predicted,actual_rate
+all rows,67573,25109,7098,0.733461,0.478698,0.525956,0.175819,0.273215,0.282687
+deduplicated,54387,25109,7098,0.735471,0.482274,0.525887,0.175474,0.258386,0.282687

@@ -1,0 +1,17 @@
+trained_on,evaluated_on,column,has_other_level,fallback_level,reference_is_modal,unseen_rows
+train,validation,hotel,False,City Hotel,True,0
+train,validation,market_segment,False,Online TA,True,0
+train,validation,distribution_channel,False,TA/TO,True,0
+train,validation,customer_type,False,Transient,True,0
+train,validation,agent_group,True,Other,False,0
+train,validation,meal,False,BB,True,0
+train,validation,reserved_room_type,True,Other,True,0
+train,validation,deposit_type,False,No Deposit,True,0
+refit,test,hotel,False,City Hotel,True,0
+refit,test,market_segment,False,Online TA,True,0
+refit,test,distribution_channel,False,TA/TO,True,0
+refit,test,customer_type,False,Transient,True,0
+refit,test,agent_group,True,Other,False,0
+refit,test,meal,False,BB,True,0
+refit,test,reserved_room_type,True,Other,True,0
+refit,test,deposit_type,False,No Deposit,True,0
