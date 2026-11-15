@@ -39,7 +39,7 @@ def select_terms(train: pd.DataFrame, validation: pd.DataFrame, base_terms: list
     """Greedy forward selection, then one backward pass.
 
     A change is accepted only if it lowers BIC on the training window AND lowers log loss on the
-    validation window (the rule of the original project, with validation replacing the test set).
+    validation window. The test set is never used here.
     """
     def score(terms):
         m = fit_logit(terms, train)

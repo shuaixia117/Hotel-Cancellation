@@ -33,7 +33,7 @@ def test_in_flight_bookings_are_excluded_from_selection_and_test():
     assert list(s.validation.index) == [1]
     assert list(s.refit.index) == [0, 1, 2]
     assert list(s.test.index) == []
-    assert list(s.legacy_test.index) == [3]
+    assert all(3 not in d.index for d in [s.train, s.validation, s.refit, s.test])   # in flight at the test cutoff
 
 
 def test_encoder_learns_levels_and_agents_from_training_rows_only():
@@ -67,7 +67,7 @@ def test_rare_training_levels_are_merged():
 
 def test_feature_sets_contain_no_outcome_information():
     forbidden = config.LEAKAGE_COLUMNS + config.EXCLUDED_COLUMNS
-    terms = config.BASE_TERMS + config.CANDIDATE_TERMS + config.EXTENDED_TERMS + [config.LEGACY_FORMULA] + config.GBM_COLUMNS
+    terms = config.BASE_TERMS + config.CANDIDATE_TERMS + config.EXTENDED_TERMS + config.GBM_COLUMNS
     for term in terms:
         for col in forbidden:
             assert col not in term, (col, term)
