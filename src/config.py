@@ -45,7 +45,7 @@ LEAKAGE_COLUMNS = ['is_canceled', 'reservation_status', 'reservation_status_date
 # Excluded from every model because availability at booking time is doubtful (see audit).
 EXCLUDED_COLUMNS = ['country']
 
-# Strict booking-time model: starting terms (the original specification without special requests).
+# Strict booking-time model: starting terms, always included before selection.
 BASE_TERMS = ['np.log1p(lead_time) * hotel', 'market_segment', 'customer_type',
               'agent_group', 'prev_stay', 'kids', 'meal']
 # Strict booking-time candidates, tested one at a time on the validation window.
@@ -54,9 +54,6 @@ CANDIDATE_TERMS = ['I(np.log1p(lead_time) ** 2)', 'prev_cancel', 'is_repeated_gu
                    'np.log1p(total_nights)', 'weekend_share', 'has_company_id']
 # Extended set: fields that can change after booking. Higher leakage risk, reported as sensitivity only.
 EXTENDED_TERMS = ['total_of_special_requests', 'np.log1p(booking_changes)', 'np.log1p(days_in_waiting_list)']
-# The specification of the original project (selected with the 2017 test data), kept for comparison.
-LEGACY_FORMULA = ('np.log1p(lead_time) * hotel + market_segment + customer_type + agent_group'
-                  ' + total_of_special_requests + prev_stay + kids + meal')
 
 # Columns given to the gradient boosting benchmark: the same booking-time information
 # that the strict logistic regression could choose from.

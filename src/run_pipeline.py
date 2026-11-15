@@ -15,7 +15,7 @@ from src import evaluate as ev
 from src import features as ft
 from src import model as md
 
-STRICT, EXTENDED, LEGACY, GBM = 'Logistic (strict)', 'Logistic (extended)', 'Logistic (original spec)', 'Gradient boosting'
+STRICT, EXTENDED, GBM = 'Logistic (strict)', 'Logistic (extended)', 'Gradient boosting'
 OVERALL, HOTEL = 'Overall rate baseline', 'Hotel rate baseline'
 
 
@@ -110,7 +110,6 @@ def main(n_boot: int = config.N_BOOTSTRAP) -> None:
                  HOTEL: md.predict_hotel_rate(md.hotel_rates(train_s), val_s, md.overall_rate(train_s)),
                  STRICT: md.predict(strict_sel, val_s),
                  EXTENDED: md.predict(md.fit_logit(extended_terms, train_s), val_s),
-                 LEGACY: md.predict(md.fit_logit(config.LEGACY_FORMULA, train_s), val_s),
                  GBM: md.predict_gbm(md.fit_gbm(train_s, gbm_params), val_s)}
     comparison = [{'stage': 'validation', 'model': k, **ev.metrics(val_s['is_canceled'], p)} for k, p in val_preds.items()]
 
@@ -118,12 +117,10 @@ def main(n_boot: int = config.N_BOOTSTRAP) -> None:
     enc = ft.fit_encoder(non_refund_free(splits.refit))
     refit_s = ft.encode(non_refund_free(splits.refit), enc)
     test_s = ft.encode(non_refund_free(splits.test), enc)
-    legacy_s = ft.encode(non_refund_free(splits.legacy_test), enc)
     y = test_s['is_canceled'].to_numpy()
 
     strict = md.fit_logit(strict_terms, refit_s)
     extended = md.fit_logit(extended_terms, refit_s)
-    legacy = md.fit_logit(config.LEGACY_FORMULA, refit_s)
     gbm = md.fit_gbm(refit_s, gbm_params)
     base_rate, rates = md.overall_rate(refit_s), md.hotel_rates(refit_s)
 
@@ -131,7 +128,6 @@ def main(n_boot: int = config.N_BOOTSTRAP) -> None:
              HOTEL: md.predict_hotel_rate(rates, test_s, base_rate),
              STRICT: md.predict(strict, test_s),
              EXTENDED: md.predict(extended, test_s),
-             LEGACY: md.predict(legacy, test_s),
              GBM: md.predict_gbm(gbm, test_s)}
     comparison += [{'stage': 'test', 'model': k, **ev.metrics(y, p)} for k, p in preds.items()]
     comparison = pd.DataFrame(comparison)
@@ -193,15 +189,6 @@ def main(n_boot: int = config.N_BOOTSTRAP) -> None:
     save(dedup_table, 'dedup_coefficients.csv')
     save(dedup_metrics, 'dedup_metrics.csv')
 
-    # How the original headline numbers relate to the new ones
-    legacy_table = pd.DataFrame([
-        {'model': LEGACY, 'test_set': 'legacy: all 2017 arrivals', **ev.metrics(legacy_s['is_canceled'], md.predict(legacy, legacy_s), False)},
-        {'model': STRICT, 'test_set': 'legacy: all 2017 arrivals', **ev.metrics(legacy_s['is_canceled'], md.predict(strict, legacy_s), False)},
-        {'model': LEGACY, 'test_set': 'new: bookings made from 2017-01-01', **ev.metrics(y, preds[LEGACY], False)},
-        {'model': STRICT, 'test_set': 'new: bookings made from 2017-01-01', **ev.metrics(y, p, False)},
-        {'model': STRICT + ' + special requests', 'test_set': 'new: bookings made from 2017-01-01',
-         **ev.metrics(y, md.predict(md.fit_logit(strict_terms + ['total_of_special_requests'], refit_s), test_s), False)}])
-    save(legacy_table, 'legacy_comparison.csv')
 
     # ---------- Business scenarios (illustrative assumptions) ----------
     value = test_s['booking_value'].to_numpy()
