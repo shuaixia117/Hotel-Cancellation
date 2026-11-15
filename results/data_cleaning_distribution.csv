@@ -1,0 +1,20 @@
+variable,level,before,after
+rows,,119390.0,118540.0
+is_canceled,rate,0.3704,0.3725
+hotel,City Hotel,0.6645,0.6655
+hotel,Resort Hotel,0.3355,0.3345
+deposit_type,No Deposit,0.8765,0.8756
+deposit_type,Non Refund,0.1222,0.123
+deposit_type,Refundable,0.0014,0.0014
+market_segment,Online TA,0.473,0.4735
+market_segment,Offline TA/TO,0.2029,0.2028
+market_segment,Groups,0.1659,0.1667
+market_segment,Direct,0.1056,0.1049
+market_segment,Corporate,0.0444,0.0441
+market_segment,Complementary,0.0062,0.006
+market_segment,Aviation,0.002,0.0019
+market_segment,Undefined,0.0,0.0
+customer_type,Transient,0.7506,0.7502
+customer_type,Transient-Party,0.2104,0.2109
+customer_type,Contract,0.0341,0.0342
+customer_type,Group,0.0048,0.0047

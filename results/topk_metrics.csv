@@ -1,0 +1,17 @@
+model,k_share,k,precision,recall,lift
+Logistic (strict),0.05,1255,0.555378,0.0981967,1.96464
+Logistic (strict),0.1,2511,0.547192,0.193576,1.93568
+Logistic (strict),0.2,5022,0.517523,0.366159,1.83072
+Logistic (strict),0.3,7533,0.500199,0.530854,1.76944
+Gradient boosting,0.05,1255,0.607171,0.107354,2.14785
+Gradient boosting,0.1,2511,0.558742,0.197661,1.97653
+Gradient boosting,0.2,5022,0.532059,0.376444,1.88215
+Gradient boosting,0.3,7533,0.510554,0.541843,1.80607
+Hotel rate baseline,0.05,1255,0.29243,0.0517047,1.03446
+Hotel rate baseline,0.1,2511,0.299881,0.106086,1.06082
+Hotel rate baseline,0.2,5022,0.305655,0.216258,1.08125
+Hotel rate baseline,0.3,7533,0.303465,0.322063,1.0735
+Random (expected),0.05,1255,0.282687,0.05,1
+Random (expected),0.1,2511,0.282687,0.1,1
+Random (expected),0.2,5022,0.282687,0.2,1
+Random (expected),0.3,7533,0.282687,0.3,1

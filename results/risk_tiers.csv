@@ -1,0 +1,4 @@
+tier,bookings,mean_predicted,actual_rate,cancellations,mean_booking_value,total_booking_value,share_of_bookings,share_of_cancellations,canceled_booking_value
+Low,11731,0.128338,0.129742,1522,337.52,3.95945e+06,0.467203,0.214427,650431
+Medium,7400,0.333345,0.339865,2515,475.03,3.51522e+06,0.294715,0.354325,1.30708e+06
+High,5978,0.483084,0.512044,3061,595.091,3.55745e+06,0.238082,0.431248,1.94333e+06

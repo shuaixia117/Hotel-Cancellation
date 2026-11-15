@@ -1,0 +1,11 @@
+rule,type,rows_flagged,rows_flagged_by_this_rule_only,cancel_rate_of_flagged,reason
+missing_children,definition error,4,0.0,1.0,children is missing (4 rows)
+undefined_segment_or_channel,definition error,5,1.0,0.8,market_segment or distribution_channel is 'Undefined'
+zero_nights,scope,715,645.0,0.049,"0 nights with ADR 0: day use or complimentary, not an overnight booking"
+zero_guests,definition error,180,110.0,0.139,"no adults, children or babies"
+adults_over_6,placeholder,13,13.0,1.0,"10-55 adults, all Resort Hotel, all canceled, ADR 0: group blocks"
+children_over_3,subjective cap,1,1.0,1.0,one booking with 10 children; likely a typo
+babies_over_2,subjective cap,2,2.0,0.0,two bookings with 9 and 10 babies; likely typos
+adr_outside_0_1000,definition error,2,2.0,0.5,"negative ADR or 5,400 (next largest is 510)"
+parking_over_3,subjective cap,2,2.0,0.0,one booking with 8 parking spaces
+ANY RULE (total removed),,850,,0.079,
