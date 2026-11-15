@@ -1,1201 +1,1201 @@
-strategy,scenario,coverage,targeted_bookings,realized_net_benefit
-Logistic: risk,Conservative,0.01,251,-1218.73
-Logistic: risk,Conservative,0.02,502,-2496.32
-Logistic: risk,Conservative,0.03,753,-3597.26
-Logistic: risk,Conservative,0.04,1004,-4812.31
-Logistic: risk,Conservative,0.05,1255,-6231.91
-Logistic: risk,Conservative,0.06,1507,-7870.77
-Logistic: risk,Conservative,0.07,1758,-9302.95
-Logistic: risk,Conservative,0.08,2009,-10605.7
-Logistic: risk,Conservative,0.09,2260,-12079.2
-Logistic: risk,Conservative,0.1,2511,-13663.5
-Logistic: risk,Conservative,0.11,2762,-15292.6
-Logistic: risk,Conservative,0.12,3013,-16923.7
-Logistic: risk,Conservative,0.13,3264,-18652.4
-Logistic: risk,Conservative,0.14,3515,-20256.1
-Logistic: risk,Conservative,0.15,3766,-21788.8
-Logistic: risk,Conservative,0.16,4017,-23388.6
-Logistic: risk,Conservative,0.17,4269,-25059.5
-Logistic: risk,Conservative,0.18,4520,-26661.9
-Logistic: risk,Conservative,0.19,4771,-28322.5
-Logistic: risk,Conservative,0.2,5022,-29953.8
-Logistic: risk,Conservative,0.21,5273,-31625.1
-Logistic: risk,Conservative,0.22,5524,-33252.2
-Logistic: risk,Conservative,0.23,5775,-35035.6
-Logistic: risk,Conservative,0.24,6026,-36786.3
-Logistic: risk,Conservative,0.25,6277,-38526.7
-Logistic: risk,Conservative,0.26,6528,-40210.7
-Logistic: risk,Conservative,0.27,6779,-42017.6
-Logistic: risk,Conservative,0.28,7031,-43877.8
-Logistic: risk,Conservative,0.29,7282,-45686.9
-Logistic: risk,Conservative,0.3,7533,-47548
-Logistic: risk,Conservative,0.31,7784,-49433.9
-Logistic: risk,Conservative,0.32,8035,-51418.9
-Logistic: risk,Conservative,0.33,8286,-53380.5
-Logistic: risk,Conservative,0.34,8537,-55407.7
-Logistic: risk,Conservative,0.35,8788,-57341
-Logistic: risk,Conservative,0.36,9039,-59263.8
-Logistic: risk,Conservative,0.37,9290,-61070.1
-Logistic: risk,Conservative,0.38,9541,-63052.7
-Logistic: risk,Conservative,0.39,9793,-65161.6
-Logistic: risk,Conservative,0.4,10044,-67202.5
-Logistic: risk,Conservative,0.41,10295,-69216.2
-Logistic: risk,Conservative,0.42,10546,-71303.9
-Logistic: risk,Conservative,0.43,10797,-73309.4
-Logistic: risk,Conservative,0.44,11048,-75305.3
-Logistic: risk,Conservative,0.45,11299,-77381.6
-Logistic: risk,Conservative,0.46,11550,-79626
-Logistic: risk,Conservative,0.47,11801,-81644.5
-Logistic: risk,Conservative,0.48,12052,-83644.3
-Logistic: risk,Conservative,0.49,12303,-85639.8
-Logistic: risk,Conservative,0.5,12554,-87810.5
-Logistic: risk,Conservative,0.51,12806,-89868.2
-Logistic: risk,Conservative,0.52,13057,-91900.2
-Logistic: risk,Conservative,0.53,13308,-94162.5
-Logistic: risk,Conservative,0.54,13559,-96264.1
-Logistic: risk,Conservative,0.55,13810,-98458
-Logistic: risk,Conservative,0.56,14061,-100609
-Logistic: risk,Conservative,0.57,14312,-102838
-Logistic: risk,Conservative,0.58,14563,-105037
-Logistic: risk,Conservative,0.59,14814,-107283
-Logistic: risk,Conservative,0.6,15065,-109608
-Logistic: risk,Conservative,0.61,15316,-111827
-Logistic: risk,Conservative,0.62,15568,-113997
-Logistic: risk,Conservative,0.63,15819,-116251
-Logistic: risk,Conservative,0.64,16070,-118632
-Logistic: risk,Conservative,0.65,16321,-120851
-Logistic: risk,Conservative,0.66,16572,-123102
-Logistic: risk,Conservative,0.67,16823,-125301
-Logistic: risk,Conservative,0.68,17074,-127528
-Logistic: risk,Conservative,0.69,17325,-129716
-Logistic: risk,Conservative,0.7,17576,-132027
-Logistic: risk,Conservative,0.71,17827,-134305
-Logistic: risk,Conservative,0.72,18078,-136601
-Logistic: risk,Conservative,0.73,18330,-138841
-Logistic: risk,Conservative,0.74,18581,-141039
-Logistic: risk,Conservative,0.75,18832,-143454
-Logistic: risk,Conservative,0.76,19083,-145778
-Logistic: risk,Conservative,0.77,19334,-148119
-Logistic: risk,Conservative,0.78,19585,-150489
-Logistic: risk,Conservative,0.79,19836,-152903
-Logistic: risk,Conservative,0.8,20087,-155290
-Logistic: risk,Conservative,0.81,20338,-157627
-Logistic: risk,Conservative,0.82,20589,-160048
-Logistic: risk,Conservative,0.83,20840,-162442
-Logistic: risk,Conservative,0.84,21092,-164821
-Logistic: risk,Conservative,0.85,21343,-167198
-Logistic: risk,Conservative,0.86,21594,-169645
-Logistic: risk,Conservative,0.87,21845,-171998
-Logistic: risk,Conservative,0.88,22096,-174475
-Logistic: risk,Conservative,0.89,22347,-176950
-Logistic: risk,Conservative,0.9,22598,-179419
-Logistic: risk,Conservative,0.91,22849,-181892
-Logistic: risk,Conservative,0.92,23100,-184371
-Logistic: risk,Conservative,0.93,23351,-186844
-Logistic: risk,Conservative,0.94,23602,-189316
-Logistic: risk,Conservative,0.95,23854,-191828
-Logistic: risk,Conservative,0.96,24105,-194330
-Logistic: risk,Conservative,0.97,24356,-196799
-Logistic: risk,Conservative,0.98,24607,-199289
-Logistic: risk,Conservative,0.99,24858,-201779
-Logistic: risk,Conservative,1,25109,-204280
-Logistic: risk x booking value,Conservative,0.01,251,1673.25
-Logistic: risk x booking value,Conservative,0.02,502,2078.59
-Logistic: risk x booking value,Conservative,0.03,753,2029.92
-Logistic: risk x booking value,Conservative,0.04,1004,1617.06
-Logistic: risk x booking value,Conservative,0.05,1255,830.093
-Logistic: risk x booking value,Conservative,0.06,1507,-115.706
-Logistic: risk x booking value,Conservative,0.07,1758,-1252.17
-Logistic: risk x booking value,Conservative,0.08,2009,-2339.96
-Logistic: risk x booking value,Conservative,0.09,2260,-3753.58
-Logistic: risk x booking value,Conservative,0.1,2511,-5167.55
-Logistic: risk x booking value,Conservative,0.11,2762,-6573.61
-Logistic: risk x booking value,Conservative,0.12,3013,-8059.79
-Logistic: risk x booking value,Conservative,0.13,3264,-9567.46
-Logistic: risk x booking value,Conservative,0.14,3515,-11199.7
-Logistic: risk x booking value,Conservative,0.15,3766,-12756.8
-Logistic: risk x booking value,Conservative,0.16,4017,-14363
-Logistic: risk x booking value,Conservative,0.17,4269,-16057.1
-Logistic: risk x booking value,Conservative,0.18,4520,-17757.4
-Logistic: risk x booking value,Conservative,0.19,4771,-19634.8
-Logistic: risk x booking value,Conservative,0.2,5022,-21359.9
-Logistic: risk x booking value,Conservative,0.21,5273,-23188.5
-Logistic: risk x booking value,Conservative,0.22,5524,-25067.1
-Logistic: risk x booking value,Conservative,0.23,5775,-26999.1
-Logistic: risk x booking value,Conservative,0.24,6026,-28886.4
-Logistic: risk x booking value,Conservative,0.25,6277,-30690.2
-Logistic: risk x booking value,Conservative,0.26,6528,-32585.5
-Logistic: risk x booking value,Conservative,0.27,6779,-34721.7
-Logistic: risk x booking value,Conservative,0.28,7031,-36715
-Logistic: risk x booking value,Conservative,0.29,7282,-38695.5
-Logistic: risk x booking value,Conservative,0.3,7533,-40652.3
-Logistic: risk x booking value,Conservative,0.31,7784,-42707.5
-Logistic: risk x booking value,Conservative,0.32,8035,-44824.2
-Logistic: risk x booking value,Conservative,0.33,8286,-47008.4
-Logistic: risk x booking value,Conservative,0.34,8537,-49100.9
-Logistic: risk x booking value,Conservative,0.35,8788,-51163.9
-Logistic: risk x booking value,Conservative,0.36,9039,-53201.6
-Logistic: risk x booking value,Conservative,0.37,9290,-55245.2
-Logistic: risk x booking value,Conservative,0.38,9541,-57394.1
-Logistic: risk x booking value,Conservative,0.39,9793,-59465.6
-Logistic: risk x booking value,Conservative,0.4,10044,-61559.7
-Logistic: risk x booking value,Conservative,0.41,10295,-63685.1
-Logistic: risk x booking value,Conservative,0.42,10546,-65806.4
-Logistic: risk x booking value,Conservative,0.43,10797,-67970.1
-Logistic: risk x booking value,Conservative,0.44,11048,-70150.4
-Logistic: risk x booking value,Conservative,0.45,11299,-72333.6
-Logistic: risk x booking value,Conservative,0.46,11550,-74534.7
-Logistic: risk x booking value,Conservative,0.47,11801,-76740.7
-Logistic: risk x booking value,Conservative,0.48,12052,-78890.7
-Logistic: risk x booking value,Conservative,0.49,12303,-81112.4
-Logistic: risk x booking value,Conservative,0.5,12554,-83332.8
-Logistic: risk x booking value,Conservative,0.51,12806,-85572.4
-Logistic: risk x booking value,Conservative,0.52,13057,-87856
-Logistic: risk x booking value,Conservative,0.53,13308,-90039.8
-Logistic: risk x booking value,Conservative,0.54,13559,-92380.9
-Logistic: risk x booking value,Conservative,0.55,13810,-94660.4
-Logistic: risk x booking value,Conservative,0.56,14061,-96990.6
-Logistic: risk x booking value,Conservative,0.57,14312,-99297.9
-Logistic: risk x booking value,Conservative,0.58,14563,-101688
-Logistic: risk x booking value,Conservative,0.59,14814,-104004
-Logistic: risk x booking value,Conservative,0.6,15065,-106380
-Logistic: risk x booking value,Conservative,0.61,15316,-108775
-Logistic: risk x booking value,Conservative,0.62,15568,-111112
-Logistic: risk x booking value,Conservative,0.63,15819,-113477
-Logistic: risk x booking value,Conservative,0.64,16070,-115835
-Logistic: risk x booking value,Conservative,0.65,16321,-118207
-Logistic: risk x booking value,Conservative,0.66,16572,-120655
-Logistic: risk x booking value,Conservative,0.67,16823,-123045
-Logistic: risk x booking value,Conservative,0.68,17074,-125478
-Logistic: risk x booking value,Conservative,0.69,17325,-127860
-Logistic: risk x booking value,Conservative,0.7,17576,-130281
-Logistic: risk x booking value,Conservative,0.71,17827,-132686
-Logistic: risk x booking value,Conservative,0.72,18078,-135091
-Logistic: risk x booking value,Conservative,0.73,18330,-137526
-Logistic: risk x booking value,Conservative,0.74,18581,-139956
-Logistic: risk x booking value,Conservative,0.75,18832,-142403
-Logistic: risk x booking value,Conservative,0.76,19083,-144837
-Logistic: risk x booking value,Conservative,0.77,19334,-147247
-Logistic: risk x booking value,Conservative,0.78,19585,-149712
-Logistic: risk x booking value,Conservative,0.79,19836,-152158
-Logistic: risk x booking value,Conservative,0.8,20087,-154605
-Logistic: risk x booking value,Conservative,0.81,20338,-157060
-Logistic: risk x booking value,Conservative,0.82,20589,-159514
-Logistic: risk x booking value,Conservative,0.83,20840,-161992
-Logistic: risk x booking value,Conservative,0.84,21092,-164475
-Logistic: risk x booking value,Conservative,0.85,21343,-166922
-Logistic: risk x booking value,Conservative,0.86,21594,-169406
-Logistic: risk x booking value,Conservative,0.87,21845,-171873
-Logistic: risk x booking value,Conservative,0.88,22096,-174339
-Logistic: risk x booking value,Conservative,0.89,22347,-176825
-Logistic: risk x booking value,Conservative,0.9,22598,-179291
-Logistic: risk x booking value,Conservative,0.91,22849,-181780
-Logistic: risk x booking value,Conservative,0.92,23100,-184266
-Logistic: risk x booking value,Conservative,0.93,23351,-186761
-Logistic: risk x booking value,Conservative,0.94,23602,-189254
-Logistic: risk x booking value,Conservative,0.95,23854,-191762
-Logistic: risk x booking value,Conservative,0.96,24105,-194260
-Logistic: risk x booking value,Conservative,0.97,24356,-196761
-Logistic: risk x booking value,Conservative,0.98,24607,-199266
-Logistic: risk x booking value,Conservative,0.99,24858,-201770
-Logistic: risk x booking value,Conservative,1,25109,-204280
-Hotel rate baseline,Conservative,0.01,251,-2108.81
-Hotel rate baseline,Conservative,0.02,502,-4245.53
-Hotel rate baseline,Conservative,0.03,753,-6400.4
-Hotel rate baseline,Conservative,0.04,1004,-8426.7
-Hotel rate baseline,Conservative,0.05,1255,-10517.9
-Hotel rate baseline,Conservative,0.06,1507,-12729.5
-Hotel rate baseline,Conservative,0.07,1758,-14785.7
-Hotel rate baseline,Conservative,0.08,2009,-16919.1
-Hotel rate baseline,Conservative,0.09,2260,-18957.7
-Hotel rate baseline,Conservative,0.1,2511,-21014.4
-Hotel rate baseline,Conservative,0.11,2762,-23167.2
-Hotel rate baseline,Conservative,0.12,3013,-25048.2
-Hotel rate baseline,Conservative,0.13,3264,-27074.9
-Hotel rate baseline,Conservative,0.14,3515,-29127.4
-Hotel rate baseline,Conservative,0.15,3766,-31186.4
-Hotel rate baseline,Conservative,0.16,4017,-33245.4
-Hotel rate baseline,Conservative,0.17,4269,-35393.3
-Hotel rate baseline,Conservative,0.18,4520,-37548.9
-Hotel rate baseline,Conservative,0.19,4771,-39650.5
-Hotel rate baseline,Conservative,0.2,5022,-41664.2
-Hotel rate baseline,Conservative,0.21,5273,-43775.1
-Hotel rate baseline,Conservative,0.22,5524,-45897.7
-Hotel rate baseline,Conservative,0.23,5775,-48008
-Hotel rate baseline,Conservative,0.24,6026,-50125.8
-Hotel rate baseline,Conservative,0.25,6277,-52166.3
-Hotel rate baseline,Conservative,0.26,6528,-54187.7
-Hotel rate baseline,Conservative,0.27,6779,-56326.3
-Hotel rate baseline,Conservative,0.28,7031,-58346.7
-Hotel rate baseline,Conservative,0.29,7282,-60499.8
-Hotel rate baseline,Conservative,0.3,7533,-62579.9
-Hotel rate baseline,Conservative,0.31,7784,-64625.5
-Hotel rate baseline,Conservative,0.32,8035,-66742.1
-Hotel rate baseline,Conservative,0.33,8286,-68790.5
-Hotel rate baseline,Conservative,0.34,8537,-70862.4
-Hotel rate baseline,Conservative,0.35,8788,-72965.9
-Hotel rate baseline,Conservative,0.36,9039,-75039.5
-Hotel rate baseline,Conservative,0.37,9290,-77054.2
-Hotel rate baseline,Conservative,0.38,9541,-79150.4
-Hotel rate baseline,Conservative,0.39,9793,-81185.5
-Hotel rate baseline,Conservative,0.4,10044,-83264.7
-Hotel rate baseline,Conservative,0.41,10295,-85331.8
-Hotel rate baseline,Conservative,0.42,10546,-87475.7
-Hotel rate baseline,Conservative,0.43,10797,-89486.5
-Hotel rate baseline,Conservative,0.44,11048,-91629.3
-Hotel rate baseline,Conservative,0.45,11299,-93676.9
-Hotel rate baseline,Conservative,0.46,11550,-95758.3
-Hotel rate baseline,Conservative,0.47,11801,-97855.1
-Hotel rate baseline,Conservative,0.48,12052,-99946.1
-Hotel rate baseline,Conservative,0.49,12303,-102054
-Hotel rate baseline,Conservative,0.5,12554,-104093
-Hotel rate baseline,Conservative,0.51,12806,-106206
-Hotel rate baseline,Conservative,0.52,13057,-108344
-Hotel rate baseline,Conservative,0.53,13308,-110512
-Hotel rate baseline,Conservative,0.54,13559,-112711
-Hotel rate baseline,Conservative,0.55,13810,-114738
-Hotel rate baseline,Conservative,0.56,14061,-116864
-Hotel rate baseline,Conservative,0.57,14312,-119010
-Hotel rate baseline,Conservative,0.58,14563,-121192
-Hotel rate baseline,Conservative,0.59,14814,-123307
-Hotel rate baseline,Conservative,0.6,15065,-125443
-Hotel rate baseline,Conservative,0.61,15316,-127541
-Hotel rate baseline,Conservative,0.62,15568,-129626
-Hotel rate baseline,Conservative,0.63,15819,-131647
-Hotel rate baseline,Conservative,0.64,16070,-133769
-Hotel rate baseline,Conservative,0.65,16321,-135872
-Hotel rate baseline,Conservative,0.66,16572,-137847
-Hotel rate baseline,Conservative,0.67,16823,-139861
-Hotel rate baseline,Conservative,0.68,17074,-141803
-Hotel rate baseline,Conservative,0.69,17325,-143825
-Hotel rate baseline,Conservative,0.7,17576,-145723
-Hotel rate baseline,Conservative,0.71,17827,-147711
-Hotel rate baseline,Conservative,0.72,18078,-149636
-Hotel rate baseline,Conservative,0.73,18330,-151620
-Hotel rate baseline,Conservative,0.74,18581,-153447
-Hotel rate baseline,Conservative,0.75,18832,-155366
-Hotel rate baseline,Conservative,0.76,19083,-157342
-Hotel rate baseline,Conservative,0.77,19334,-159301
-Hotel rate baseline,Conservative,0.78,19585,-161296
-Hotel rate baseline,Conservative,0.79,19836,-163295
-Hotel rate baseline,Conservative,0.8,20087,-165225
-Hotel rate baseline,Conservative,0.81,20338,-167139
-Hotel rate baseline,Conservative,0.82,20589,-168944
-Hotel rate baseline,Conservative,0.83,20840,-170914
-Hotel rate baseline,Conservative,0.84,21092,-172914
-Hotel rate baseline,Conservative,0.85,21343,-174915
-Hotel rate baseline,Conservative,0.86,21594,-177073
-Hotel rate baseline,Conservative,0.87,21845,-179036
-Hotel rate baseline,Conservative,0.88,22096,-180975
-Hotel rate baseline,Conservative,0.89,22347,-182965
-Hotel rate baseline,Conservative,0.9,22598,-185100
-Hotel rate baseline,Conservative,0.91,22849,-187117
-Hotel rate baseline,Conservative,0.92,23100,-188968
-Hotel rate baseline,Conservative,0.93,23351,-190845
-Hotel rate baseline,Conservative,0.94,23602,-192771
-Hotel rate baseline,Conservative,0.95,23854,-194673
-Hotel rate baseline,Conservative,0.96,24105,-196671
-Hotel rate baseline,Conservative,0.97,24356,-198575
-Hotel rate baseline,Conservative,0.98,24607,-200381
-Hotel rate baseline,Conservative,0.99,24858,-202345
-Hotel rate baseline,Conservative,1,25109,-204280
-Random (expected),Conservative,0.01,251,-2042.07
-Random (expected),Conservative,0.02,502,-4084.13
-Random (expected),Conservative,0.03,753,-6126.2
-Random (expected),Conservative,0.04,1004,-8168.27
-Random (expected),Conservative,0.05,1255,-10210.3
-Random (expected),Conservative,0.06,1507,-12260.5
-Random (expected),Conservative,0.07,1758,-14302.6
-Random (expected),Conservative,0.08,2009,-16344.7
-Random (expected),Conservative,0.09,2260,-18386.7
-Random (expected),Conservative,0.1,2511,-20428.8
-Random (expected),Conservative,0.11,2762,-22470.9
-Random (expected),Conservative,0.12,3013,-24512.9
-Random (expected),Conservative,0.13,3264,-26555
-Random (expected),Conservative,0.14,3515,-28597.1
-Random (expected),Conservative,0.15,3766,-30639.1
-Random (expected),Conservative,0.16,4017,-32681.2
-Random (expected),Conservative,0.17,4269,-34731.4
-Random (expected),Conservative,0.18,4520,-36773.5
-Random (expected),Conservative,0.19,4771,-38815.5
-Random (expected),Conservative,0.2,5022,-40857.6
-Random (expected),Conservative,0.21,5273,-42899.7
-Random (expected),Conservative,0.22,5524,-44941.7
-Random (expected),Conservative,0.23,5775,-46983.8
-Random (expected),Conservative,0.24,6026,-49025.9
-Random (expected),Conservative,0.25,6277,-51067.9
-Random (expected),Conservative,0.26,6528,-53110
-Random (expected),Conservative,0.27,6779,-55152.1
-Random (expected),Conservative,0.28,7031,-57202.3
-Random (expected),Conservative,0.29,7282,-59244.3
-Random (expected),Conservative,0.3,7533,-61286.4
-Random (expected),Conservative,0.31,7784,-63328.5
-Random (expected),Conservative,0.32,8035,-65370.5
-Random (expected),Conservative,0.33,8286,-67412.6
-Random (expected),Conservative,0.34,8537,-69454.7
-Random (expected),Conservative,0.35,8788,-71496.7
-Random (expected),Conservative,0.36,9039,-73538.8
-Random (expected),Conservative,0.37,9290,-75580.9
-Random (expected),Conservative,0.38,9541,-77622.9
-Random (expected),Conservative,0.39,9793,-79673.1
-Random (expected),Conservative,0.4,10044,-81715.2
-Random (expected),Conservative,0.41,10295,-83757.3
-Random (expected),Conservative,0.42,10546,-85799.3
-Random (expected),Conservative,0.43,10797,-87841.4
-Random (expected),Conservative,0.44,11048,-89883.5
-Random (expected),Conservative,0.45,11299,-91925.5
-Random (expected),Conservative,0.46,11550,-93967.6
-Random (expected),Conservative,0.47,11801,-96009.7
-Random (expected),Conservative,0.48,12052,-98051.8
-Random (expected),Conservative,0.49,12303,-100094
-Random (expected),Conservative,0.5,12554,-102136
-Random (expected),Conservative,0.51,12806,-104186
-Random (expected),Conservative,0.52,13057,-106228
-Random (expected),Conservative,0.53,13308,-108270
-Random (expected),Conservative,0.54,13559,-110312
-Random (expected),Conservative,0.55,13810,-112354
-Random (expected),Conservative,0.56,14061,-114396
-Random (expected),Conservative,0.57,14312,-116438
-Random (expected),Conservative,0.58,14563,-118481
-Random (expected),Conservative,0.59,14814,-120523
-Random (expected),Conservative,0.6,15065,-122565
-Random (expected),Conservative,0.61,15316,-124607
-Random (expected),Conservative,0.62,15568,-126657
-Random (expected),Conservative,0.63,15819,-128699
-Random (expected),Conservative,0.64,16070,-130741
-Random (expected),Conservative,0.65,16321,-132783
-Random (expected),Conservative,0.66,16572,-134825
-Random (expected),Conservative,0.67,16823,-136867
-Random (expected),Conservative,0.68,17074,-138909
-Random (expected),Conservative,0.69,17325,-140951
-Random (expected),Conservative,0.7,17576,-142993
-Random (expected),Conservative,0.71,17827,-145036
-Random (expected),Conservative,0.72,18078,-147078
-Random (expected),Conservative,0.73,18330,-149128
-Random (expected),Conservative,0.74,18581,-151170
-Random (expected),Conservative,0.75,18832,-153212
-Random (expected),Conservative,0.76,19083,-155254
-Random (expected),Conservative,0.77,19334,-157296
-Random (expected),Conservative,0.78,19585,-159338
-Random (expected),Conservative,0.79,19836,-161380
-Random (expected),Conservative,0.8,20087,-163422
-Random (expected),Conservative,0.81,20338,-165464
-Random (expected),Conservative,0.82,20589,-167506
-Random (expected),Conservative,0.83,20840,-169548
-Random (expected),Conservative,0.84,21092,-171599
-Random (expected),Conservative,0.85,21343,-173641
-Random (expected),Conservative,0.86,21594,-175683
-Random (expected),Conservative,0.87,21845,-177725
-Random (expected),Conservative,0.88,22096,-179767
-Random (expected),Conservative,0.89,22347,-181809
-Random (expected),Conservative,0.9,22598,-183851
-Random (expected),Conservative,0.91,22849,-185893
-Random (expected),Conservative,0.92,23100,-187935
-Random (expected),Conservative,0.93,23351,-189977
-Random (expected),Conservative,0.94,23602,-192019
-Random (expected),Conservative,0.95,23854,-194070
-Random (expected),Conservative,0.96,24105,-196112
-Random (expected),Conservative,0.97,24356,-198154
-Random (expected),Conservative,0.98,24607,-200196
-Random (expected),Conservative,0.99,24858,-202238
-Random (expected),Conservative,1,25109,-204280
-Logistic: risk,Base,0.01,251,3910.09
-Logistic: risk,Base,0.02,502,7584.73
-Logistic: risk,Base,0.03,753,11966
-Logistic: risk,Base,0.04,1004,15890.8
-Logistic: risk,Base,0.05,1255,18997.3
-Logistic: risk,Base,0.06,1507,21261.9
-Logistic: risk,Base,0.07,1758,24318.2
-Logistic: risk,Base,0.08,2009,27892.2
-Logistic: risk,Base,0.09,2260,30783.2
-Logistic: risk,Base,0.1,2511,33231
-Logistic: risk,Base,0.11,2762,35499.5
-Logistic: risk,Base,0.12,3013,37760.3
-Logistic: risk,Base,0.13,3264,39630.5
-Logistic: risk,Base,0.14,3515,42000.5
-Logistic: risk,Base,0.15,3766,44655
-Logistic: risk,Base,0.16,4017,47040.5
-Logistic: risk,Base,0.17,4269,49176.9
-Logistic: risk,Base,0.18,4520,51552.6
-Logistic: risk,Base,0.19,4771,53694.9
-Logistic: risk,Base,0.2,5022,55954.7
-Logistic: risk,Base,0.21,5273,58054.6
-Logistic: risk,Base,0.22,5524,60331.1
-Logistic: risk,Base,0.23,5775,61982.6
-Logistic: risk,Base,0.24,6026,63764.7
-Logistic: risk,Base,0.25,6277,65588.2
-Logistic: risk,Base,0.26,6528,67637.1
-Logistic: risk,Base,0.27,6779,69194.5
-Logistic: risk,Base,0.28,7031,70574
-Logistic: risk,Base,0.29,7282,72122.5
-Logistic: risk,Base,0.3,7533,73463.1
-Logistic: risk,Base,0.31,7784,74704.3
-Logistic: risk,Base,0.32,8035,75549.6
-Logistic: risk,Base,0.33,8286,76488.1
-Logistic: risk,Base,0.34,8537,77164
-Logistic: risk,Base,0.35,8788,78216.1
-Logistic: risk,Base,0.36,9039,79309.7
-Logistic: risk,Base,0.37,9290,80869.5
-Logistic: risk,Base,0.38,9541,81724.1
-Logistic: risk,Base,0.39,9793,82108.7
-Logistic: risk,Base,0.4,10044,82729.8
-Logistic: risk,Base,0.41,10295,83460.1
-Logistic: risk,Base,0.42,10546,83894.3
-Logistic: risk,Base,0.43,10797,84657.2
-Logistic: risk,Base,0.44,11048,85458.8
-Logistic: risk,Base,0.45,11299,85938.7
-Logistic: risk,Base,0.46,11550,85746.2
-Logistic: risk,Base,0.47,11801,86456.9
-Logistic: risk,Base,0.48,12052,87242.9
-Logistic: risk,Base,0.49,12303,88045.9
-Logistic: risk,Base,0.5,12554,88147.9
-Logistic: risk,Base,0.51,12806,88737.3
-Logistic: risk,Base,0.52,13057,89394.3
-Logistic: risk,Base,0.53,13308,89129.9
-Logistic: risk,Base,0.54,13559,89508.5
-Logistic: risk,Base,0.55,13810,89517.9
-Logistic: risk,Base,0.56,14061,89699.3
-Logistic: risk,Base,0.57,14312,89566.7
-Logistic: risk,Base,0.58,14563,89556.2
-Logistic: risk,Base,0.59,14814,89356.9
-Logistic: risk,Base,0.6,15065,88844.6
-Logistic: risk,Base,0.61,15316,88750.1
-Logistic: risk,Base,0.62,15568,88890.5
-Logistic: risk,Base,0.63,15819,88660.1
-Logistic: risk,Base,0.64,16070,87922.4
-Logistic: risk,Base,0.65,16321,87829.2
-Logistic: risk,Base,0.66,16572,87610.8
-Logistic: risk,Base,0.67,16823,87600.3
-Logistic: risk,Base,0.68,17074,87478.3
-Logistic: risk,Base,0.69,17325,87512.7
-Logistic: risk,Base,0.7,17576,87051.6
-Logistic: risk,Base,0.71,17827,86724.5
-Logistic: risk,Base,0.72,18078,86326.1
-Logistic: risk,Base,0.73,18330,86185.6
-Logistic: risk,Base,0.74,18581,86180.1
-Logistic: risk,Base,0.75,18832,85304.1
-Logistic: risk,Base,0.76,19083,84793.7
-Logistic: risk,Base,0.77,19334,84213.2
-Logistic: risk,Base,0.78,19585,83518.8
-Logistic: risk,Base,0.79,19836,82647.1
-Logistic: risk,Base,0.8,20087,81883.2
-Logistic: risk,Base,0.81,20338,81321.9
-Logistic: risk,Base,0.82,20589,80423.1
-Logistic: risk,Base,0.83,20840,79630
-Logistic: risk,Base,0.84,21092,78934.7
-Logistic: risk,Base,0.85,21343,78213.8
-Logistic: risk,Base,0.86,21594,77208.1
-Logistic: risk,Base,0.87,21845,76584.1
-Logistic: risk,Base,0.88,22096,75460.3
-Logistic: risk,Base,0.89,22347,74346.8
-Logistic: risk,Base,0.9,22598,73253
-Logistic: risk,Base,0.91,22849,72148.8
-Logistic: risk,Base,0.92,23100,71016.1
-Logistic: risk,Base,0.93,23351,69909.2
-Logistic: risk,Base,0.94,23602,68804.5
-Logistic: risk,Base,0.95,23854,67577
-Logistic: risk,Base,0.96,24105,66353.6
-Logistic: risk,Base,0.97,24356,65263.5
-Logistic: risk,Base,0.98,24607,64090.2
-Logistic: risk,Base,0.99,24858,62913.2
-Logistic: risk,Base,1,25109,61695.4
-Logistic: risk x booking value,Base,0.01,251,15478
-Logistic: risk x booking value,Base,0.02,502,25884.3
-Logistic: risk x booking value,Base,0.03,753,34474.7
-Logistic: risk x booking value,Base,0.04,1004,41608.2
-Logistic: risk x booking value,Base,0.05,1255,47245.4
-Logistic: risk x booking value,Base,0.06,1507,52282.2
-Logistic: risk x booking value,Base,0.07,1758,56521.3
-Logistic: risk x booking value,Base,0.08,2009,60955.2
-Logistic: risk x booking value,Base,0.09,2260,64085.7
-Logistic: risk x booking value,Base,0.1,2511,67214.8
-Logistic: risk x booking value,Base,0.11,2762,70375.6
-Logistic: risk x booking value,Base,0.12,3013,73215.8
-Logistic: risk x booking value,Base,0.13,3264,75970.2
-Logistic: risk x booking value,Base,0.14,3515,78226.1
-Logistic: risk x booking value,Base,0.15,3766,80782.9
-Logistic: risk x booking value,Base,0.16,4017,83143.2
-Logistic: risk x booking value,Base,0.17,4269,85186.6
-Logistic: risk x booking value,Base,0.18,4520,87170.4
-Logistic: risk x booking value,Base,0.19,4771,88445.8
-Logistic: risk x booking value,Base,0.2,5022,90330.2
-Logistic: risk x booking value,Base,0.21,5273,91800.9
-Logistic: risk x booking value,Base,0.22,5524,93071.7
-Logistic: risk x booking value,Base,0.23,5775,94128.5
-Logistic: risk x booking value,Base,0.24,6026,95364.5
-Logistic: risk x booking value,Base,0.25,6277,96934.1
-Logistic: risk x booking value,Base,0.26,6528,98138
-Logistic: risk x booking value,Base,0.27,6779,98378.3
-Logistic: risk x booking value,Base,0.28,7031,99225.2
-Logistic: risk x booking value,Base,0.29,7282,100088
-Logistic: risk x booking value,Base,0.3,7533,101046
-Logistic: risk x booking value,Base,0.31,7784,101610
-Logistic: risk x booking value,Base,0.32,8035,101928
-Logistic: risk x booking value,Base,0.33,8286,101977
-Logistic: risk x booking value,Base,0.34,8537,102391
-Logistic: risk x booking value,Base,0.35,8788,102924
-Logistic: risk x booking value,Base,0.36,9039,103559
-Logistic: risk x booking value,Base,0.37,9290,104169
-Logistic: risk x booking value,Base,0.38,9541,104359
-Logistic: risk x booking value,Base,0.39,9793,104892
-Logistic: risk x booking value,Base,0.4,10044,105301
-Logistic: risk x booking value,Base,0.41,10295,105585
-Logistic: risk x booking value,Base,0.42,10546,105884
-Logistic: risk x booking value,Base,0.43,10797,106015
-Logistic: risk x booking value,Base,0.44,11048,106078
-Logistic: risk x booking value,Base,0.45,11299,106130
-Logistic: risk x booking value,Base,0.46,11550,106111
-Logistic: risk x booking value,Base,0.47,11801,106072
-Logistic: risk x booking value,Base,0.48,12052,106257
-Logistic: risk x booking value,Base,0.49,12303,106155
-Logistic: risk x booking value,Base,0.5,12554,106059
-Logistic: risk x booking value,Base,0.51,12806,105920
-Logistic: risk x booking value,Base,0.52,13057,105571
-Logistic: risk x booking value,Base,0.53,13308,105621
-Logistic: risk x booking value,Base,0.54,13559,105041
-Logistic: risk x booking value,Base,0.55,13810,104708
-Logistic: risk x booking value,Base,0.56,14061,104172
-Logistic: risk x booking value,Base,0.57,14312,103728
-Logistic: risk x booking value,Base,0.58,14563,102954
-Logistic: risk x booking value,Base,0.59,14814,102473
-Logistic: risk x booking value,Base,0.6,15065,101756
-Logistic: risk x booking value,Base,0.61,15316,100961
-Logistic: risk x booking value,Base,0.62,15568,100430
-Logistic: risk x booking value,Base,0.63,15819,99755.4
-Logistic: risk x booking value,Base,0.64,16070,99108.9
-Logistic: risk x booking value,Base,0.65,16321,98408.5
-Logistic: risk x booking value,Base,0.66,16572,97399.7
-Logistic: risk x booking value,Base,0.67,16823,96625.8
-Logistic: risk x booking value,Base,0.68,17074,95678.2
-Logistic: risk x booking value,Base,0.69,17325,94936
-Logistic: risk x booking value,Base,0.7,17576,94035.6
-Logistic: risk x booking value,Base,0.71,17827,93200.9
-Logistic: risk x booking value,Base,0.72,18078,92366.5
-Logistic: risk x booking value,Base,0.73,18330,91444.9
-Logistic: risk x booking value,Base,0.74,18581,90509.2
-Logistic: risk x booking value,Base,0.75,18832,89507.6
-Logistic: risk x booking value,Base,0.76,19083,88557.2
-Logistic: risk x booking value,Base,0.77,19334,87700.2
-Logistic: risk x booking value,Base,0.78,19585,86628.8
-Logistic: risk x booking value,Base,0.79,19836,85627.5
-Logistic: risk x booking value,Base,0.8,20087,84624.6
-Logistic: risk x booking value,Base,0.81,20338,83591.5
-Logistic: risk x booking value,Base,0.82,20589,82558.1
-Logistic: risk x booking value,Base,0.83,20840,81433.9
-Logistic: risk x booking value,Base,0.84,21092,80321.6
-Logistic: risk x booking value,Base,0.85,21343,79317.9
-Logistic: risk x booking value,Base,0.86,21594,78164.2
-Logistic: risk x booking value,Base,0.87,21845,77082
-Logistic: risk x booking value,Base,0.88,22096,76002.6
-Logistic: risk x booking value,Base,0.89,22347,74846.3
-Logistic: risk x booking value,Base,0.9,22598,73765.8
-Logistic: risk x booking value,Base,0.91,22849,72594.8
-Logistic: risk x booking value,Base,0.92,23100,71435.8
-Logistic: risk x booking value,Base,0.93,23351,70240.7
-Logistic: risk x booking value,Base,0.94,23602,69053.3
-Logistic: risk x booking value,Base,0.95,23854,67841.3
-Logistic: risk x booking value,Base,0.96,24105,66636.2
-Logistic: risk x booking value,Base,0.97,24356,65416
-Logistic: risk x booking value,Base,0.98,24607,64182.5
-Logistic: risk x booking value,Base,0.99,24858,62950.4
-Logistic: risk x booking value,Base,1,25109,61695.4
-Hotel rate baseline,Base,0.01,251,349.758
-Hotel rate baseline,Base,0.02,502,587.871
-Hotel rate baseline,Base,0.03,753,753.385
-Hotel rate baseline,Base,0.04,1004,1433.22
-Hotel rate baseline,Base,0.05,1255,1853.24
-Hotel rate baseline,Base,0.06,1507,1827.02
-Hotel rate baseline,Base,0.07,1758,2387.05
-Hotel rate baseline,Base,0.08,2009,2638.71
-Hotel rate baseline,Base,0.09,2260,3269.12
-Hotel rate baseline,Base,0.1,2511,3827.39
-Hotel rate baseline,Base,0.11,2762,4001.23
-Hotel rate baseline,Base,0.12,3013,5262.11
-Hotel rate baseline,Base,0.13,3264,5940.35
-Hotel rate baseline,Base,0.14,3515,6515.43
-Hotel rate baseline,Base,0.15,3766,7064.58
-Hotel rate baseline,Base,0.16,4017,7613.37
-Hotel rate baseline,Base,0.17,4269,7841.66
-Hotel rate baseline,Base,0.18,4520,8004.26
-Hotel rate baseline,Base,0.19,4771,8383.15
-Hotel rate baseline,Base,0.2,5022,9113.12
-Hotel rate baseline,Base,0.21,5273,9454.58
-Hotel rate baseline,Base,0.22,5524,9749.17
-Hotel rate baseline,Base,0.23,5775,10093.2
-Hotel rate baseline,Base,0.24,6026,10406.8
-Hotel rate baseline,Base,0.25,6277,11029.9
-Hotel rate baseline,Base,0.26,6528,11729.3
-Hotel rate baseline,Base,0.27,6779,11959.7
-Hotel rate baseline,Base,0.28,7031,12698.3
-Hotel rate baseline,Base,0.29,7282,12870.6
-Hotel rate baseline,Base,0.3,7533,13335.6
-Hotel rate baseline,Base,0.31,7784,13937.9
-Hotel rate baseline,Base,0.32,8035,14256.5
-Hotel rate baseline,Base,0.33,8286,14848.2
-Hotel rate baseline,Base,0.34,8537,15345.5
-Hotel rate baseline,Base,0.35,8788,15716.4
-Hotel rate baseline,Base,0.36,9039,16207.1
-Hotel rate baseline,Base,0.37,9290,16933.2
-Hotel rate baseline,Base,0.38,9541,17333.4
-Hotel rate baseline,Base,0.39,9793,18012.9
-Hotel rate baseline,Base,0.4,10044,18481.1
-Hotel rate baseline,Base,0.41,10295,18997.7
-Hotel rate baseline,Base,0.42,10546,19207.3
-Hotel rate baseline,Base,0.43,10797,19949.2
-Hotel rate baseline,Base,0.44,11048,20162.8
-Hotel rate baseline,Base,0.45,11299,20757.5
-Hotel rate baseline,Base,0.46,11550,21217
-Hotel rate baseline,Base,0.47,11801,21614.6
-Hotel rate baseline,Base,0.48,12052,22035.7
-Hotel rate baseline,Base,0.49,12303,22390.9
-Hotel rate baseline,Base,0.5,12554,23016
-Hotel rate baseline,Base,0.51,12806,23387.3
-Hotel rate baseline,Base,0.52,13057,23620.3
-Hotel rate baseline,Base,0.53,13308,23733
-Hotel rate baseline,Base,0.54,13559,23721.3
-Hotel rate baseline,Base,0.55,13810,24399.6
-Hotel rate baseline,Base,0.56,14061,24680.4
-Hotel rate baseline,Base,0.57,14312,24880.3
-Hotel rate baseline,Base,0.58,14563,24937.9
-Hotel rate baseline,Base,0.59,14814,25262.3
-Hotel rate baseline,Base,0.6,15065,25501.6
-Hotel rate baseline,Base,0.61,15316,25894.2
-Hotel rate baseline,Base,0.62,15568,26375.5
-Hotel rate baseline,Base,0.63,15819,27079
-Hotel rate baseline,Base,0.64,16070,27373.1
-Hotel rate baseline,Base,0.65,16321,27747.9
-Hotel rate baseline,Base,0.66,16572,28632.1
-Hotel rate baseline,Base,0.67,16823,29361.2
-Hotel rate baseline,Base,0.68,17074,30377.3
-Hotel rate baseline,Base,0.69,17325,31077
-Hotel rate baseline,Base,0.7,17576,32269.9
-Hotel rate baseline,Base,0.71,17827,33101.3
-Hotel rate baseline,Base,0.72,18078,34184.6
-Hotel rate baseline,Base,0.73,18330,35069.5
-Hotel rate baseline,Base,0.74,18581,36548.4
-Hotel rate baseline,Base,0.75,18832,37657.8
-Hotel rate baseline,Base,0.76,19083,38538.5
-Hotel rate baseline,Base,0.77,19334,39484.6
-Hotel rate baseline,Base,0.78,19585,40290.1
-Hotel rate baseline,Base,0.79,19836,41079.2
-Hotel rate baseline,Base,0.8,20087,42144.4
-Hotel rate baseline,Base,0.81,20338,43274.6
-Hotel rate baseline,Base,0.82,20589,44840.3
-Hotel rate baseline,Base,0.83,20840,45743.4
-Hotel rate baseline,Base,0.84,21092,46562.7
-Hotel rate baseline,Base,0.85,21343,47346.2
-Hotel rate baseline,Base,0.86,21594,47498
-Hotel rate baseline,Base,0.87,21845,48430.9
-Hotel rate baseline,Base,0.88,22096,49461.8
-Hotel rate baseline,Base,0.89,22347,50283
-Hotel rate baseline,Base,0.9,22598,50530.5
-Hotel rate baseline,Base,0.91,22849,51247.1
-Hotel rate baseline,Base,0.92,23100,52629.4
-Hotel rate baseline,Base,0.93,23351,53907
-Hotel rate baseline,Base,0.94,23602,54984.5
-Hotel rate baseline,Base,0.95,23854,56199.3
-Hotel rate baseline,Base,0.96,24105,56991.5
-Hotel rate baseline,Base,0.97,24356,58160.6
-Hotel rate baseline,Base,0.98,24607,59722.6
-Hotel rate baseline,Base,0.99,24858,60648.5
-Hotel rate baseline,Base,1,25109,61695.4
-Random (expected),Base,0.01,251,616.733
-Random (expected),Base,0.02,502,1233.47
-Random (expected),Base,0.03,753,1850.2
-Random (expected),Base,0.04,1004,2466.93
-Random (expected),Base,0.05,1255,3083.66
-Random (expected),Base,0.06,1507,3702.85
-Random (expected),Base,0.07,1758,4319.59
-Random (expected),Base,0.08,2009,4936.32
-Random (expected),Base,0.09,2260,5553.05
-Random (expected),Base,0.1,2511,6169.78
-Random (expected),Base,0.11,2762,6786.52
-Random (expected),Base,0.12,3013,7403.25
-Random (expected),Base,0.13,3264,8019.98
-Random (expected),Base,0.14,3515,8636.72
-Random (expected),Base,0.15,3766,9253.45
-Random (expected),Base,0.16,4017,9870.18
-Random (expected),Base,0.17,4269,10489.4
-Random (expected),Base,0.18,4520,11106.1
-Random (expected),Base,0.19,4771,11722.8
-Random (expected),Base,0.2,5022,12339.6
-Random (expected),Base,0.21,5273,12956.3
-Random (expected),Base,0.22,5524,13573
-Random (expected),Base,0.23,5775,14189.8
-Random (expected),Base,0.24,6026,14806.5
-Random (expected),Base,0.25,6277,15423.2
-Random (expected),Base,0.26,6528,16040
-Random (expected),Base,0.27,6779,16656.7
-Random (expected),Base,0.28,7031,17275.9
-Random (expected),Base,0.29,7282,17892.6
-Random (expected),Base,0.3,7533,18509.4
-Random (expected),Base,0.31,7784,19126.1
-Random (expected),Base,0.32,8035,19742.8
-Random (expected),Base,0.33,8286,20359.6
-Random (expected),Base,0.34,8537,20976.3
-Random (expected),Base,0.35,8788,21593
-Random (expected),Base,0.36,9039,22209.7
-Random (expected),Base,0.37,9290,22826.5
-Random (expected),Base,0.38,9541,23443.2
-Random (expected),Base,0.39,9793,24062.4
-Random (expected),Base,0.4,10044,24679.1
-Random (expected),Base,0.41,10295,25295.9
-Random (expected),Base,0.42,10546,25912.6
-Random (expected),Base,0.43,10797,26529.3
-Random (expected),Base,0.44,11048,27146.1
-Random (expected),Base,0.45,11299,27762.8
-Random (expected),Base,0.46,11550,28379.5
-Random (expected),Base,0.47,11801,28996.3
-Random (expected),Base,0.48,12052,29613
-Random (expected),Base,0.49,12303,30229.7
-Random (expected),Base,0.5,12554,30846.5
-Random (expected),Base,0.51,12806,31465.7
-Random (expected),Base,0.52,13057,32082.4
-Random (expected),Base,0.53,13308,32699.1
-Random (expected),Base,0.54,13559,33315.9
-Random (expected),Base,0.55,13810,33932.6
-Random (expected),Base,0.56,14061,34549.3
-Random (expected),Base,0.57,14312,35166.1
-Random (expected),Base,0.58,14563,35782.8
-Random (expected),Base,0.59,14814,36399.5
-Random (expected),Base,0.6,15065,37016.2
-Random (expected),Base,0.61,15316,37633
-Random (expected),Base,0.62,15568,38252.2
-Random (expected),Base,0.63,15819,38868.9
-Random (expected),Base,0.64,16070,39485.6
-Random (expected),Base,0.65,16321,40102.4
-Random (expected),Base,0.66,16572,40719.1
-Random (expected),Base,0.67,16823,41335.8
-Random (expected),Base,0.68,17074,41952.6
-Random (expected),Base,0.69,17325,42569.3
-Random (expected),Base,0.7,17576,43186
-Random (expected),Base,0.71,17827,43802.8
-Random (expected),Base,0.72,18078,44419.5
-Random (expected),Base,0.73,18330,45038.7
-Random (expected),Base,0.74,18581,45655.4
-Random (expected),Base,0.75,18832,46272.2
-Random (expected),Base,0.76,19083,46888.9
-Random (expected),Base,0.77,19334,47505.6
-Random (expected),Base,0.78,19585,48122.4
-Random (expected),Base,0.79,19836,48739.1
-Random (expected),Base,0.8,20087,49355.8
-Random (expected),Base,0.81,20338,49972.6
-Random (expected),Base,0.82,20589,50589.3
-Random (expected),Base,0.83,20840,51206
-Random (expected),Base,0.84,21092,51825.2
-Random (expected),Base,0.85,21343,52441.9
-Random (expected),Base,0.86,21594,53058.7
-Random (expected),Base,0.87,21845,53675.4
-Random (expected),Base,0.88,22096,54292.1
-Random (expected),Base,0.89,22347,54908.9
-Random (expected),Base,0.9,22598,55525.6
-Random (expected),Base,0.91,22849,56142.3
-Random (expected),Base,0.92,23100,56759.1
-Random (expected),Base,0.93,23351,57375.8
-Random (expected),Base,0.94,23602,57992.5
-Random (expected),Base,0.95,23854,58611.7
-Random (expected),Base,0.96,24105,59228.5
-Random (expected),Base,0.97,24356,59845.2
-Random (expected),Base,0.98,24607,60461.9
-Random (expected),Base,0.99,24858,61078.7
-Random (expected),Base,1,25109,61695.4
-Logistic: risk,Optimistic,0.01,251,12159.7
-Logistic: risk,Optimistic,0.02,502,23730.8
-Logistic: risk,Optimistic,0.03,753,37068.4
-Logistic: risk,Optimistic,0.04,1004,49264.9
-Logistic: risk,Optimistic,0.05,1255,59415.9
-Logistic: risk,Optimistic,0.06,1507,67471.3
-Logistic: risk,Optimistic,0.07,1758,77496.5
-Logistic: risk,Optimistic,0.08,2009,88815.9
-Logistic: risk,Optimistic,0.09,2260,98427.9
-Logistic: risk,Optimistic,0.1,2511,106932
-Logistic: risk,Optimistic,0.11,2762,114988
-Logistic: risk,Optimistic,0.12,3013,123024
-Logistic: risk,Optimistic,0.13,3264,130084
-Logistic: risk,Optimistic,0.14,3515,138394
-Logistic: risk,Optimistic,0.15,3766,147414
-Logistic: risk,Optimistic,0.16,4017,155763
-Logistic: risk,Optimistic,0.17,4269,163498
-Logistic: risk,Optimistic,0.18,4520,171821
-Logistic: risk,Optimistic,0.19,4771,179562
-Logistic: risk,Optimistic,0.2,5022,187596
-Logistic: risk,Optimistic,0.21,5273,195230
-Logistic: risk,Optimistic,0.22,5524,203306
-Logistic: risk,Optimistic,0.23,5775,209819
-Logistic: risk,Optimistic,0.24,6026,216659
-Logistic: risk,Optimistic,0.25,6277,223602
-Logistic: risk,Optimistic,0.26,6528,231109
-Logistic: risk,Optimistic,0.27,6779,237387
-Logistic: risk,Optimistic,0.28,7031,243229
-Logistic: risk,Optimistic,0.29,7282,249485
-Logistic: risk,Optimistic,0.3,7533,255221
-Logistic: risk,Optimistic,0.31,7784,260709
-Logistic: risk,Optimistic,0.32,8035,265206
-Logistic: risk,Optimistic,0.33,8286,269937
-Logistic: risk,Optimistic,0.34,8537,274012
-Logistic: risk,Optimistic,0.35,8788,279026
-Logistic: risk,Optimistic,0.36,9039,284145
-Logistic: risk,Optimistic,0.37,9290,290429
-Logistic: risk,Optimistic,0.38,9541,294950
-Logistic: risk,Optimistic,0.39,9793,298305
-Logistic: risk,Optimistic,0.4,10044,302243
-Logistic: risk,Optimistic,0.41,10295,306453
-Logistic: risk,Optimistic,0.42,10546,309923
-Logistic: risk,Optimistic,0.43,10797,314215
-Logistic: risk,Optimistic,0.44,11048,318603
-Logistic: risk,Optimistic,0.45,11299,322187
-Logistic: risk,Optimistic,0.46,11550,324090
-Logistic: risk,Optimistic,0.47,11801,328252
-Logistic: risk,Optimistic,0.48,12052,332601
-Logistic: risk,Optimistic,0.49,12303,336993
-Logistic: risk,Optimistic,0.5,12554,339633
-Logistic: risk,Optimistic,0.51,12806,343500
-Logistic: risk,Optimistic,0.52,13057,347527
-Logistic: risk,Optimistic,0.53,13308,349251
-Logistic: risk,Optimistic,0.54,13559,352582
-Logistic: risk,Optimistic,0.55,13810,354990
-Logistic: risk,Optimistic,0.56,14061,357828
-Logistic: risk,Optimistic,0.57,14312,359881
-Logistic: risk,Optimistic,0.58,14563,362239
-Logistic: risk,Optimistic,0.59,14814,364125
-Logistic: risk,Optimistic,0.6,15065,365229
-Logistic: risk,Optimistic,0.61,15316,367377
-Logistic: risk,Optimistic,0.62,15568,370122
-Logistic: risk,Optimistic,0.63,15819,371931
-Logistic: risk,Optimistic,0.64,16070,372471
-Logistic: risk,Optimistic,0.65,16321,374622
-Logistic: risk,Optimistic,0.66,16572,376461
-Logistic: risk,Optimistic,0.67,16823,378819
-Logistic: risk,Optimistic,0.68,17074,380899
-Logistic: risk,Optimistic,0.69,17325,383369
-Logistic: risk,Optimistic,0.7,17576,384601
-Logistic: risk,Optimistic,0.71,17827,386168
-Logistic: risk,Optimistic,0.72,18078,387556
-Logistic: risk,Optimistic,0.73,18330,389599
-Logistic: risk,Optimistic,0.74,18581,391970
-Logistic: risk,Optimistic,0.75,18832,392164
-Logistic: risk,Optimistic,0.76,19083,393273
-Logistic: risk,Optimistic,0.77,19334,394206
-Logistic: risk,Optimistic,0.78,19585,394855
-Logistic: risk,Optimistic,0.79,19836,395060
-Logistic: risk,Optimistic,0.8,20087,395535
-Logistic: risk,Optimistic,0.81,20338,396516
-Logistic: risk,Optimistic,0.82,20589,396653
-Logistic: risk,Optimistic,0.83,20840,397055
-Logistic: risk,Optimistic,0.84,21092,397711
-Logistic: risk,Optimistic,0.85,21343,398293
-Logistic: risk,Optimistic,0.86,21594,398163
-Logistic: risk,Optimistic,0.87,21845,398988
-Logistic: risk,Optimistic,0.88,22096,398563
-Logistic: risk,Optimistic,0.89,22347,398164
-Logistic: risk,Optimistic,0.9,22598,397813
-Logistic: risk,Optimistic,0.91,22849,397438
-Logistic: risk,Optimistic,0.92,23100,396990
-Logistic: risk,Optimistic,0.93,23351,396607
-Logistic: risk,Optimistic,0.94,23602,396230
-Logistic: risk,Optimistic,0.95,23854,395555
-Logistic: risk,Optimistic,0.96,24105,394882
-Logistic: risk,Optimistic,0.97,24356,394541
-Logistic: risk,Optimistic,0.98,24607,393992
-Logistic: risk,Optimistic,0.99,24858,393434
-Logistic: risk,Optimistic,1,25109,392774
-Logistic: risk x booking value,Optimistic,0.01,251,41079.5
-Logistic: risk x booking value,Optimistic,0.02,502,69479.9
-Logistic: risk x booking value,Optimistic,0.03,753,93340.2
-Logistic: risk x booking value,Optimistic,0.04,1004,113559
-Logistic: risk x booking value,Optimistic,0.05,1255,130036
-Logistic: risk x booking value,Optimistic,0.06,1507,145022
-Logistic: risk x booking value,Optimistic,0.07,1758,158004
-Logistic: risk x booking value,Optimistic,0.08,2009,171473
-Logistic: risk x booking value,Optimistic,0.09,2260,181684
-Logistic: risk x booking value,Optimistic,0.1,2511,191892
-Logistic: risk x booking value,Optimistic,0.11,2762,202178
-Logistic: risk x booking value,Optimistic,0.12,3013,211663
-Logistic: risk x booking value,Optimistic,0.13,3264,220933
-Logistic: risk x booking value,Optimistic,0.14,3515,228958
-Logistic: risk x booking value,Optimistic,0.15,3766,237734
-Logistic: risk x booking value,Optimistic,0.16,4017,246019
-Logistic: risk x booking value,Optimistic,0.17,4269,253522
-Logistic: risk x booking value,Optimistic,0.18,4520,260866
-Logistic: risk x booking value,Optimistic,0.19,4771,266439
-Logistic: risk x booking value,Optimistic,0.2,5022,273535
-Logistic: risk x booking value,Optimistic,0.21,5273,279596
-Logistic: risk x booking value,Optimistic,0.22,5524,285157
-Logistic: risk x booking value,Optimistic,0.23,5775,290184
-Logistic: risk x booking value,Optimistic,0.24,6026,295658
-Logistic: risk x booking value,Optimistic,0.25,6277,301967
-Logistic: risk x booking value,Optimistic,0.26,6528,307361
-Logistic: risk x booking value,Optimistic,0.27,6779,310346
-Logistic: risk x booking value,Optimistic,0.28,7031,314857
-Logistic: risk x booking value,Optimistic,0.29,7282,319399
-Logistic: risk x booking value,Optimistic,0.3,7533,324178
-Logistic: risk x booking value,Optimistic,0.31,7784,327973
-Logistic: risk x booking value,Optimistic,0.32,8035,331153
-Logistic: risk x booking value,Optimistic,0.33,8286,333658
-Logistic: risk x booking value,Optimistic,0.34,8537,337080
-Logistic: risk x booking value,Optimistic,0.35,8788,340797
-Logistic: risk x booking value,Optimistic,0.36,9039,344767
-Logistic: risk x booking value,Optimistic,0.37,9290,348678
-Logistic: risk x booking value,Optimistic,0.38,9541,351536
-Logistic: risk x booking value,Optimistic,0.39,9793,355265
-Logistic: risk x booking value,Optimistic,0.4,10044,358671
-Logistic: risk x booking value,Optimistic,0.41,10295,361764
-Logistic: risk x booking value,Optimistic,0.42,10546,364898
-Logistic: risk x booking value,Optimistic,0.43,10797,367608
-Logistic: risk x booking value,Optimistic,0.44,11048,370152
-Logistic: risk x booking value,Optimistic,0.45,11299,372667
-Logistic: risk x booking value,Optimistic,0.46,11550,375003
-Logistic: risk x booking value,Optimistic,0.47,11801,377290
-Logistic: risk x booking value,Optimistic,0.48,12052,380137
-Logistic: risk x booking value,Optimistic,0.49,12303,382267
-Logistic: risk x booking value,Optimistic,0.5,12554,384410
-Logistic: risk x booking value,Optimistic,0.51,12806,386458
-Logistic: risk x booking value,Optimistic,0.52,13057,387969
-Logistic: risk x booking value,Optimistic,0.53,13308,390478
-Logistic: risk x booking value,Optimistic,0.54,13559,391414
-Logistic: risk x booking value,Optimistic,0.55,13810,392966
-Logistic: risk x booking value,Optimistic,0.56,14061,394011
-Logistic: risk x booking value,Optimistic,0.57,14312,395285
-Logistic: risk x booking value,Optimistic,0.58,14563,395734
-Logistic: risk x booking value,Optimistic,0.59,14814,396916
-Logistic: risk x booking value,Optimistic,0.6,15065,397507
-Logistic: risk x booking value,Optimistic,0.61,15316,397904
-Logistic: risk x booking value,Optimistic,0.62,15568,398972
-Logistic: risk x booking value,Optimistic,0.63,15819,399669
-Logistic: risk x booking value,Optimistic,0.64,16070,400437
-Logistic: risk x booking value,Optimistic,0.65,16321,401071
-Logistic: risk x booking value,Optimistic,0.66,16572,400933
-Logistic: risk x booking value,Optimistic,0.67,16823,401383
-Logistic: risk x booking value,Optimistic,0.68,17074,401399
-Logistic: risk x booking value,Optimistic,0.69,17325,401927
-Logistic: risk x booking value,Optimistic,0.7,17576,402061
-Logistic: risk x booking value,Optimistic,0.71,17827,402359
-Logistic: risk x booking value,Optimistic,0.72,18078,402657
-Logistic: risk x booking value,Optimistic,0.73,18330,402747
-Logistic: risk x booking value,Optimistic,0.74,18581,402793
-Logistic: risk x booking value,Optimistic,0.75,18832,402673
-Logistic: risk x booking value,Optimistic,0.76,19083,402681
-Logistic: risk x booking value,Optimistic,0.77,19334,402923
-Logistic: risk x booking value,Optimistic,0.78,19585,402629
-Logistic: risk x booking value,Optimistic,0.79,19836,402511
-Logistic: risk x booking value,Optimistic,0.8,20087,402388
-Logistic: risk x booking value,Optimistic,0.81,20338,402190
-Logistic: risk x booking value,Optimistic,0.82,20589,401991
-Logistic: risk x booking value,Optimistic,0.83,20840,401565
-Logistic: risk x booking value,Optimistic,0.84,21092,401178
-Logistic: risk x booking value,Optimistic,0.85,21343,401053
-Logistic: risk x booking value,Optimistic,0.86,21594,400553
-Logistic: risk x booking value,Optimistic,0.87,21845,400233
-Logistic: risk x booking value,Optimistic,0.88,22096,399919
-Logistic: risk x booking value,Optimistic,0.89,22347,399412
-Logistic: risk x booking value,Optimistic,0.9,22598,399095
-Logistic: risk x booking value,Optimistic,0.91,22849,398552
-Logistic: risk x booking value,Optimistic,0.92,23100,398040
-Logistic: risk x booking value,Optimistic,0.93,23351,397436
-Logistic: risk x booking value,Optimistic,0.94,23602,396852
-Logistic: risk x booking value,Optimistic,0.95,23854,396216
-Logistic: risk x booking value,Optimistic,0.96,24105,395588
-Logistic: risk x booking value,Optimistic,0.97,24356,394922
-Logistic: risk x booking value,Optimistic,0.98,24607,394223
-Logistic: risk x booking value,Optimistic,0.99,24858,393527
-Logistic: risk x booking value,Optimistic,1,25109,392774
-Hotel rate baseline,Optimistic,0.01,251,3258.9
-Hotel rate baseline,Optimistic,0.02,502,6238.68
-Hotel rate baseline,Optimistic,0.03,753,9036.96
-Hotel rate baseline,Optimistic,0.04,1004,13121
-Hotel rate baseline,Optimistic,0.05,1255,16555.6
-Hotel rate baseline,Optimistic,0.06,1507,18884.1
-Hotel rate baseline,Optimistic,0.07,1758,22668.6
-Hotel rate baseline,Optimistic,0.08,2009,25682.3
-Hotel rate baseline,Optimistic,0.09,2260,29642.8
-Hotel rate baseline,Optimistic,0.1,2511,33423
-Hotel rate baseline,Optimistic,0.11,2762,36242.1
-Hotel rate baseline,Optimistic,0.12,3013,41778.8
-Hotel rate baseline,Optimistic,0.13,3264,45858.9
-Hotel rate baseline,Optimistic,0.14,3515,49681.1
-Hotel rate baseline,Optimistic,0.15,3766,53438.5
-Hotel rate baseline,Optimistic,0.16,4017,57194.9
-Hotel rate baseline,Optimistic,0.17,4269,60159.6
-Hotel rate baseline,Optimistic,0.18,4520,62950.6
-Hotel rate baseline,Optimistic,0.19,4771,66282.4
-Hotel rate baseline,Optimistic,0.2,5022,70491.8
-Hotel rate baseline,Optimistic,0.21,5273,73730
-Hotel rate baseline,Optimistic,0.22,5524,76850.9
-Hotel rate baseline,Optimistic,0.23,5775,80095.5
-Hotel rate baseline,Optimistic,0.24,6026,83264
-Hotel rate baseline,Optimistic,0.25,6277,87206.2
-Hotel rate baseline,Optimistic,0.26,6528,91339.2
-Hotel rate baseline,Optimistic,0.27,6779,94299.9
-Hotel rate baseline,Optimistic,0.28,7031,98540.1
-Hotel rate baseline,Optimistic,0.29,7282,101356
-Hotel rate baseline,Optimistic,0.3,7533,104902
-Hotel rate baseline,Optimistic,0.31,7784,108793
-Hotel rate baseline,Optimistic,0.32,8035,111974
-Hotel rate baseline,Optimistic,0.33,8286,115837
-Hotel rate baseline,Optimistic,0.34,8537,119465
-Hotel rate baseline,Optimistic,0.35,8788,122777
-Hotel rate baseline,Optimistic,0.36,9039,126388
-Hotel rate baseline,Optimistic,0.37,9290,130588
-Hotel rate baseline,Optimistic,0.38,9541,133973
-Hotel rate baseline,Optimistic,0.39,9793,138066
-Hotel rate baseline,Optimistic,0.4,10044,141621
-Hotel rate baseline,Optimistic,0.41,10295,145297
-Hotel rate baseline,Optimistic,0.42,10546,148205
-Hotel rate baseline,Optimistic,0.43,10797,152444
-Hotel rate baseline,Optimistic,0.44,11048,155363
-Hotel rate baseline,Optimistic,0.45,11299,159234
-Hotel rate baseline,Optimistic,0.46,11550,162767
-Hotel rate baseline,Optimistic,0.47,11801,166146
-Hotel rate baseline,Optimistic,0.48,12052,169583
-Hotel rate baseline,Optimistic,0.49,12303,172856
-Hotel rate baseline,Optimistic,0.5,12554,176803
-Hotel rate baseline,Optimistic,0.51,12806,180125
-Hotel rate baseline,Optimistic,0.52,13057,183092
-Hotel rate baseline,Optimistic,0.53,13308,185758
-Hotel rate baseline,Optimistic,0.54,13559,188114
-Hotel rate baseline,Optimistic,0.55,13810,192194
-Hotel rate baseline,Optimistic,0.56,14061,195280
-Hotel rate baseline,Optimistic,0.57,14312,198165
-Hotel rate baseline,Optimistic,0.58,14563,200693
-Hotel rate baseline,Optimistic,0.59,14814,203889
-Hotel rate baseline,Optimistic,0.6,15065,206871
-Hotel rate baseline,Optimistic,0.61,15316,210238
-Hotel rate baseline,Optimistic,0.62,15568,213835
-Hotel rate baseline,Optimistic,0.63,15819,217978
-Hotel rate baseline,Optimistic,0.64,16070,221098
-Hotel rate baseline,Optimistic,0.65,16321,224419
-Hotel rate baseline,Optimistic,0.66,16572,229014
-Hotel rate baseline,Optimistic,0.67,16823,233221
-Hotel rate baseline,Optimistic,0.68,17074,238146
-Hotel rate baseline,Optimistic,0.69,17325,242280
-Hotel rate baseline,Optimistic,0.7,17576,247647
-Hotel rate baseline,Optimistic,0.71,17827,252110
-Hotel rate baseline,Optimistic,0.72,18078,257203
-Hotel rate baseline,Optimistic,0.73,18330,261809
-Hotel rate baseline,Optimistic,0.74,18581,267891
-Hotel rate baseline,Optimistic,0.75,18832,273048
-Hotel rate baseline,Optimistic,0.76,19083,277635
-Hotel rate baseline,Optimistic,0.77,19334,282385
-Hotel rate baseline,Optimistic,0.78,19585,286783
-Hotel rate baseline,Optimistic,0.79,19836,291140
-Hotel rate baseline,Optimistic,0.8,20087,296187
-Hotel rate baseline,Optimistic,0.81,20338,301397
-Hotel rate baseline,Optimistic,0.82,20589,307696
-Hotel rate baseline,Optimistic,0.83,20840,312338
-Hotel rate baseline,Optimistic,0.84,21092,316781
-Hotel rate baseline,Optimistic,0.85,21343,321124
-Hotel rate baseline,Optimistic,0.86,21594,323888
-Hotel rate baseline,Optimistic,0.87,21845,328605
-Hotel rate baseline,Optimistic,0.88,22096,333567
-Hotel rate baseline,Optimistic,0.89,22347,338004
-Hotel rate baseline,Optimistic,0.9,22598,341007
-Hotel rate baseline,Optimistic,0.91,22849,345183
-Hotel rate baseline,Optimistic,0.92,23100,351024
-Hotel rate baseline,Optimistic,0.93,23351,356602
-Hotel rate baseline,Optimistic,0.94,23602,361680
-Hotel rate baseline,Optimistic,0.95,23854,367111
-Hotel rate baseline,Optimistic,0.96,24105,371476
-Hotel rate baseline,Optimistic,0.97,24356,376784
-Hotel rate baseline,Optimistic,0.98,24607,383073
-Hotel rate baseline,Optimistic,0.99,24858,387772
-Hotel rate baseline,Optimistic,1,25109,392774
-Random (expected),Optimistic,0.01,251,3926.33
-Random (expected),Optimistic,0.02,502,7852.66
-Random (expected),Optimistic,0.03,753,11779
-Random (expected),Optimistic,0.04,1004,15705.3
-Random (expected),Optimistic,0.05,1255,19631.7
-Random (expected),Optimistic,0.06,1507,23573.6
-Random (expected),Optimistic,0.07,1758,27500
-Random (expected),Optimistic,0.08,2009,31426.3
-Random (expected),Optimistic,0.09,2260,35352.6
-Random (expected),Optimistic,0.1,2511,39279
-Random (expected),Optimistic,0.11,2762,43205.3
-Random (expected),Optimistic,0.12,3013,47131.6
-Random (expected),Optimistic,0.13,3264,51058
-Random (expected),Optimistic,0.14,3515,54984.3
-Random (expected),Optimistic,0.15,3766,58910.6
-Random (expected),Optimistic,0.16,4017,62837
-Random (expected),Optimistic,0.17,4269,66778.9
-Random (expected),Optimistic,0.18,4520,70705.3
-Random (expected),Optimistic,0.19,4771,74631.6
-Random (expected),Optimistic,0.2,5022,78557.9
-Random (expected),Optimistic,0.21,5273,82484.3
-Random (expected),Optimistic,0.22,5524,86410.6
-Random (expected),Optimistic,0.23,5775,90336.9
-Random (expected),Optimistic,0.24,6026,94263.2
-Random (expected),Optimistic,0.25,6277,98189.6
-Random (expected),Optimistic,0.26,6528,102116
-Random (expected),Optimistic,0.27,6779,106042
-Random (expected),Optimistic,0.28,7031,109984
-Random (expected),Optimistic,0.29,7282,113911
-Random (expected),Optimistic,0.3,7533,117837
-Random (expected),Optimistic,0.31,7784,121763
-Random (expected),Optimistic,0.32,8035,125690
-Random (expected),Optimistic,0.33,8286,129616
-Random (expected),Optimistic,0.34,8537,133542
-Random (expected),Optimistic,0.35,8788,137469
-Random (expected),Optimistic,0.36,9039,141395
-Random (expected),Optimistic,0.37,9290,145321
-Random (expected),Optimistic,0.38,9541,149248
-Random (expected),Optimistic,0.39,9793,153190
-Random (expected),Optimistic,0.4,10044,157116
-Random (expected),Optimistic,0.41,10295,161042
-Random (expected),Optimistic,0.42,10546,164969
-Random (expected),Optimistic,0.43,10797,168895
-Random (expected),Optimistic,0.44,11048,172821
-Random (expected),Optimistic,0.45,11299,176748
-Random (expected),Optimistic,0.46,11550,180674
-Random (expected),Optimistic,0.47,11801,184600
-Random (expected),Optimistic,0.48,12052,188526
-Random (expected),Optimistic,0.49,12303,192453
-Random (expected),Optimistic,0.5,12554,196379
-Random (expected),Optimistic,0.51,12806,200321
-Random (expected),Optimistic,0.52,13057,204247
-Random (expected),Optimistic,0.53,13308,208174
-Random (expected),Optimistic,0.54,13559,212100
-Random (expected),Optimistic,0.55,13810,216026
-Random (expected),Optimistic,0.56,14061,219953
-Random (expected),Optimistic,0.57,14312,223879
-Random (expected),Optimistic,0.58,14563,227805
-Random (expected),Optimistic,0.59,14814,231732
-Random (expected),Optimistic,0.6,15065,235658
-Random (expected),Optimistic,0.61,15316,239584
-Random (expected),Optimistic,0.62,15568,243526
-Random (expected),Optimistic,0.63,15819,247453
-Random (expected),Optimistic,0.64,16070,251379
-Random (expected),Optimistic,0.65,16321,255305
-Random (expected),Optimistic,0.66,16572,259232
-Random (expected),Optimistic,0.67,16823,263158
-Random (expected),Optimistic,0.68,17074,267084
-Random (expected),Optimistic,0.69,17325,271011
-Random (expected),Optimistic,0.7,17576,274937
-Random (expected),Optimistic,0.71,17827,278863
-Random (expected),Optimistic,0.72,18078,282790
-Random (expected),Optimistic,0.73,18330,286732
-Random (expected),Optimistic,0.74,18581,290658
-Random (expected),Optimistic,0.75,18832,294584
-Random (expected),Optimistic,0.76,19083,298511
-Random (expected),Optimistic,0.77,19334,302437
-Random (expected),Optimistic,0.78,19585,306363
-Random (expected),Optimistic,0.79,19836,310290
-Random (expected),Optimistic,0.8,20087,314216
-Random (expected),Optimistic,0.81,20338,318142
-Random (expected),Optimistic,0.82,20589,322069
-Random (expected),Optimistic,0.83,20840,325995
-Random (expected),Optimistic,0.84,21092,329937
-Random (expected),Optimistic,0.85,21343,333863
-Random (expected),Optimistic,0.86,21594,337790
-Random (expected),Optimistic,0.87,21845,341716
-Random (expected),Optimistic,0.88,22096,345642
-Random (expected),Optimistic,0.89,22347,349569
-Random (expected),Optimistic,0.9,22598,353495
-Random (expected),Optimistic,0.91,22849,357421
-Random (expected),Optimistic,0.92,23100,361348
-Random (expected),Optimistic,0.93,23351,365274
-Random (expected),Optimistic,0.94,23602,369200
-Random (expected),Optimistic,0.95,23854,373142
-Random (expected),Optimistic,0.96,24105,377069
-Random (expected),Optimistic,0.97,24356,380995
-Random (expected),Optimistic,0.98,24607,384921
-Random (expected),Optimistic,0.99,24858,388848
-Random (expected),Optimistic,1,25109,392774
+strategy,scenario,coverage,targeted_bookings,expected_net_benefit,outcome_conditioned_net_benefit
+Logistic: risk,Conservative,0.01,251,-1296.82,-1218.73
+Logistic: risk,Conservative,0.02,502,-2650.43,-2496.32
+Logistic: risk,Conservative,0.03,753,-3955.14,-3597.26
+Logistic: risk,Conservative,0.04,1004,-5302.75,-4812.31
+Logistic: risk,Conservative,0.05,1255,-6827.31,-6231.91
+Logistic: risk,Conservative,0.06,1507,-8457.97,-7870.77
+Logistic: risk,Conservative,0.07,1758,-10088.9,-9302.95
+Logistic: risk,Conservative,0.08,2009,-11651.9,-10605.7
+Logistic: risk,Conservative,0.09,2260,-13238,-12079.2
+Logistic: risk,Conservative,0.1,2511,-14784.4,-13663.5
+Logistic: risk,Conservative,0.11,2762,-16415.8,-15292.6
+Logistic: risk,Conservative,0.12,3013,-18108.3,-16923.7
+Logistic: risk,Conservative,0.13,3264,-19845.9,-18652.4
+Logistic: risk,Conservative,0.14,3515,-21511.8,-20256.1
+Logistic: risk,Conservative,0.15,3766,-23188.2,-21788.8
+Logistic: risk,Conservative,0.16,4017,-24892.8,-23388.6
+Logistic: risk,Conservative,0.17,4269,-26697.2,-25059.5
+Logistic: risk,Conservative,0.18,4520,-28402.7,-26661.9
+Logistic: risk,Conservative,0.19,4771,-30226.8,-28322.5
+Logistic: risk,Conservative,0.2,5022,-31992.9,-29953.8
+Logistic: risk,Conservative,0.21,5273,-33819.5,-31625.1
+Logistic: risk,Conservative,0.22,5524,-35598.8,-33252.2
+Logistic: risk,Conservative,0.23,5775,-37483.8,-35035.6
+Logistic: risk,Conservative,0.24,6026,-39361.3,-36786.3
+Logistic: risk,Conservative,0.25,6277,-41250.1,-38526.7
+Logistic: risk,Conservative,0.26,6528,-43129.5,-40210.7
+Logistic: risk,Conservative,0.27,6779,-45082.6,-42017.6
+Logistic: risk,Conservative,0.28,7031,-47003.5,-43877.8
+Logistic: risk,Conservative,0.29,7282,-48918.9,-45686.9
+Logistic: risk,Conservative,0.3,7533,-50871.6,-47548
+Logistic: risk,Conservative,0.31,7784,-52851.5,-49433.9
+Logistic: risk,Conservative,0.32,8035,-54786.8,-51418.9
+Logistic: risk,Conservative,0.33,8286,-56774.6,-53380.5
+Logistic: risk,Conservative,0.34,8537,-58834.6,-55407.7
+Logistic: risk,Conservative,0.35,8788,-60876.5,-57341
+Logistic: risk,Conservative,0.36,9039,-62920.6,-59263.8
+Logistic: risk,Conservative,0.37,9290,-64907.5,-61070.1
+Logistic: risk,Conservative,0.38,9541,-66935.8,-63052.7
+Logistic: risk,Conservative,0.39,9793,-69015.2,-65161.6
+Logistic: risk,Conservative,0.4,10044,-71076.6,-67202.5
+Logistic: risk,Conservative,0.41,10295,-73163.8,-69216.2
+Logistic: risk,Conservative,0.42,10546,-75238.9,-71303.9
+Logistic: risk,Conservative,0.43,10797,-77240.8,-73309.4
+Logistic: risk,Conservative,0.44,11048,-79350.3,-75305.3
+Logistic: risk,Conservative,0.45,11299,-81435.5,-77381.6
+Logistic: risk,Conservative,0.46,11550,-83573.1,-79626
+Logistic: risk,Conservative,0.47,11801,-85631.2,-81644.5
+Logistic: risk,Conservative,0.48,12052,-87674.1,-83644.3
+Logistic: risk,Conservative,0.49,12303,-89711.6,-85639.8
+Logistic: risk,Conservative,0.5,12554,-91862.1,-87810.5
+Logistic: risk,Conservative,0.51,12806,-93958,-89868.2
+Logistic: risk,Conservative,0.52,13057,-96137.4,-91900.2
+Logistic: risk,Conservative,0.53,13308,-98330.7,-94162.5
+Logistic: risk,Conservative,0.54,13559,-100414,-96264.1
+Logistic: risk,Conservative,0.55,13810,-102588,-98458
+Logistic: risk,Conservative,0.56,14061,-104768,-100609
+Logistic: risk,Conservative,0.57,14312,-106921,-102838
+Logistic: risk,Conservative,0.58,14563,-109114,-105037
+Logistic: risk,Conservative,0.59,14814,-111391,-107283
+Logistic: risk,Conservative,0.6,15065,-113668,-109608
+Logistic: risk,Conservative,0.61,15316,-115905,-111827
+Logistic: risk,Conservative,0.62,15568,-118163,-113997
+Logistic: risk,Conservative,0.63,15819,-120387,-116251
+Logistic: risk,Conservative,0.64,16070,-122694,-118632
+Logistic: risk,Conservative,0.65,16321,-124951,-120851
+Logistic: risk,Conservative,0.66,16572,-127254,-123102
+Logistic: risk,Conservative,0.67,16823,-129553,-125301
+Logistic: risk,Conservative,0.68,17074,-131816,-127528
+Logistic: risk,Conservative,0.69,17325,-134079,-129716
+Logistic: risk,Conservative,0.7,17576,-136402,-132027
+Logistic: risk,Conservative,0.71,17827,-138689,-134305
+Logistic: risk,Conservative,0.72,18078,-141007,-136601
+Logistic: risk,Conservative,0.73,18330,-143308,-138841
+Logistic: risk,Conservative,0.74,18581,-145614,-141039
+Logistic: risk,Conservative,0.75,18832,-147987,-143454
+Logistic: risk,Conservative,0.76,19083,-150322,-145778
+Logistic: risk,Conservative,0.77,19334,-152706,-148119
+Logistic: risk,Conservative,0.78,19585,-155096,-150489
+Logistic: risk,Conservative,0.79,19836,-157494,-152903
+Logistic: risk,Conservative,0.8,20087,-159881,-155290
+Logistic: risk,Conservative,0.81,20338,-162310,-157627
+Logistic: risk,Conservative,0.82,20589,-164736,-160048
+Logistic: risk,Conservative,0.83,20840,-167158,-162442
+Logistic: risk,Conservative,0.84,21092,-169568,-164821
+Logistic: risk,Conservative,0.85,21343,-171996,-167198
+Logistic: risk,Conservative,0.86,21594,-174427,-169645
+Logistic: risk,Conservative,0.87,21845,-176860,-171998
+Logistic: risk,Conservative,0.88,22096,-179312,-174475
+Logistic: risk,Conservative,0.89,22347,-181777,-176950
+Logistic: risk,Conservative,0.9,22598,-184243,-179419
+Logistic: risk,Conservative,0.91,22849,-186707,-181892
+Logistic: risk,Conservative,0.92,23100,-189180,-184371
+Logistic: risk,Conservative,0.93,23351,-191662,-186844
+Logistic: risk,Conservative,0.94,23602,-194143,-189316
+Logistic: risk,Conservative,0.95,23854,-196646,-191828
+Logistic: risk,Conservative,0.96,24105,-199138,-194330
+Logistic: risk,Conservative,0.97,24356,-201630,-196799
+Logistic: risk,Conservative,0.98,24607,-204127,-199289
+Logistic: risk,Conservative,0.99,24858,-206629,-201779
+Logistic: risk,Conservative,1,25109,-209135,-204280
+Logistic: expected value (risk x booking value),Conservative,0.01,251,580.677,1673.25
+Logistic: expected value (risk x booking value),Conservative,0.02,502,254.584,2078.59
+Logistic: expected value (risk x booking value),Conservative,0.03,753,-431.961,2029.92
+Logistic: expected value (risk x booking value),Conservative,0.04,1004,-1346.51,1617.06
+Logistic: expected value (risk x booking value),Conservative,0.05,1255,-2431.35,830.093
+Logistic: expected value (risk x booking value),Conservative,0.06,1507,-3652.24,-115.706
+Logistic: expected value (risk x booking value),Conservative,0.07,1758,-4963.42,-1252.17
+Logistic: expected value (risk x booking value),Conservative,0.08,2009,-6356.1,-2339.96
+Logistic: expected value (risk x booking value),Conservative,0.09,2260,-7813.16,-3753.58
+Logistic: expected value (risk x booking value),Conservative,0.1,2511,-9322.1,-5167.55
+Logistic: expected value (risk x booking value),Conservative,0.11,2762,-10886.1,-6573.61
+Logistic: expected value (risk x booking value),Conservative,0.12,3013,-12493.6,-8059.79
+Logistic: expected value (risk x booking value),Conservative,0.13,3264,-14139.6,-9567.46
+Logistic: expected value (risk x booking value),Conservative,0.14,3515,-15821.2,-11199.7
+Logistic: expected value (risk x booking value),Conservative,0.15,3766,-17533.4,-12756.8
+Logistic: expected value (risk x booking value),Conservative,0.16,4017,-19271.6,-14363
+Logistic: expected value (risk x booking value),Conservative,0.17,4269,-21039.3,-16057.1
+Logistic: expected value (risk x booking value),Conservative,0.18,4520,-22824.4,-17757.4
+Logistic: expected value (risk x booking value),Conservative,0.19,4771,-24634.3,-19634.8
+Logistic: expected value (risk x booking value),Conservative,0.2,5022,-26468.2,-21359.9
+Logistic: expected value (risk x booking value),Conservative,0.21,5273,-28322.3,-23188.5
+Logistic: expected value (risk x booking value),Conservative,0.22,5524,-30197.1,-25067.1
+Logistic: expected value (risk x booking value),Conservative,0.23,5775,-32093.2,-26999.1
+Logistic: expected value (risk x booking value),Conservative,0.24,6026,-34006.5,-28886.4
+Logistic: expected value (risk x booking value),Conservative,0.25,6277,-35935.7,-30690.2
+Logistic: expected value (risk x booking value),Conservative,0.26,6528,-37880.5,-32585.5
+Logistic: expected value (risk x booking value),Conservative,0.27,6779,-39840,-34721.7
+Logistic: expected value (risk x booking value),Conservative,0.28,7031,-41820.9,-36715
+Logistic: expected value (risk x booking value),Conservative,0.29,7282,-43809.7,-38695.5
+Logistic: expected value (risk x booking value),Conservative,0.3,7533,-45812.2,-40652.3
+Logistic: expected value (risk x booking value),Conservative,0.31,7784,-47829.2,-42707.5
+Logistic: expected value (risk x booking value),Conservative,0.32,8035,-49861.2,-44824.2
+Logistic: expected value (risk x booking value),Conservative,0.33,8286,-51907.1,-47008.4
+Logistic: expected value (risk x booking value),Conservative,0.34,8537,-53965.5,-49100.9
+Logistic: expected value (risk x booking value),Conservative,0.35,8788,-56038.2,-51163.9
+Logistic: expected value (risk x booking value),Conservative,0.36,9039,-58124.7,-53201.6
+Logistic: expected value (risk x booking value),Conservative,0.37,9290,-60224.3,-55245.2
+Logistic: expected value (risk x booking value),Conservative,0.38,9541,-62335.9,-57394.1
+Logistic: expected value (risk x booking value),Conservative,0.39,9793,-64466.9,-59465.6
+Logistic: expected value (risk x booking value),Conservative,0.4,10044,-66599.6,-61559.7
+Logistic: expected value (risk x booking value),Conservative,0.41,10295,-68743.5,-63685.1
+Logistic: expected value (risk x booking value),Conservative,0.42,10546,-70899.3,-65806.4
+Logistic: expected value (risk x booking value),Conservative,0.43,10797,-73066.1,-67970.1
+Logistic: expected value (risk x booking value),Conservative,0.44,11048,-75243.4,-70150.4
+Logistic: expected value (risk x booking value),Conservative,0.45,11299,-77430.1,-72333.6
+Logistic: expected value (risk x booking value),Conservative,0.46,11550,-79626.5,-74534.7
+Logistic: expected value (risk x booking value),Conservative,0.47,11801,-81833.3,-76740.7
+Logistic: expected value (risk x booking value),Conservative,0.48,12052,-84050.7,-78890.7
+Logistic: expected value (risk x booking value),Conservative,0.49,12303,-86278.5,-81112.4
+Logistic: expected value (risk x booking value),Conservative,0.5,12554,-88516.9,-83332.8
+Logistic: expected value (risk x booking value),Conservative,0.51,12806,-90776.8,-85572.4
+Logistic: expected value (risk x booking value),Conservative,0.52,13057,-93037.9,-87856
+Logistic: expected value (risk x booking value),Conservative,0.53,13308,-95307.4,-90039.8
+Logistic: expected value (risk x booking value),Conservative,0.54,13559,-97586.7,-92380.9
+Logistic: expected value (risk x booking value),Conservative,0.55,13810,-99877,-94660.4
+Logistic: expected value (risk x booking value),Conservative,0.56,14061,-102176,-96990.6
+Logistic: expected value (risk x booking value),Conservative,0.57,14312,-104483,-99297.9
+Logistic: expected value (risk x booking value),Conservative,0.58,14563,-106798,-101688
+Logistic: expected value (risk x booking value),Conservative,0.59,14814,-109119,-104004
+Logistic: expected value (risk x booking value),Conservative,0.6,15065,-111448,-106380
+Logistic: expected value (risk x booking value),Conservative,0.61,15316,-113785,-108775
+Logistic: expected value (risk x booking value),Conservative,0.62,15568,-116138,-111112
+Logistic: expected value (risk x booking value),Conservative,0.63,15819,-118489,-113477
+Logistic: expected value (risk x booking value),Conservative,0.64,16070,-120846,-115835
+Logistic: expected value (risk x booking value),Conservative,0.65,16321,-123211,-118207
+Logistic: expected value (risk x booking value),Conservative,0.66,16572,-125581,-120655
+Logistic: expected value (risk x booking value),Conservative,0.67,16823,-127957,-123045
+Logistic: expected value (risk x booking value),Conservative,0.68,17074,-130340,-125478
+Logistic: expected value (risk x booking value),Conservative,0.69,17325,-132731,-127860
+Logistic: expected value (risk x booking value),Conservative,0.7,17576,-135128,-130281
+Logistic: expected value (risk x booking value),Conservative,0.71,17827,-137530,-132686
+Logistic: expected value (risk x booking value),Conservative,0.72,18078,-139938,-135091
+Logistic: expected value (risk x booking value),Conservative,0.73,18330,-142361,-137526
+Logistic: expected value (risk x booking value),Conservative,0.74,18581,-144780,-139956
+Logistic: expected value (risk x booking value),Conservative,0.75,18832,-147205,-142403
+Logistic: expected value (risk x booking value),Conservative,0.76,19083,-149635,-144837
+Logistic: expected value (risk x booking value),Conservative,0.77,19334,-152071,-147247
+Logistic: expected value (risk x booking value),Conservative,0.78,19585,-154511,-149712
+Logistic: expected value (risk x booking value),Conservative,0.79,19836,-156957,-152158
+Logistic: expected value (risk x booking value),Conservative,0.8,20087,-159407,-154605
+Logistic: expected value (risk x booking value),Conservative,0.81,20338,-161862,-157060
+Logistic: expected value (risk x booking value),Conservative,0.82,20589,-164320,-159514
+Logistic: expected value (risk x booking value),Conservative,0.83,20840,-166781,-161992
+Logistic: expected value (risk x booking value),Conservative,0.84,21092,-169257,-164475
+Logistic: expected value (risk x booking value),Conservative,0.85,21343,-171726,-166922
+Logistic: expected value (risk x booking value),Conservative,0.86,21594,-174199,-169406
+Logistic: expected value (risk x booking value),Conservative,0.87,21845,-176675,-171873
+Logistic: expected value (risk x booking value),Conservative,0.88,22096,-179155,-174339
+Logistic: expected value (risk x booking value),Conservative,0.89,22347,-181638,-176825
+Logistic: expected value (risk x booking value),Conservative,0.9,22598,-184124,-179291
+Logistic: expected value (risk x booking value),Conservative,0.91,22849,-186613,-181780
+Logistic: expected value (risk x booking value),Conservative,0.92,23100,-189106,-184266
+Logistic: expected value (risk x booking value),Conservative,0.93,23351,-191600,-186761
+Logistic: expected value (risk x booking value),Conservative,0.94,23602,-194097,-189254
+Logistic: expected value (risk x booking value),Conservative,0.95,23854,-196606,-191762
+Logistic: expected value (risk x booking value),Conservative,0.96,24105,-199108,-194260
+Logistic: expected value (risk x booking value),Conservative,0.97,24356,-201611,-196761
+Logistic: expected value (risk x booking value),Conservative,0.98,24607,-204117,-199266
+Logistic: expected value (risk x booking value),Conservative,0.99,24858,-206625,-201770
+Logistic: expected value (risk x booking value),Conservative,1,25109,-209135,-204280
+Hotel rate baseline,Conservative,0.01,251,-2067.51,-2108.81
+Hotel rate baseline,Conservative,0.02,502,-4213.99,-4245.53
+Hotel rate baseline,Conservative,0.03,753,-6316.95,-6400.4
+Hotel rate baseline,Conservative,0.04,1004,-8414.54,-8426.7
+Hotel rate baseline,Conservative,0.05,1255,-10501,-10517.9
+Hotel rate baseline,Conservative,0.06,1507,-12641.1,-12729.5
+Hotel rate baseline,Conservative,0.07,1758,-14755.4,-14785.7
+Hotel rate baseline,Conservative,0.08,2009,-16877,-16919.1
+Hotel rate baseline,Conservative,0.09,2260,-18959.1,-18957.7
+Hotel rate baseline,Conservative,0.1,2511,-21039.3,-21014.4
+Hotel rate baseline,Conservative,0.11,2762,-23158.5,-23167.2
+Hotel rate baseline,Conservative,0.12,3013,-25202,-25048.2
+Hotel rate baseline,Conservative,0.13,3264,-27242.5,-27074.9
+Hotel rate baseline,Conservative,0.14,3515,-29322.8,-29127.4
+Hotel rate baseline,Conservative,0.15,3766,-31416.5,-31186.4
+Hotel rate baseline,Conservative,0.16,4017,-33513.9,-33245.4
+Hotel rate baseline,Conservative,0.17,4269,-35632.3,-35393.3
+Hotel rate baseline,Conservative,0.18,4520,-37735.5,-37548.9
+Hotel rate baseline,Conservative,0.19,4771,-39845.4,-39650.5
+Hotel rate baseline,Conservative,0.2,5022,-41908.9,-41664.2
+Hotel rate baseline,Conservative,0.21,5273,-44023.7,-43775.1
+Hotel rate baseline,Conservative,0.22,5524,-46152.7,-45897.7
+Hotel rate baseline,Conservative,0.23,5775,-48262.2,-48008
+Hotel rate baseline,Conservative,0.24,6026,-50347.2,-50125.8
+Hotel rate baseline,Conservative,0.25,6277,-52435.2,-52166.3
+Hotel rate baseline,Conservative,0.26,6528,-54538.2,-54187.7
+Hotel rate baseline,Conservative,0.27,6779,-56653.4,-56326.3
+Hotel rate baseline,Conservative,0.28,7031,-58740,-58346.7
+Hotel rate baseline,Conservative,0.29,7282,-60872.2,-60499.8
+Hotel rate baseline,Conservative,0.3,7533,-62984.6,-62579.9
+Hotel rate baseline,Conservative,0.31,7784,-65052.4,-64625.5
+Hotel rate baseline,Conservative,0.32,8035,-67168,-66742.1
+Hotel rate baseline,Conservative,0.33,8286,-69259.5,-68790.5
+Hotel rate baseline,Conservative,0.34,8537,-71343.1,-70862.4
+Hotel rate baseline,Conservative,0.35,8788,-73430.6,-72965.9
+Hotel rate baseline,Conservative,0.36,9039,-75508.7,-75039.5
+Hotel rate baseline,Conservative,0.37,9290,-77594.1,-77054.2
+Hotel rate baseline,Conservative,0.38,9541,-79647.9,-79150.4
+Hotel rate baseline,Conservative,0.39,9793,-81741.3,-81185.5
+Hotel rate baseline,Conservative,0.4,10044,-83831.5,-83264.7
+Hotel rate baseline,Conservative,0.41,10295,-85946.4,-85331.8
+Hotel rate baseline,Conservative,0.42,10546,-88068.5,-87475.7
+Hotel rate baseline,Conservative,0.43,10797,-90179.4,-89486.5
+Hotel rate baseline,Conservative,0.44,11048,-92288.5,-91629.3
+Hotel rate baseline,Conservative,0.45,11299,-94384.7,-93676.9
+Hotel rate baseline,Conservative,0.46,11550,-96504.4,-95758.3
+Hotel rate baseline,Conservative,0.47,11801,-98620.1,-97855.1
+Hotel rate baseline,Conservative,0.48,12052,-100752,-99946.1
+Hotel rate baseline,Conservative,0.49,12303,-102817,-102054
+Hotel rate baseline,Conservative,0.5,12554,-104910,-104093
+Hotel rate baseline,Conservative,0.51,12806,-107028,-106206
+Hotel rate baseline,Conservative,0.52,13057,-109151,-108344
+Hotel rate baseline,Conservative,0.53,13308,-111270,-110512
+Hotel rate baseline,Conservative,0.54,13559,-113385,-112711
+Hotel rate baseline,Conservative,0.55,13810,-115461,-114738
+Hotel rate baseline,Conservative,0.56,14061,-117573,-116864
+Hotel rate baseline,Conservative,0.57,14312,-119666,-119010
+Hotel rate baseline,Conservative,0.58,14563,-121803,-121192
+Hotel rate baseline,Conservative,0.59,14814,-123927,-123307
+Hotel rate baseline,Conservative,0.6,15065,-126040,-125443
+Hotel rate baseline,Conservative,0.61,15316,-128103,-127541
+Hotel rate baseline,Conservative,0.62,15568,-130207,-129626
+Hotel rate baseline,Conservative,0.63,15819,-132284,-131647
+Hotel rate baseline,Conservative,0.64,16070,-134370,-133769
+Hotel rate baseline,Conservative,0.65,16321,-136483,-135872
+Hotel rate baseline,Conservative,0.66,16572,-138559,-137847
+Hotel rate baseline,Conservative,0.67,16823,-140675,-139861
+Hotel rate baseline,Conservative,0.68,17074,-142763,-141803
+Hotel rate baseline,Conservative,0.69,17325,-144892,-143825
+Hotel rate baseline,Conservative,0.7,17576,-146974,-145723
+Hotel rate baseline,Conservative,0.71,17827,-149086,-147711
+Hotel rate baseline,Conservative,0.72,18078,-151160,-149636
+Hotel rate baseline,Conservative,0.73,18330,-153198,-151620
+Hotel rate baseline,Conservative,0.74,18581,-155233,-153447
+Hotel rate baseline,Conservative,0.75,18832,-157288,-155366
+Hotel rate baseline,Conservative,0.76,19083,-159379,-157342
+Hotel rate baseline,Conservative,0.77,19334,-161496,-159301
+Hotel rate baseline,Conservative,0.78,19585,-163557,-161296
+Hotel rate baseline,Conservative,0.79,19836,-165618,-163295
+Hotel rate baseline,Conservative,0.8,20087,-167640,-165225
+Hotel rate baseline,Conservative,0.81,20338,-169766,-167139
+Hotel rate baseline,Conservative,0.82,20589,-171805,-168944
+Hotel rate baseline,Conservative,0.83,20840,-173892,-170914
+Hotel rate baseline,Conservative,0.84,21092,-176003,-172914
+Hotel rate baseline,Conservative,0.85,21343,-178087,-174915
+Hotel rate baseline,Conservative,0.86,21594,-180198,-177073
+Hotel rate baseline,Conservative,0.87,21845,-182206,-179036
+Hotel rate baseline,Conservative,0.88,22096,-184248,-180975
+Hotel rate baseline,Conservative,0.89,22347,-186359,-182965
+Hotel rate baseline,Conservative,0.9,22598,-188512,-185100
+Hotel rate baseline,Conservative,0.91,22849,-190585,-187117
+Hotel rate baseline,Conservative,0.92,23100,-192654,-188968
+Hotel rate baseline,Conservative,0.93,23351,-194684,-190845
+Hotel rate baseline,Conservative,0.94,23602,-196758,-192771
+Hotel rate baseline,Conservative,0.95,23854,-198877,-194673
+Hotel rate baseline,Conservative,0.96,24105,-201006,-196671
+Hotel rate baseline,Conservative,0.97,24356,-203052,-198575
+Hotel rate baseline,Conservative,0.98,24607,-205056,-200381
+Hotel rate baseline,Conservative,0.99,24858,-207106,-202345
+Hotel rate baseline,Conservative,1,25109,-209135,-204280
+Random (expected),Conservative,0.01,251,-2090.6,-2042.07
+Random (expected),Conservative,0.02,502,-4181.2,-4084.13
+Random (expected),Conservative,0.03,753,-6271.8,-6126.2
+Random (expected),Conservative,0.04,1004,-8362.4,-8168.27
+Random (expected),Conservative,0.05,1255,-10453,-10210.3
+Random (expected),Conservative,0.06,1507,-12551.9,-12260.5
+Random (expected),Conservative,0.07,1758,-14642.5,-14302.6
+Random (expected),Conservative,0.08,2009,-16733.1,-16344.7
+Random (expected),Conservative,0.09,2260,-18823.7,-18386.7
+Random (expected),Conservative,0.1,2511,-20914.3,-20428.8
+Random (expected),Conservative,0.11,2762,-23004.9,-22470.9
+Random (expected),Conservative,0.12,3013,-25095.5,-24512.9
+Random (expected),Conservative,0.13,3264,-27186.1,-26555
+Random (expected),Conservative,0.14,3515,-29276.7,-28597.1
+Random (expected),Conservative,0.15,3766,-31367.3,-30639.1
+Random (expected),Conservative,0.16,4017,-33457.9,-32681.2
+Random (expected),Conservative,0.17,4269,-35556.9,-34731.4
+Random (expected),Conservative,0.18,4520,-37647.5,-36773.5
+Random (expected),Conservative,0.19,4771,-39738.1,-38815.5
+Random (expected),Conservative,0.2,5022,-41828.7,-40857.6
+Random (expected),Conservative,0.21,5273,-43919.3,-42899.7
+Random (expected),Conservative,0.22,5524,-46009.9,-44941.7
+Random (expected),Conservative,0.23,5775,-48100.5,-46983.8
+Random (expected),Conservative,0.24,6026,-50191.1,-49025.9
+Random (expected),Conservative,0.25,6277,-52281.7,-51067.9
+Random (expected),Conservative,0.26,6528,-54372.3,-53110
+Random (expected),Conservative,0.27,6779,-56462.9,-55152.1
+Random (expected),Conservative,0.28,7031,-58561.8,-57202.3
+Random (expected),Conservative,0.29,7282,-60652.4,-59244.3
+Random (expected),Conservative,0.3,7533,-62743,-61286.4
+Random (expected),Conservative,0.31,7784,-64833.6,-63328.5
+Random (expected),Conservative,0.32,8035,-66924.2,-65370.5
+Random (expected),Conservative,0.33,8286,-69014.8,-67412.6
+Random (expected),Conservative,0.34,8537,-71105.4,-69454.7
+Random (expected),Conservative,0.35,8788,-73196,-71496.7
+Random (expected),Conservative,0.36,9039,-75286.6,-73538.8
+Random (expected),Conservative,0.37,9290,-77377.2,-75580.9
+Random (expected),Conservative,0.38,9541,-79467.8,-77622.9
+Random (expected),Conservative,0.39,9793,-81566.7,-79673.1
+Random (expected),Conservative,0.4,10044,-83657.3,-81715.2
+Random (expected),Conservative,0.41,10295,-85747.9,-83757.3
+Random (expected),Conservative,0.42,10546,-87838.5,-85799.3
+Random (expected),Conservative,0.43,10797,-89929.1,-87841.4
+Random (expected),Conservative,0.44,11048,-92019.7,-89883.5
+Random (expected),Conservative,0.45,11299,-94110.3,-91925.5
+Random (expected),Conservative,0.46,11550,-96200.9,-93967.6
+Random (expected),Conservative,0.47,11801,-98291.5,-96009.7
+Random (expected),Conservative,0.48,12052,-100382,-98051.8
+Random (expected),Conservative,0.49,12303,-102473,-100094
+Random (expected),Conservative,0.5,12554,-104563,-102136
+Random (expected),Conservative,0.51,12806,-106662,-104186
+Random (expected),Conservative,0.52,13057,-108753,-106228
+Random (expected),Conservative,0.53,13308,-110843,-108270
+Random (expected),Conservative,0.54,13559,-112934,-110312
+Random (expected),Conservative,0.55,13810,-115025,-112354
+Random (expected),Conservative,0.56,14061,-117115,-114396
+Random (expected),Conservative,0.57,14312,-119206,-116438
+Random (expected),Conservative,0.58,14563,-121296,-118481
+Random (expected),Conservative,0.59,14814,-123387,-120523
+Random (expected),Conservative,0.6,15065,-125478,-122565
+Random (expected),Conservative,0.61,15316,-127568,-124607
+Random (expected),Conservative,0.62,15568,-129667,-126657
+Random (expected),Conservative,0.63,15819,-131758,-128699
+Random (expected),Conservative,0.64,16070,-133848,-130741
+Random (expected),Conservative,0.65,16321,-135939,-132783
+Random (expected),Conservative,0.66,16572,-138030,-134825
+Random (expected),Conservative,0.67,16823,-140120,-136867
+Random (expected),Conservative,0.68,17074,-142211,-138909
+Random (expected),Conservative,0.69,17325,-144301,-140951
+Random (expected),Conservative,0.7,17576,-146392,-142993
+Random (expected),Conservative,0.71,17827,-148483,-145036
+Random (expected),Conservative,0.72,18078,-150573,-147078
+Random (expected),Conservative,0.73,18330,-152672,-149128
+Random (expected),Conservative,0.74,18581,-154763,-151170
+Random (expected),Conservative,0.75,18832,-156853,-153212
+Random (expected),Conservative,0.76,19083,-158944,-155254
+Random (expected),Conservative,0.77,19334,-161035,-157296
+Random (expected),Conservative,0.78,19585,-163125,-159338
+Random (expected),Conservative,0.79,19836,-165216,-161380
+Random (expected),Conservative,0.8,20087,-167306,-163422
+Random (expected),Conservative,0.81,20338,-169397,-165464
+Random (expected),Conservative,0.82,20589,-171488,-167506
+Random (expected),Conservative,0.83,20840,-173578,-169548
+Random (expected),Conservative,0.84,21092,-175677,-171599
+Random (expected),Conservative,0.85,21343,-177768,-173641
+Random (expected),Conservative,0.86,21594,-179858,-175683
+Random (expected),Conservative,0.87,21845,-181949,-177725
+Random (expected),Conservative,0.88,22096,-184039,-179767
+Random (expected),Conservative,0.89,22347,-186130,-181809
+Random (expected),Conservative,0.9,22598,-188221,-183851
+Random (expected),Conservative,0.91,22849,-190311,-185893
+Random (expected),Conservative,0.92,23100,-192402,-187935
+Random (expected),Conservative,0.93,23351,-194492,-189977
+Random (expected),Conservative,0.94,23602,-196583,-192019
+Random (expected),Conservative,0.95,23854,-198682,-194070
+Random (expected),Conservative,0.96,24105,-200773,-196112
+Random (expected),Conservative,0.97,24356,-202863,-198154
+Random (expected),Conservative,0.98,24607,-204954,-200196
+Random (expected),Conservative,0.99,24858,-207044,-202238
+Random (expected),Conservative,1,25109,-209135,-204280
+Logistic: risk,Base,0.01,251,3597.74,3910.09
+Logistic: risk,Base,0.02,502,6968.27,7584.73
+Logistic: risk,Base,0.03,753,10534.4,11966
+Logistic: risk,Base,0.04,1004,13929,15890.8
+Logistic: risk,Base,0.05,1255,16615.8,18997.3
+Logistic: risk,Base,0.06,1507,18913.1,21261.9
+Logistic: risk,Base,0.07,1758,21174.4,24318.2
+Logistic: risk,Base,0.08,2009,23707.4,27892.2
+Logistic: risk,Base,0.09,2260,26148.1,30783.2
+Logistic: risk,Base,0.1,2511,28747.5,33231
+Logistic: risk,Base,0.11,2762,31006.6,35499.5
+Logistic: risk,Base,0.12,3013,33022,37760.3
+Logistic: risk,Base,0.13,3264,34856.2,39630.5
+Logistic: risk,Base,0.14,3515,36977.8,42000.5
+Logistic: risk,Base,0.15,3766,39057.2,44655
+Logistic: risk,Base,0.16,4017,41023.7,47040.5
+Logistic: risk,Base,0.17,4269,42626.1,49176.9
+Logistic: risk,Base,0.18,4520,44589.2,51552.6
+Logistic: risk,Base,0.19,4771,46078,53694.9
+Logistic: risk,Base,0.2,5022,47798.5,55954.7
+Logistic: risk,Base,0.21,5273,49277.2,58054.6
+Logistic: risk,Base,0.22,5524,50944.7,60331.1
+Logistic: risk,Base,0.23,5775,52189.9,61982.6
+Logistic: risk,Base,0.24,6026,53464.8,63764.7
+Logistic: risk,Base,0.25,6277,54694.7,65588.2
+Logistic: risk,Base,0.26,6528,55962.2,67637.1
+Logistic: risk,Base,0.27,6779,56934.5,69194.5
+Logistic: risk,Base,0.28,7031,58071.1,70574
+Logistic: risk,Base,0.29,7282,59194.2,72122.5
+Logistic: risk,Base,0.3,7533,60168.5,73463.1
+Logistic: risk,Base,0.31,7784,61033.8,74704.3
+Logistic: risk,Base,0.32,8035,62077.8,75549.6
+Logistic: risk,Base,0.33,8286,62911.5,76488.1
+Logistic: risk,Base,0.34,8537,63456.7,77164
+Logistic: risk,Base,0.35,8788,64074.2,78216.1
+Logistic: risk,Base,0.36,9039,64682.6,79309.7
+Logistic: risk,Base,0.37,9290,65519.9,80869.5
+Logistic: risk,Base,0.38,9541,66191.8,81724.1
+Logistic: risk,Base,0.39,9793,66694.3,82108.7
+Logistic: risk,Base,0.4,10044,67233.6,82729.8
+Logistic: risk,Base,0.41,10295,67669.6,83460.1
+Logistic: risk,Base,0.42,10546,68154.2,83894.3
+Logistic: risk,Base,0.43,10797,68931.9,84657.2
+Logistic: risk,Base,0.44,11048,69278.7,85458.8
+Logistic: risk,Base,0.45,11299,69723,85938.7
+Logistic: risk,Base,0.46,11550,69957.5,85746.2
+Logistic: risk,Base,0.47,11801,70510.2,86456.9
+Logistic: risk,Base,0.48,12052,71123.7,87242.9
+Logistic: risk,Base,0.49,12303,71758.5,88045.9
+Logistic: risk,Base,0.5,12554,71941.6,88147.9
+Logistic: risk,Base,0.51,12806,72378,88737.3
+Logistic: risk,Base,0.52,13057,72445.4,89394.3
+Logistic: risk,Base,0.53,13308,72457.2,89129.9
+Logistic: risk,Base,0.54,13559,72910.5,89508.5
+Logistic: risk,Base,0.55,13810,72996.3,89517.9
+Logistic: risk,Base,0.56,14061,73064.1,89699.3
+Logistic: risk,Base,0.57,14312,73237,89566.7
+Logistic: risk,Base,0.58,14563,73249.6,89556.2
+Logistic: risk,Base,0.59,14814,72926.2,89356.9
+Logistic: risk,Base,0.6,15065,72604.3,88844.6
+Logistic: risk,Base,0.61,15316,72440.3,88750.1
+Logistic: risk,Base,0.62,15568,72226.5,88890.5
+Logistic: risk,Base,0.63,15819,72116.8,88660.1
+Logistic: risk,Base,0.64,16070,71673.8,87922.4
+Logistic: risk,Base,0.65,16321,71429.9,87829.2
+Logistic: risk,Base,0.66,16572,71002.9,87610.8
+Logistic: risk,Base,0.67,16823,70591.4,87600.3
+Logistic: risk,Base,0.68,17074,70325.2,87478.3
+Logistic: risk,Base,0.69,17325,70059.5,87512.7
+Logistic: risk,Base,0.7,17576,69552.4,87051.6
+Logistic: risk,Base,0.71,17827,69187.9,86724.5
+Logistic: risk,Base,0.72,18078,68700.3,86326.1
+Logistic: risk,Base,0.73,18330,68316.1,86185.6
+Logistic: risk,Base,0.74,18581,67880.5,86180.1
+Logistic: risk,Base,0.75,18832,67172.7,85304.1
+Logistic: risk,Base,0.76,19083,66617.1,84793.7
+Logistic: risk,Base,0.77,19334,65867.7,84213.2
+Logistic: risk,Base,0.78,19585,65090.1,83518.8
+Logistic: risk,Base,0.79,19836,64283.7,82647.1
+Logistic: risk,Base,0.8,20087,63523,81883.2
+Logistic: risk,Base,0.81,20338,62590.4,81321.9
+Logistic: risk,Base,0.82,20589,61670.1,80423.1
+Logistic: risk,Base,0.83,20840,60766.9,79630
+Logistic: risk,Base,0.84,21092,59948.7,78934.7
+Logistic: risk,Base,0.85,21343,59022.7,78213.8
+Logistic: risk,Base,0.86,21594,58081.3,77208.1
+Logistic: risk,Base,0.87,21845,57134.4,76584.1
+Logistic: risk,Base,0.88,22096,56110.9,75460.3
+Logistic: risk,Base,0.89,22347,55035.6,74346.8
+Logistic: risk,Base,0.9,22598,53957.7,73253
+Logistic: risk,Base,0.91,22849,52888.4,72148.8
+Logistic: risk,Base,0.92,23100,51780.2,71016.1
+Logistic: risk,Base,0.93,23351,50635.4,69909.2
+Logistic: risk,Base,0.94,23602,49496.6,68804.5
+Logistic: risk,Base,0.95,23854,48305.5,67577
+Logistic: risk,Base,0.96,24105,47124.4,66353.6
+Logistic: risk,Base,0.97,24356,45940.2,65263.5
+Logistic: risk,Base,0.98,24607,44735.3,64090.2
+Logistic: risk,Base,0.99,24858,43515.3,62913.2
+Logistic: risk,Base,1,25109,42275,61695.4
+Logistic: expected value (risk x booking value),Base,0.01,251,11107.7,15478
+Logistic: expected value (risk x booking value),Base,0.02,502,18588.3,25884.3
+Logistic: expected value (risk x booking value),Base,0.03,753,24627.2,34474.7
+Logistic: expected value (risk x booking value),Base,0.04,1004,29753.9,41608.2
+Logistic: expected value (risk x booking value),Base,0.05,1255,34199.6,47245.4
+Logistic: expected value (risk x booking value),Base,0.06,1507,38136,52282.2
+Logistic: expected value (risk x booking value),Base,0.07,1758,41676.3,56521.3
+Logistic: expected value (risk x booking value),Base,0.08,2009,44890.6,60955.2
+Logistic: expected value (risk x booking value),Base,0.09,2260,47847.4,64085.7
+Logistic: expected value (risk x booking value),Base,0.1,2511,50596.6,67214.8
+Logistic: expected value (risk x booking value),Base,0.11,2762,53125.6,70375.6
+Logistic: expected value (risk x booking value),Base,0.12,3013,55480.8,73215.8
+Logistic: expected value (risk x booking value),Base,0.13,3264,57681.5,75970.2
+Logistic: expected value (risk x booking value),Base,0.14,3515,59740.1,78226.1
+Logistic: expected value (risk x booking value),Base,0.15,3766,61676.5,80782.9
+Logistic: expected value (risk x booking value),Base,0.16,4017,63508.5,83143.2
+Logistic: expected value (risk x booking value),Base,0.17,4269,65257.7,85186.6
+Logistic: expected value (risk x booking value),Base,0.18,4520,66902.3,87170.4
+Logistic: expected value (risk x booking value),Base,0.19,4771,68447.7,88445.8
+Logistic: expected value (risk x booking value),Base,0.2,5022,69897.1,90330.2
+Logistic: expected value (risk x booking value),Base,0.21,5273,71266,91800.9
+Logistic: expected value (risk x booking value),Base,0.22,5524,72551.7,93071.7
+Logistic: expected value (risk x booking value),Base,0.23,5775,73752.4,94128.5
+Logistic: expected value (risk x booking value),Base,0.24,6026,74884.1,95364.5
+Logistic: expected value (risk x booking value),Base,0.25,6277,75952.4,96934.1
+Logistic: expected value (risk x booking value),Base,0.26,6528,76957.8,98138
+Logistic: expected value (risk x booking value),Base,0.27,6779,77905.1,98378.3
+Logistic: expected value (risk x booking value),Base,0.28,7031,78801.4,99225.2
+Logistic: expected value (risk x booking value),Base,0.29,7282,79631.2,100088
+Logistic: expected value (risk x booking value),Base,0.3,7533,80406,101046
+Logistic: expected value (risk x booking value),Base,0.31,7784,81123,101610
+Logistic: expected value (risk x booking value),Base,0.32,8035,81780.1,101928
+Logistic: expected value (risk x booking value),Base,0.33,8286,82381.4,101977
+Logistic: expected value (risk x booking value),Base,0.34,8537,82933,102391
+Logistic: expected value (risk x booking value),Base,0.35,8788,83427.1,102924
+Logistic: expected value (risk x booking value),Base,0.36,9039,83866.1,103559
+Logistic: expected value (risk x booking value),Base,0.37,9290,84252.8,104169
+Logistic: expected value (risk x booking value),Base,0.38,9541,84591.2,104359
+Logistic: expected value (risk x booking value),Base,0.39,9793,84887.3,104892
+Logistic: expected value (risk x booking value),Base,0.4,10044,85141.6,105301
+Logistic: expected value (risk x booking value),Base,0.41,10295,85350.8,105585
+Logistic: expected value (risk x booking value),Base,0.42,10546,85512.7,105884
+Logistic: expected value (risk x booking value),Base,0.43,10797,85630.4,106015
+Logistic: expected value (risk x booking value),Base,0.44,11048,85706.5,106078
+Logistic: expected value (risk x booking value),Base,0.45,11299,85744.6,106130
+Logistic: expected value (risk x booking value),Base,0.46,11550,85743.8,106111
+Logistic: expected value (risk x booking value),Base,0.47,11801,85701.7,106072
+Logistic: expected value (risk x booking value),Base,0.48,12052,85617.2,106257
+Logistic: expected value (risk x booking value),Base,0.49,12303,85490.9,106155
+Logistic: expected value (risk x booking value),Base,0.5,12554,85322.4,106059
+Logistic: expected value (risk x booking value),Base,0.51,12806,85103,105920
+Logistic: expected value (risk x booking value),Base,0.52,13057,84843.4,105571
+Logistic: expected value (risk x booking value),Base,0.53,13308,84550.4,105621
+Logistic: expected value (risk x booking value),Base,0.54,13559,84218.2,105041
+Logistic: expected value (risk x booking value),Base,0.55,13810,83841.9,104708
+Logistic: expected value (risk x booking value),Base,0.56,14061,83430.8,104172
+Logistic: expected value (risk x booking value),Base,0.57,14312,82987.8,103728
+Logistic: expected value (risk x booking value),Base,0.58,14563,82513.2,102954
+Logistic: expected value (risk x booking value),Base,0.59,14814,82013.3,102473
+Logistic: expected value (risk x booking value),Base,0.6,15065,81482.3,101756
+Logistic: expected value (risk x booking value),Base,0.61,15316,80920.5,100961
+Logistic: expected value (risk x booking value),Base,0.62,15568,80326.8,100430
+Logistic: expected value (risk x booking value),Base,0.63,15819,79709.5,99755.4
+Logistic: expected value (risk x booking value),Base,0.64,16070,79064.2,99108.9
+Logistic: expected value (risk x booking value),Base,0.65,16321,78392.3,98408.5
+Logistic: expected value (risk x booking value),Base,0.66,16572,77697.6,97399.7
+Logistic: expected value (risk x booking value),Base,0.67,16823,76978.4,96625.8
+Logistic: expected value (risk x booking value),Base,0.68,17074,76229.8,95678.2
+Logistic: expected value (risk x booking value),Base,0.69,17325,75451.7,94936
+Logistic: expected value (risk x booking value),Base,0.7,17576,74647.9,94035.6
+Logistic: expected value (risk x booking value),Base,0.71,17827,73824.5,93200.9
+Logistic: expected value (risk x booking value),Base,0.72,18078,72977.5,92366.5
+Logistic: expected value (risk x booking value),Base,0.73,18330,72105.3,91444.9
+Logistic: expected value (risk x booking value),Base,0.74,18581,71215.4,90509.2
+Logistic: expected value (risk x booking value),Base,0.75,18832,70302,89507.6
+Logistic: expected value (risk x booking value),Base,0.76,19083,69365.3,88557.2
+Logistic: expected value (risk x booking value),Base,0.77,19334,68407.7,87700.2
+Logistic: expected value (risk x booking value),Base,0.78,19585,67430.4,86628.8
+Logistic: expected value (risk x booking value),Base,0.79,19836,66433.6,85627.5
+Logistic: expected value (risk x booking value),Base,0.8,20087,65417.5,84624.6
+Logistic: expected value (risk x booking value),Base,0.81,20338,64383.9,83591.5
+Logistic: expected value (risk x booking value),Base,0.82,20589,63336.6,82558.1
+Logistic: expected value (risk x booking value),Base,0.83,20840,62275.1,81433.9
+Logistic: expected value (risk x booking value),Base,0.84,21092,61193.6,80321.6
+Logistic: expected value (risk x booking value),Base,0.85,21343,60102.3,79317.9
+Logistic: expected value (risk x booking value),Base,0.86,21594,58995,78164.2
+Logistic: expected value (risk x booking value),Base,0.87,21845,57873.7,77082
+Logistic: expected value (risk x booking value),Base,0.88,22096,56739,76002.6
+Logistic: expected value (risk x booking value),Base,0.89,22347,55592.9,74846.3
+Logistic: expected value (risk x booking value),Base,0.9,22598,54433.1,73765.8
+Logistic: expected value (risk x booking value),Base,0.91,22849,53261.2,72594.8
+Logistic: expected value (risk x booking value),Base,0.92,23100,52078,71435.8
+Logistic: expected value (risk x booking value),Base,0.93,23351,50884.3,70240.7
+Logistic: expected value (risk x booking value),Base,0.94,23602,49681.9,69053.3
+Logistic: expected value (risk x booking value),Base,0.95,23854,48465.3,67841.3
+Logistic: expected value (risk x booking value),Base,0.96,24105,47244.6,66636.2
+Logistic: expected value (risk x booking value),Base,0.97,24356,46014.6,65416
+Logistic: expected value (risk x booking value),Base,0.98,24607,44776.7,64182.5
+Logistic: expected value (risk x booking value),Base,0.99,24858,43530,62950.4
+Logistic: expected value (risk x booking value),Base,1,25109,42275,61695.4
+Hotel rate baseline,Base,0.01,251,514.948,349.758
+Hotel rate baseline,Base,0.02,502,714.046,587.871
+Hotel rate baseline,Base,0.03,753,1087.2,753.385
+Hotel rate baseline,Base,0.04,1004,1481.86,1433.22
+Hotel rate baseline,Base,0.05,1255,1920.98,1853.24
+Hotel rate baseline,Base,0.06,1507,2180.54,1827.02
+Hotel rate baseline,Base,0.07,1758,2508.5,2387.05
+Hotel rate baseline,Base,0.08,2009,2806.98,2638.71
+Hotel rate baseline,Base,0.09,2260,3263.65,3269.12
+Hotel rate baseline,Base,0.1,2511,3727.95,3827.39
+Hotel rate baseline,Base,0.11,2762,4036.16,4001.23
+Hotel rate baseline,Base,0.12,3013,4647.01,5262.11
+Hotel rate baseline,Base,0.13,3264,5269.98,5940.35
+Hotel rate baseline,Base,0.14,3515,5733.91,6515.43
+Hotel rate baseline,Base,0.15,3766,6144.04,7064.58
+Hotel rate baseline,Base,0.16,4017,6539.33,7613.37
+Hotel rate baseline,Base,0.17,4269,6885.93,7841.66
+Hotel rate baseline,Base,0.18,4520,7258.17,8004.26
+Hotel rate baseline,Base,0.19,4771,7603.52,8383.15
+Hotel rate baseline,Base,0.2,5022,8134.24,9113.12
+Hotel rate baseline,Base,0.21,5273,8460.37,9454.58
+Hotel rate baseline,Base,0.22,5524,8729.38,9749.17
+Hotel rate baseline,Base,0.23,5775,9076.06,10093.2
+Hotel rate baseline,Base,0.24,6026,9521.07,10406.8
+Hotel rate baseline,Base,0.25,6277,9954.37,11029.9
+Hotel rate baseline,Base,0.26,6528,10327.2,11729.3
+Hotel rate baseline,Base,0.27,6779,10651.2,11959.7
+Hotel rate baseline,Base,0.28,7031,11124.9,12698.3
+Hotel rate baseline,Base,0.29,7282,11381.1,12870.6
+Hotel rate baseline,Base,0.3,7533,11716.6,13335.6
+Hotel rate baseline,Base,0.31,7784,12230.4,13937.9
+Hotel rate baseline,Base,0.32,8035,12552.9,14256.5
+Hotel rate baseline,Base,0.33,8286,12972.1,14848.2
+Hotel rate baseline,Base,0.34,8537,13422.6,15345.5
+Hotel rate baseline,Base,0.35,8788,13857.6,15716.4
+Hotel rate baseline,Base,0.36,9039,14330,16207.1
+Hotel rate baseline,Base,0.37,9290,14773.6,16933.2
+Hotel rate baseline,Base,0.38,9541,15343.5,17333.4
+Hotel rate baseline,Base,0.39,9793,15790,18012.9
+Hotel rate baseline,Base,0.4,10044,16214.2,18481.1
+Hotel rate baseline,Base,0.41,10295,16539.2,18997.7
+Hotel rate baseline,Base,0.42,10546,16836,19207.3
+Hotel rate baseline,Base,0.43,10797,17177.5,19949.2
+Hotel rate baseline,Base,0.44,11048,17525.9,20162.8
+Hotel rate baseline,Base,0.45,11299,17926.4,20757.5
+Hotel rate baseline,Base,0.46,11550,18232.3,21217
+Hotel rate baseline,Base,0.47,11801,18554.4,21614.6
+Hotel rate baseline,Base,0.48,12052,18810.8,22035.7
+Hotel rate baseline,Base,0.49,12303,19335.6,22390.9
+Hotel rate baseline,Base,0.5,12554,19749.8,23016
+Hotel rate baseline,Base,0.51,12806,20099.9,23387.3
+Hotel rate baseline,Base,0.52,13057,20391.4,23620.3
+Hotel rate baseline,Base,0.53,13308,20700.2,23733
+Hotel rate baseline,Base,0.54,13559,21025.5,23721.3
+Hotel rate baseline,Base,0.55,13810,21506.8,24399.6
+Hotel rate baseline,Base,0.56,14061,21841.5,24680.4
+Hotel rate baseline,Base,0.57,14312,22257.5,24880.3
+Hotel rate baseline,Base,0.58,14563,22494.2,24937.9
+Hotel rate baseline,Base,0.59,14814,22783.1,25262.3
+Hotel rate baseline,Base,0.6,15065,23116.5,25501.6
+Hotel rate baseline,Base,0.61,15316,23649.6,25894.2
+Hotel rate baseline,Base,0.62,15568,24053.2,26375.5
+Hotel rate baseline,Base,0.63,15819,24530,27079
+Hotel rate baseline,Base,0.64,16070,24969.1,27373.1
+Hotel rate baseline,Base,0.65,16321,25303.1,27747.9
+Hotel rate baseline,Base,0.66,16572,25784.7,28632.1
+Hotel rate baseline,Base,0.67,16823,26106.1,29361.2
+Hotel rate baseline,Base,0.68,17074,26538.9,30377.3
+Hotel rate baseline,Base,0.69,17325,26806.4,31077
+Hotel rate baseline,Base,0.7,17576,27263.2,32269.9
+Hotel rate baseline,Base,0.71,17827,27601.6,33101.3
+Hotel rate baseline,Base,0.72,18078,28088.3,34184.6
+Hotel rate baseline,Base,0.73,18330,28758.9,35069.5
+Hotel rate baseline,Base,0.74,18581,29403.7,36548.4
+Hotel rate baseline,Base,0.75,18832,29966.5,37657.8
+Hotel rate baseline,Base,0.76,19083,30388.8,38538.5
+Hotel rate baseline,Base,0.77,19334,30707.3,39484.6
+Hotel rate baseline,Base,0.78,19585,31248.3,40290.1
+Hotel rate baseline,Base,0.79,19836,31786.2,41079.2
+Hotel rate baseline,Base,0.8,20087,32483.4,42144.4
+Hotel rate baseline,Base,0.81,20338,32767.2,43274.6
+Hotel rate baseline,Base,0.82,20589,33394.3,44840.3
+Hotel rate baseline,Base,0.83,20840,33832.9,45743.4
+Hotel rate baseline,Base,0.84,21092,34208.8,46562.7
+Hotel rate baseline,Base,0.85,21343,34655.7,47346.2
+Hotel rate baseline,Base,0.86,21594,34999.6,47498
+Hotel rate baseline,Base,0.87,21845,35750.1,48430.9
+Hotel rate baseline,Base,0.88,22096,36366.5,49461.8
+Hotel rate baseline,Base,0.89,22347,36710.6,50283
+Hotel rate baseline,Base,0.9,22598,36882.6,50530.5
+Hotel rate baseline,Base,0.91,22849,37375.8,51247.1
+Hotel rate baseline,Base,0.92,23100,37882.5,52629.4
+Hotel rate baseline,Base,0.93,23351,38549.3,53907
+Hotel rate baseline,Base,0.94,23602,39038.9,54984.5
+Hotel rate baseline,Base,0.95,23854,39384,56199.3
+Hotel rate baseline,Base,0.96,24105,39651.8,56991.5
+Hotel rate baseline,Base,0.97,24356,40252.5,58160.6
+Hotel rate baseline,Base,0.98,24607,41019.2,59722.6
+Hotel rate baseline,Base,0.99,24858,41604.2,60648.5
+Hotel rate baseline,Base,1,25109,42275,61695.4
+Random (expected),Base,0.01,251,422.599,616.733
+Random (expected),Base,0.02,502,845.198,1233.47
+Random (expected),Base,0.03,753,1267.8,1850.2
+Random (expected),Base,0.04,1004,1690.4,2466.93
+Random (expected),Base,0.05,1255,2112.99,3083.66
+Random (expected),Base,0.06,1507,2537.28,3702.85
+Random (expected),Base,0.07,1758,2959.88,4319.59
+Random (expected),Base,0.08,2009,3382.47,4936.32
+Random (expected),Base,0.09,2260,3805.07,5553.05
+Random (expected),Base,0.1,2511,4227.67,6169.78
+Random (expected),Base,0.11,2762,4650.27,6786.52
+Random (expected),Base,0.12,3013,5072.87,7403.25
+Random (expected),Base,0.13,3264,5495.47,8019.98
+Random (expected),Base,0.14,3515,5918.07,8636.72
+Random (expected),Base,0.15,3766,6340.67,9253.45
+Random (expected),Base,0.16,4017,6763.27,9870.18
+Random (expected),Base,0.17,4269,7187.55,10489.4
+Random (expected),Base,0.18,4520,7610.15,11106.1
+Random (expected),Base,0.19,4771,8032.75,11722.8
+Random (expected),Base,0.2,5022,8455.34,12339.6
+Random (expected),Base,0.21,5273,8877.94,12956.3
+Random (expected),Base,0.22,5524,9300.54,13573
+Random (expected),Base,0.23,5775,9723.14,14189.8
+Random (expected),Base,0.24,6026,10145.7,14806.5
+Random (expected),Base,0.25,6277,10568.3,15423.2
+Random (expected),Base,0.26,6528,10990.9,16040
+Random (expected),Base,0.27,6779,11413.5,16656.7
+Random (expected),Base,0.28,7031,11837.8,17275.9
+Random (expected),Base,0.29,7282,12260.4,17892.6
+Random (expected),Base,0.3,7533,12683,18509.4
+Random (expected),Base,0.31,7784,13105.6,19126.1
+Random (expected),Base,0.32,8035,13528.2,19742.8
+Random (expected),Base,0.33,8286,13950.8,20359.6
+Random (expected),Base,0.34,8537,14373.4,20976.3
+Random (expected),Base,0.35,8788,14796,21593
+Random (expected),Base,0.36,9039,15218.6,22209.7
+Random (expected),Base,0.37,9290,15641.2,22826.5
+Random (expected),Base,0.38,9541,16063.8,23443.2
+Random (expected),Base,0.39,9793,16488.1,24062.4
+Random (expected),Base,0.4,10044,16910.7,24679.1
+Random (expected),Base,0.41,10295,17333.3,25295.9
+Random (expected),Base,0.42,10546,17755.9,25912.6
+Random (expected),Base,0.43,10797,18178.5,26529.3
+Random (expected),Base,0.44,11048,18601.1,27146.1
+Random (expected),Base,0.45,11299,19023.7,27762.8
+Random (expected),Base,0.46,11550,19446.3,28379.5
+Random (expected),Base,0.47,11801,19868.9,28996.3
+Random (expected),Base,0.48,12052,20291.5,29613
+Random (expected),Base,0.49,12303,20714.1,30229.7
+Random (expected),Base,0.5,12554,21136.7,30846.5
+Random (expected),Base,0.51,12806,21561,31465.7
+Random (expected),Base,0.52,13057,21983.6,32082.4
+Random (expected),Base,0.53,13308,22406.2,32699.1
+Random (expected),Base,0.54,13559,22828.8,33315.9
+Random (expected),Base,0.55,13810,23251.4,33932.6
+Random (expected),Base,0.56,14061,23674,34549.3
+Random (expected),Base,0.57,14312,24096.6,35166.1
+Random (expected),Base,0.58,14563,24519.2,35782.8
+Random (expected),Base,0.59,14814,24941.8,36399.5
+Random (expected),Base,0.6,15065,25364.4,37016.2
+Random (expected),Base,0.61,15316,25786.9,37633
+Random (expected),Base,0.62,15568,26211.2,38252.2
+Random (expected),Base,0.63,15819,26633.8,38868.9
+Random (expected),Base,0.64,16070,27056.4,39485.6
+Random (expected),Base,0.65,16321,27479,40102.4
+Random (expected),Base,0.66,16572,27901.6,40719.1
+Random (expected),Base,0.67,16823,28324.2,41335.8
+Random (expected),Base,0.68,17074,28746.8,41952.6
+Random (expected),Base,0.69,17325,29169.4,42569.3
+Random (expected),Base,0.7,17576,29592,43186
+Random (expected),Base,0.71,17827,30014.6,43802.8
+Random (expected),Base,0.72,18078,30437.2,44419.5
+Random (expected),Base,0.73,18330,30861.5,45038.7
+Random (expected),Base,0.74,18581,31284.1,45655.4
+Random (expected),Base,0.75,18832,31706.7,46272.2
+Random (expected),Base,0.76,19083,32129.3,46888.9
+Random (expected),Base,0.77,19334,32551.9,47505.6
+Random (expected),Base,0.78,19585,32974.5,48122.4
+Random (expected),Base,0.79,19836,33397.1,48739.1
+Random (expected),Base,0.8,20087,33819.7,49355.8
+Random (expected),Base,0.81,20338,34242.3,49972.6
+Random (expected),Base,0.82,20589,34664.9,50589.3
+Random (expected),Base,0.83,20840,35087.5,51206
+Random (expected),Base,0.84,21092,35511.8,51825.2
+Random (expected),Base,0.85,21343,35934.4,52441.9
+Random (expected),Base,0.86,21594,36357,53058.7
+Random (expected),Base,0.87,21845,36779.6,53675.4
+Random (expected),Base,0.88,22096,37202.2,54292.1
+Random (expected),Base,0.89,22347,37624.8,54908.9
+Random (expected),Base,0.9,22598,38047.4,55525.6
+Random (expected),Base,0.91,22849,38470,56142.3
+Random (expected),Base,0.92,23100,38892.6,56759.1
+Random (expected),Base,0.93,23351,39315.2,57375.8
+Random (expected),Base,0.94,23602,39737.8,57992.5
+Random (expected),Base,0.95,23854,40162,58611.7
+Random (expected),Base,0.96,24105,40584.6,59228.5
+Random (expected),Base,0.97,24356,41007.2,59845.2
+Random (expected),Base,0.98,24607,41429.8,60461.9
+Random (expected),Base,0.99,24858,41852.4,61078.7
+Random (expected),Base,1,25109,42275,61695.4
+Logistic: risk,Optimistic,0.01,251,11378.8,12159.7
+Logistic: risk,Optimistic,0.02,502,22189.7,23730.8
+Logistic: risk,Optimistic,0.03,753,33489.6,37068.4
+Logistic: risk,Optimistic,0.04,1004,44360.5,49264.9
+Logistic: risk,Optimistic,0.05,1255,53461.9,59415.9
+Logistic: risk,Optimistic,0.06,1507,61599.3,67471.3
+Logistic: risk,Optimistic,0.07,1758,69637.1,77496.5
+Logistic: risk,Optimistic,0.08,2009,78353.9,88815.9
+Logistic: risk,Optimistic,0.09,2260,86840.2,98427.9
+Logistic: risk,Optimistic,0.1,2511,95723.2,106932
+Logistic: risk,Optimistic,0.11,2762,103756,114988
+Logistic: risk,Optimistic,0.12,3013,111178,123024
+Logistic: risk,Optimistic,0.13,3264,118149,130084
+Logistic: risk,Optimistic,0.14,3515,125837,138394
+Logistic: risk,Optimistic,0.15,3766,133420,147414
+Logistic: risk,Optimistic,0.16,4017,140721,155763
+Logistic: risk,Optimistic,0.17,4269,147121,163498
+Logistic: risk,Optimistic,0.18,4520,154413,171821
+Logistic: risk,Optimistic,0.19,4771,160519,179562
+Logistic: risk,Optimistic,0.2,5022,167205,187596
+Logistic: risk,Optimistic,0.21,5273,173286,195230
+Logistic: risk,Optimistic,0.22,5524,179840,203306
+Logistic: risk,Optimistic,0.23,5775,185337,209819
+Logistic: risk,Optimistic,0.24,6026,190909,216659
+Logistic: risk,Optimistic,0.25,6277,196368,223602
+Logistic: risk,Optimistic,0.26,6528,201921,231109
+Logistic: risk,Optimistic,0.27,6779,206737,237387
+Logistic: risk,Optimistic,0.28,7031,211972,243229
+Logistic: risk,Optimistic,0.29,7282,217165,249485
+Logistic: risk,Optimistic,0.3,7533,221985,255221
+Logistic: risk,Optimistic,0.31,7784,226533,260709
+Logistic: risk,Optimistic,0.32,8035,231527,265206
+Logistic: risk,Optimistic,0.33,8286,235996,269937
+Logistic: risk,Optimistic,0.34,8537,239743,274012
+Logistic: risk,Optimistic,0.35,8788,243671,279026
+Logistic: risk,Optimistic,0.36,9039,247577,284145
+Logistic: risk,Optimistic,0.37,9290,252055,290429
+Logistic: risk,Optimistic,0.38,9541,256119,294950
+Logistic: risk,Optimistic,0.39,9793,259769,298305
+Logistic: risk,Optimistic,0.4,10044,263502,302243
+Logistic: risk,Optimistic,0.41,10295,266977,306453
+Logistic: risk,Optimistic,0.42,10546,270573,309923
+Logistic: risk,Optimistic,0.43,10797,274901,314215
+Logistic: risk,Optimistic,0.44,11048,278153,318603
+Logistic: risk,Optimistic,0.45,11299,281648,322187
+Logistic: risk,Optimistic,0.46,11550,284619,324090
+Logistic: risk,Optimistic,0.47,11801,288385,328252
+Logistic: risk,Optimistic,0.48,12052,292303,332601
+Logistic: risk,Optimistic,0.49,12303,296275,336993
+Logistic: risk,Optimistic,0.5,12554,299117,339633
+Logistic: risk,Optimistic,0.51,12806,302602,343500
+Logistic: risk,Optimistic,0.52,13057,305155,347527
+Logistic: risk,Optimistic,0.53,13308,307569,349251
+Logistic: risk,Optimistic,0.54,13559,311087,352582
+Logistic: risk,Optimistic,0.55,13810,313686,354990
+Logistic: risk,Optimistic,0.56,14061,316240,357828
+Logistic: risk,Optimistic,0.57,14312,319056,359881
+Logistic: risk,Optimistic,0.58,14563,321472,362239
+Logistic: risk,Optimistic,0.59,14814,323049,364125
+Logistic: risk,Optimistic,0.6,15065,324628,365229
+Logistic: risk,Optimistic,0.61,15316,326603,367377
+Logistic: risk,Optimistic,0.62,15568,328462,370122
+Logistic: risk,Optimistic,0.63,15819,330572,371931
+Logistic: risk,Optimistic,0.64,16070,331849,372471
+Logistic: risk,Optimistic,0.65,16321,333624,374622
+Logistic: risk,Optimistic,0.66,16572,334941,376461
+Logistic: risk,Optimistic,0.67,16823,336297,378819
+Logistic: risk,Optimistic,0.68,17074,338016,380899
+Logistic: risk,Optimistic,0.69,17325,339736,383369
+Logistic: risk,Optimistic,0.7,17576,340853,384601
+Logistic: risk,Optimistic,0.71,17827,342326,386168
+Logistic: risk,Optimistic,0.72,18078,343492,387556
+Logistic: risk,Optimistic,0.73,18330,344925,389599
+Logistic: risk,Optimistic,0.74,18581,346221,391970
+Logistic: risk,Optimistic,0.75,18832,346836,392164
+Logistic: risk,Optimistic,0.76,19083,347831,393273
+Logistic: risk,Optimistic,0.77,19334,348342,394206
+Logistic: risk,Optimistic,0.78,19585,348783,394855
+Logistic: risk,Optimistic,0.79,19836,349151,395060
+Logistic: risk,Optimistic,0.8,20087,349634,395535
+Logistic: risk,Optimistic,0.81,20338,349687,396516
+Logistic: risk,Optimistic,0.82,20589,349771,396653
+Logistic: risk,Optimistic,0.83,20840,349897,397055
+Logistic: risk,Optimistic,0.84,21092,350246,397711
+Logistic: risk,Optimistic,0.85,21343,350315,398293
+Logistic: risk,Optimistic,0.86,21594,350346,398163
+Logistic: risk,Optimistic,0.87,21845,350364,398988
+Logistic: risk,Optimistic,0.88,22096,350189,398563
+Logistic: risk,Optimistic,0.89,22347,349886,398164
+Logistic: risk,Optimistic,0.9,22598,349575,397813
+Logistic: risk,Optimistic,0.91,22849,349287,397438
+Logistic: risk,Optimistic,0.92,23100,348901,396990
+Logistic: risk,Optimistic,0.93,23351,348423,396607
+Logistic: risk,Optimistic,0.94,23602,347960,396230
+Logistic: risk,Optimistic,0.95,23854,347377,395555
+Logistic: risk,Optimistic,0.96,24105,346809,394882
+Logistic: risk,Optimistic,0.97,24356,346233,394541
+Logistic: risk,Optimistic,0.98,24607,345605,393992
+Logistic: risk,Optimistic,0.99,24858,344939,393434
+Logistic: risk,Optimistic,1,25109,344223,392774
+Logistic: expected value (risk x booking value),Optimistic,0.01,251,30153.8,41079.5
+Logistic: expected value (risk x booking value),Optimistic,0.02,502,51239.8,69479.9
+Logistic: expected value (risk x booking value),Optimistic,0.03,753,68721.4,93340.2
+Logistic: expected value (risk x booking value),Optimistic,0.04,1004,83922.9,113559
+Logistic: expected value (risk x booking value),Optimistic,0.05,1255,97421.5,130036
+Logistic: expected value (risk x booking value),Optimistic,0.06,1507,109657,145022
+Logistic: expected value (risk x booking value),Optimistic,0.07,1758,120892,158004
+Logistic: expected value (risk x booking value),Optimistic,0.08,2009,131312,171473
+Logistic: expected value (risk x booking value),Optimistic,0.09,2260,141088,181684
+Logistic: expected value (risk x booking value),Optimistic,0.1,2511,150346,191892
+Logistic: expected value (risk x booking value),Optimistic,0.11,2762,159053,202178
+Logistic: expected value (risk x booking value),Optimistic,0.12,3013,167325,211663
+Logistic: expected value (risk x booking value),Optimistic,0.13,3264,175212,220933
+Logistic: expected value (risk x booking value),Optimistic,0.14,3515,182743,228958
+Logistic: expected value (risk x booking value),Optimistic,0.15,3766,189968,237734
+Logistic: expected value (risk x booking value),Optimistic,0.16,4017,196933,246019
+Logistic: expected value (risk x booking value),Optimistic,0.17,4269,203700,253522
+Logistic: expected value (risk x booking value),Optimistic,0.18,4520,210196,260866
+Logistic: expected value (risk x booking value),Optimistic,0.19,4771,216444,266439
+Logistic: expected value (risk x booking value),Optimistic,0.2,5022,222452,273535
+Logistic: expected value (risk x booking value),Optimistic,0.21,5273,228258,279596
+Logistic: expected value (risk x booking value),Optimistic,0.22,5524,233857,285157
+Logistic: expected value (risk x booking value),Optimistic,0.23,5775,239243,290184
+Logistic: expected value (risk x booking value),Optimistic,0.24,6026,244457,295658
+Logistic: expected value (risk x booking value),Optimistic,0.25,6277,249512,301967
+Logistic: expected value (risk x booking value),Optimistic,0.26,6528,254411,307361
+Logistic: expected value (risk x booking value),Optimistic,0.27,6779,259163,310346
+Logistic: expected value (risk x booking value),Optimistic,0.28,7031,263798,314857
+Logistic: expected value (risk x booking value),Optimistic,0.29,7282,268257,319399
+Logistic: expected value (risk x booking value),Optimistic,0.3,7533,272579,324178
+Logistic: expected value (risk x booking value),Optimistic,0.31,7784,276756,327973
+Logistic: expected value (risk x booking value),Optimistic,0.32,8035,280783,331153
+Logistic: expected value (risk x booking value),Optimistic,0.33,8286,284671,333658
+Logistic: expected value (risk x booking value),Optimistic,0.34,8537,288434,337080
+Logistic: expected value (risk x booking value),Optimistic,0.35,8788,292054,340797
+Logistic: expected value (risk x booking value),Optimistic,0.36,9039,295536,344767
+Logistic: expected value (risk x booking value),Optimistic,0.37,9290,298887,348678
+Logistic: expected value (risk x booking value),Optimistic,0.38,9541,302118,351536
+Logistic: expected value (risk x booking value),Optimistic,0.39,9793,305252,355265
+Logistic: expected value (risk x booking value),Optimistic,0.4,10044,308272,358671
+Logistic: expected value (risk x booking value),Optimistic,0.41,10295,311180,361764
+Logistic: expected value (risk x booking value),Optimistic,0.42,10546,313969,364898
+Logistic: expected value (risk x booking value),Optimistic,0.43,10797,316648,367608
+Logistic: expected value (risk x booking value),Optimistic,0.44,11048,319222,370152
+Logistic: expected value (risk x booking value),Optimistic,0.45,11299,321702,372667
+Logistic: expected value (risk x booking value),Optimistic,0.46,11550,324085,375003
+Logistic: expected value (risk x booking value),Optimistic,0.47,11801,326364,377290
+Logistic: expected value (risk x booking value),Optimistic,0.48,12052,328537,380137
+Logistic: expected value (risk x booking value),Optimistic,0.49,12303,330606,382267
+Logistic: expected value (risk x booking value),Optimistic,0.5,12554,332569,384410
+Logistic: expected value (risk x booking value),Optimistic,0.51,12806,334414,386458
+Logistic: expected value (risk x booking value),Optimistic,0.52,13057,336150,387969
+Logistic: expected value (risk x booking value),Optimistic,0.53,13308,337802,390478
+Logistic: expected value (risk x booking value),Optimistic,0.54,13559,339356,391414
+Logistic: expected value (risk x booking value),Optimistic,0.55,13810,340800,392966
+Logistic: expected value (risk x booking value),Optimistic,0.56,14061,342157,394011
+Logistic: expected value (risk x booking value),Optimistic,0.57,14312,343433,395285
+Logistic: expected value (risk x booking value),Optimistic,0.58,14563,344631,395734
+Logistic: expected value (risk x booking value),Optimistic,0.59,14814,345766,396916
+Logistic: expected value (risk x booking value),Optimistic,0.6,15065,346823,397507
+Logistic: expected value (risk x booking value),Optimistic,0.61,15316,347803,397904
+Logistic: expected value (risk x booking value),Optimistic,0.62,15568,348713,398972
+Logistic: expected value (risk x booking value),Optimistic,0.63,15819,349554,399669
+Logistic: expected value (risk x booking value),Optimistic,0.64,16070,350325,400437
+Logistic: expected value (risk x booking value),Optimistic,0.65,16321,351030,401071
+Logistic: expected value (risk x booking value),Optimistic,0.66,16572,351678,400933
+Logistic: expected value (risk x booking value),Optimistic,0.67,16823,352264,401383
+Logistic: expected value (risk x booking value),Optimistic,0.68,17074,352778,401399
+Logistic: expected value (risk x booking value),Optimistic,0.69,17325,353217,401927
+Logistic: expected value (risk x booking value),Optimistic,0.7,17576,353592,402061
+Logistic: expected value (risk x booking value),Optimistic,0.71,17827,353918,402359
+Logistic: expected value (risk x booking value),Optimistic,0.72,18078,354185,402657
+Logistic: expected value (risk x booking value),Optimistic,0.73,18330,354398,402747
+Logistic: expected value (risk x booking value),Optimistic,0.74,18581,354558,402793
+Logistic: expected value (risk x booking value),Optimistic,0.75,18832,354659,402673
+Logistic: expected value (risk x booking value),Optimistic,0.76,19083,354702,402681
+Logistic: expected value (risk x booking value),Optimistic,0.77,19334,354692,402923
+Logistic: expected value (risk x booking value),Optimistic,0.78,19585,354634,402629
+Logistic: expected value (risk x booking value),Optimistic,0.79,19836,354526,402511
+Logistic: expected value (risk x booking value),Optimistic,0.8,20087,354370,402388
+Logistic: expected value (risk x booking value),Optimistic,0.81,20338,354171,402190
+Logistic: expected value (risk x booking value),Optimistic,0.82,20589,353937,401991
+Logistic: expected value (risk x booking value),Optimistic,0.83,20840,353668,401565
+Logistic: expected value (risk x booking value),Optimistic,0.84,21092,353358,401178
+Logistic: expected value (risk x booking value),Optimistic,0.85,21343,353014,401053
+Logistic: expected value (risk x booking value),Optimistic,0.86,21594,352631,400553
+Logistic: expected value (risk x booking value),Optimistic,0.87,21845,352212,400233
+Logistic: expected value (risk x booking value),Optimistic,0.88,22096,351759,399919
+Logistic: expected value (risk x booking value),Optimistic,0.89,22347,351279,399412
+Logistic: expected value (risk x booking value),Optimistic,0.9,22598,350764,399095
+Logistic: expected value (risk x booking value),Optimistic,0.91,22849,350218,398552
+Logistic: expected value (risk x booking value),Optimistic,0.92,23100,349645,398040
+Logistic: expected value (risk x booking value),Optimistic,0.93,23351,349045,397436
+Logistic: expected value (risk x booking value),Optimistic,0.94,23602,348424,396852
+Logistic: expected value (risk x booking value),Optimistic,0.95,23854,347776,396216
+Logistic: expected value (risk x booking value),Optimistic,0.96,24105,347109,395588
+Logistic: expected value (risk x booking value),Optimistic,0.97,24356,346418,394922
+Logistic: expected value (risk x booking value),Optimistic,0.98,24607,345708,394223
+Logistic: expected value (risk x booking value),Optimistic,0.99,24858,344976,393527
+Logistic: expected value (risk x booking value),Optimistic,1,25109,344223,392774
+Hotel rate baseline,Optimistic,0.01,251,3671.87,3258.9
+Hotel rate baseline,Optimistic,0.02,502,6554.11,6238.68
+Hotel rate baseline,Optimistic,0.03,753,9871.51,9036.96
+Hotel rate baseline,Optimistic,0.04,1004,13242.6,13121
+Hotel rate baseline,Optimistic,0.05,1255,16725,16555.6
+Hotel rate baseline,Optimistic,0.06,1507,19767.9,18884.1
+Hotel rate baseline,Optimistic,0.07,1758,22972.2,22668.6
+Hotel rate baseline,Optimistic,0.08,2009,26103,25682.3
+Hotel rate baseline,Optimistic,0.09,2260,29629.1,29642.8
+Hotel rate baseline,Optimistic,0.1,2511,33174.4,33423
+Hotel rate baseline,Optimistic,0.11,2762,36329.4,36242.1
+Hotel rate baseline,Optimistic,0.12,3013,40241,41778.8
+Hotel rate baseline,Optimistic,0.13,3264,44182.9,45858.9
+Hotel rate baseline,Optimistic,0.14,3515,47727.3,49681.1
+Hotel rate baseline,Optimistic,0.15,3766,51137.1,53438.5
+Hotel rate baseline,Optimistic,0.16,4017,54509.8,57194.9
+Hotel rate baseline,Optimistic,0.17,4269,57770.3,60159.6
+Hotel rate baseline,Optimistic,0.18,4520,61085.4,62950.6
+Hotel rate baseline,Optimistic,0.19,4771,64333.3,66282.4
+Hotel rate baseline,Optimistic,0.2,5022,68044.6,70491.8
+Hotel rate baseline,Optimistic,0.21,5273,71244.4,73730
+Hotel rate baseline,Optimistic,0.22,5524,74301.5,76850.9
+Hotel rate baseline,Optimistic,0.23,5775,77552.6,80095.5
+Hotel rate baseline,Optimistic,0.24,6026,81049.7,83264
+Hotel rate baseline,Optimistic,0.25,6277,84517.4,87206.2
+Hotel rate baseline,Optimistic,0.26,6528,87833.9,91339.2
+Hotel rate baseline,Optimistic,0.27,6779,91028.6,94299.9
+Hotel rate baseline,Optimistic,0.28,7031,94606.8,98540.1
+Hotel rate baseline,Optimistic,0.29,7282,97631.8,101356
+Hotel rate baseline,Optimistic,0.3,7533,100855,104902
+Hotel rate baseline,Optimistic,0.31,7784,104524,108793
+Hotel rate baseline,Optimistic,0.32,8035,107715,111974
+Hotel rate baseline,Optimistic,0.33,8286,111147,115837
+Hotel rate baseline,Optimistic,0.34,8537,114658,119465
+Hotel rate baseline,Optimistic,0.35,8788,118130,122777
+Hotel rate baseline,Optimistic,0.36,9039,121696,126388
+Hotel rate baseline,Optimistic,0.37,9290,125189,130588
+Hotel rate baseline,Optimistic,0.38,9541,128998,133973
+Hotel rate baseline,Optimistic,0.39,9793,132508,138066
+Hotel rate baseline,Optimistic,0.4,10044,135953,141621
+Hotel rate baseline,Optimistic,0.41,10295,139151,145297
+Hotel rate baseline,Optimistic,0.42,10546,142277,148205
+Hotel rate baseline,Optimistic,0.43,10797,145515,152444
+Hotel rate baseline,Optimistic,0.44,11048,148771,155363
+Hotel rate baseline,Optimistic,0.45,11299,152156,159234
+Hotel rate baseline,Optimistic,0.46,11550,155306,162767
+Hotel rate baseline,Optimistic,0.47,11801,158496,166146
+Hotel rate baseline,Optimistic,0.48,12052,161521,169583
+Hotel rate baseline,Optimistic,0.49,12303,165218,172856
+Hotel rate baseline,Optimistic,0.5,12554,168637,176803
+Hotel rate baseline,Optimistic,0.51,12806,171907,180125
+Hotel rate baseline,Optimistic,0.52,13057,175020,183092
+Hotel rate baseline,Optimistic,0.53,13308,178177,185758
+Hotel rate baseline,Optimistic,0.54,13559,181374,188114
+Hotel rate baseline,Optimistic,0.55,13810,184962,192194
+Hotel rate baseline,Optimistic,0.56,14061,188183,195280
+Hotel rate baseline,Optimistic,0.57,14312,191608,198165
+Hotel rate baseline,Optimistic,0.58,14563,194584,200693
+Hotel rate baseline,Optimistic,0.59,14814,197691,203889
+Hotel rate baseline,Optimistic,0.6,15065,200909,206871
+Hotel rate baseline,Optimistic,0.61,15316,204626,210238
+Hotel rate baseline,Optimistic,0.62,15568,208029,213835
+Hotel rate baseline,Optimistic,0.63,15819,211605,217978
+Hotel rate baseline,Optimistic,0.64,16070,215088,221098
+Hotel rate baseline,Optimistic,0.65,16321,218307,224419
+Hotel rate baseline,Optimistic,0.66,16572,221896,229014
+Hotel rate baseline,Optimistic,0.67,16823,225084,233221
+Hotel rate baseline,Optimistic,0.68,17074,228550,238146
+Hotel rate baseline,Optimistic,0.69,17325,231604,242280
+Hotel rate baseline,Optimistic,0.7,17576,235130,247647
+Hotel rate baseline,Optimistic,0.71,17827,238361,252110
+Hotel rate baseline,Optimistic,0.72,18078,241962,257203
+Hotel rate baseline,Optimistic,0.73,18330,246032,261809
+Hotel rate baseline,Optimistic,0.74,18581,250029,267891
+Hotel rate baseline,Optimistic,0.75,18832,253820,273048
+Hotel rate baseline,Optimistic,0.76,19083,257261,277635
+Hotel rate baseline,Optimistic,0.77,19334,260441,282385
+Hotel rate baseline,Optimistic,0.78,19585,264178,286783
+Hotel rate baseline,Optimistic,0.79,19836,267907,291140
+Hotel rate baseline,Optimistic,0.8,20087,272035,296187
+Hotel rate baseline,Optimistic,0.81,20338,275129,301397
+Hotel rate baseline,Optimistic,0.82,20589,279081,307696
+Hotel rate baseline,Optimistic,0.83,20840,282562,312338
+Hotel rate baseline,Optimistic,0.84,21092,285896,316781
+Hotel rate baseline,Optimistic,0.85,21343,289398,321124
+Hotel rate baseline,Optimistic,0.86,21594,292642,323888
+Hotel rate baseline,Optimistic,0.87,21845,296903,328605
+Hotel rate baseline,Optimistic,0.88,22096,300828,333567
+Hotel rate baseline,Optimistic,0.89,22347,304073,338004
+Hotel rate baseline,Optimistic,0.9,22598,306888,341007
+Hotel rate baseline,Optimistic,0.91,22849,310505,345183
+Hotel rate baseline,Optimistic,0.92,23100,314156,351024
+Hotel rate baseline,Optimistic,0.93,23351,318208,356602
+Hotel rate baseline,Optimistic,0.94,23602,321816,361680
+Hotel rate baseline,Optimistic,0.95,23854,325073,367111
+Hotel rate baseline,Optimistic,0.96,24105,328127,371476
+Hotel rate baseline,Optimistic,0.97,24356,332013,376784
+Hotel rate baseline,Optimistic,0.98,24607,336314,383073
+Hotel rate baseline,Optimistic,0.99,24858,340162,387772
+Hotel rate baseline,Optimistic,1,25109,344223,392774
+Random (expected),Optimistic,0.01,251,3441,3926.33
+Random (expected),Optimistic,0.02,502,6881.99,7852.66
+Random (expected),Optimistic,0.03,753,10323,11779
+Random (expected),Optimistic,0.04,1004,13764,15705.3
+Random (expected),Optimistic,0.05,1255,17205,19631.7
+Random (expected),Optimistic,0.06,1507,20659.7,23573.6
+Random (expected),Optimistic,0.07,1758,24100.7,27500
+Random (expected),Optimistic,0.08,2009,27541.7,31426.3
+Random (expected),Optimistic,0.09,2260,30982.7,35352.6
+Random (expected),Optimistic,0.1,2511,34423.7,39279
+Random (expected),Optimistic,0.11,2762,37864.7,43205.3
+Random (expected),Optimistic,0.12,3013,41305.7,47131.6
+Random (expected),Optimistic,0.13,3264,44746.7,51058
+Random (expected),Optimistic,0.14,3515,48187.7,54984.3
+Random (expected),Optimistic,0.15,3766,51628.7,58910.6
+Random (expected),Optimistic,0.16,4017,55069.7,62837
+Random (expected),Optimistic,0.17,4269,58524.4,66778.9
+Random (expected),Optimistic,0.18,4520,61965.4,70705.3
+Random (expected),Optimistic,0.19,4771,65406.4,74631.6
+Random (expected),Optimistic,0.2,5022,68847.4,78557.9
+Random (expected),Optimistic,0.21,5273,72288.4,82484.3
+Random (expected),Optimistic,0.22,5524,75729.4,86410.6
+Random (expected),Optimistic,0.23,5775,79170.4,90336.9
+Random (expected),Optimistic,0.24,6026,82611.4,94263.2
+Random (expected),Optimistic,0.25,6277,86052.3,98189.6
+Random (expected),Optimistic,0.26,6528,89493.3,102116
+Random (expected),Optimistic,0.27,6779,92934.3,106042
+Random (expected),Optimistic,0.28,7031,96389,109984
+Random (expected),Optimistic,0.29,7282,99830,113911
+Random (expected),Optimistic,0.3,7533,103271,117837
+Random (expected),Optimistic,0.31,7784,106712,121763
+Random (expected),Optimistic,0.32,8035,110153,125690
+Random (expected),Optimistic,0.33,8286,113594,129616
+Random (expected),Optimistic,0.34,8537,117035,133542
+Random (expected),Optimistic,0.35,8788,120476,137469
+Random (expected),Optimistic,0.36,9039,123917,141395
+Random (expected),Optimistic,0.37,9290,127358,145321
+Random (expected),Optimistic,0.38,9541,130799,149248
+Random (expected),Optimistic,0.39,9793,134254,153190
+Random (expected),Optimistic,0.4,10044,137695,157116
+Random (expected),Optimistic,0.41,10295,141136,161042
+Random (expected),Optimistic,0.42,10546,144577,164969
+Random (expected),Optimistic,0.43,10797,148018,168895
+Random (expected),Optimistic,0.44,11048,151459,172821
+Random (expected),Optimistic,0.45,11299,154900,176748
+Random (expected),Optimistic,0.46,11550,158341,180674
+Random (expected),Optimistic,0.47,11801,161782,184600
+Random (expected),Optimistic,0.48,12052,165223,188526
+Random (expected),Optimistic,0.49,12303,168664,192453
+Random (expected),Optimistic,0.5,12554,172105,196379
+Random (expected),Optimistic,0.51,12806,175559,200321
+Random (expected),Optimistic,0.52,13057,179000,204247
+Random (expected),Optimistic,0.53,13308,182441,208174
+Random (expected),Optimistic,0.54,13559,185882,212100
+Random (expected),Optimistic,0.55,13810,189323,216026
+Random (expected),Optimistic,0.56,14061,192764,219953
+Random (expected),Optimistic,0.57,14312,196205,223879
+Random (expected),Optimistic,0.58,14563,199646,227805
+Random (expected),Optimistic,0.59,14814,203087,231732
+Random (expected),Optimistic,0.6,15065,206528,235658
+Random (expected),Optimistic,0.61,15316,209969,239584
+Random (expected),Optimistic,0.62,15568,213424,243526
+Random (expected),Optimistic,0.63,15819,216865,247453
+Random (expected),Optimistic,0.64,16070,220306,251379
+Random (expected),Optimistic,0.65,16321,223747,255305
+Random (expected),Optimistic,0.66,16572,227188,259232
+Random (expected),Optimistic,0.67,16823,230629,263158
+Random (expected),Optimistic,0.68,17074,234070,267084
+Random (expected),Optimistic,0.69,17325,237511,271011
+Random (expected),Optimistic,0.7,17576,240952,274937
+Random (expected),Optimistic,0.71,17827,244393,278863
+Random (expected),Optimistic,0.72,18078,247834,282790
+Random (expected),Optimistic,0.73,18330,251289,286732
+Random (expected),Optimistic,0.74,18581,254730,290658
+Random (expected),Optimistic,0.75,18832,258171,294584
+Random (expected),Optimistic,0.76,19083,261612,298511
+Random (expected),Optimistic,0.77,19334,265053,302437
+Random (expected),Optimistic,0.78,19585,268494,306363
+Random (expected),Optimistic,0.79,19836,271935,310290
+Random (expected),Optimistic,0.8,20087,275376,314216
+Random (expected),Optimistic,0.81,20338,278817,318142
+Random (expected),Optimistic,0.82,20589,282258,322069
+Random (expected),Optimistic,0.83,20840,285699,325995
+Random (expected),Optimistic,0.84,21092,289153,329937
+Random (expected),Optimistic,0.85,21343,292594,333863
+Random (expected),Optimistic,0.86,21594,296035,337790
+Random (expected),Optimistic,0.87,21845,299476,341716
+Random (expected),Optimistic,0.88,22096,302917,345642
+Random (expected),Optimistic,0.89,22347,306358,349569
+Random (expected),Optimistic,0.9,22598,309799,353495
+Random (expected),Optimistic,0.91,22849,313240,357421
+Random (expected),Optimistic,0.92,23100,316681,361348
+Random (expected),Optimistic,0.93,23351,320122,365274
+Random (expected),Optimistic,0.94,23602,323563,369200
+Random (expected),Optimistic,0.95,23854,327018,373142
+Random (expected),Optimistic,0.96,24105,330459,377069
+Random (expected),Optimistic,0.97,24356,333900,380995
+Random (expected),Optimistic,0.98,24607,337341,384921
+Random (expected),Optimistic,0.99,24858,340782,388848
+Random (expected),Optimistic,1,25109,344223,392774
